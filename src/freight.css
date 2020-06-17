@@ -1,0 +1,40 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3879274, 2020-03-11T19:03:10-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FreightMicroProBook-Regular by GarageFonts
+ * URL: https://www.myfonts.com/fonts/garagefonts/freight-micro-pro/book/
+ * Copyright: Copyright &#x00A9; 2004-2009, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-879-9222 www.garagefonts.com
+ * 
+ * Webfont: FreightMicroProBook-Italic by GarageFonts
+ * URL: https://www.myfonts.com/fonts/garagefonts/freight-micro-pro/book-italic/
+ * Copyright: Copyright &#x00A9; 2004-2009, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-879-9222 www.garagefonts.com
+ * 
+ * Webfont: FreightSansCndPro-Semi by GarageFonts
+ * URL: https://www.myfonts.com/fonts/garagefonts/freight-sans-condensed-pro/semi/
+ * Copyright: Copyright &#x00A9; 2004-2012, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-879-9222 www.garagefonts.com
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b316a");
+
+  
+@font-face {font-family: 'FreightMicroProBook-Regular';src: url('webfonts/3B316A_0_0.eot');src: url('webfonts/3B316A_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3B316A_0_0.woff2') format('woff2'),url('webfonts/3B316A_0_0.woff') format('woff'),url('webfonts/3B316A_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'FreightMicroProBook-Italic';src: url('webfonts/3B316A_1_0.eot');src: url('webfonts/3B316A_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3B316A_1_0.woff2') format('woff2'),url('webfonts/3B316A_1_0.woff') format('woff'),url('webfonts/3B316A_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'FreightSansCndPro-Semi';src: url('webfonts/3B316A_2_0.eot');src: url('webfonts/3B316A_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3B316A_2_0.woff2') format('woff2'),url('webfonts/3B316A_2_0.woff') format('woff'),url('webfonts/3B316A_2_0.ttf') format('truetype');}
+ 
