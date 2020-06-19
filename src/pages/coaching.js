@@ -1,12 +1,21 @@
 import React from "react";
 import Page from "../components/page";
+import { Helmet } from "react-helmet";
+import { PageHeader } from "../styled/page-header";
+import { PageContentWidth } from "../styled/page-content-width";
+
 
 function Coaching(props) {
   return (
     <Page>
-        <h1>
+      <Helmet>
+        <title>Kevin Carroll — Coaching</title>
+      </Helmet>
+      <PageContentWidth>
+      <PageHeader>
         Coaching
-        </h1>
+        </PageHeader>
+        </PageContentWidth>
     </Page>
   )
 }

@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
+import Footer from "./footer/footer";
+
+
 function Page(props) {
 
   const pageVariants = {
@@ -15,10 +18,10 @@ function Page(props) {
       opacity: 0,
     }
   };
-  
+
   const pageTransition = {
     type: "tween",
-    ease: "anticipate",
+    ease: "easeInOut",
     duration: 0.5
   };
 
@@ -31,18 +34,37 @@ function Page(props) {
       transition={pageTransition}
     >
       <PageContent>
-        { props.children }
+        {props.children}
       </PageContent>
+      <Footer />
     </PageWrap>
   )
 }
 
 const PageWrap = styled(motion.div)`
   position: absolute;
+  width: 100%;
+
+  padding: 16px;
+  @media (min-width: 375px) {
+    padding: 32px;
+  }
+
+  @media (min-width: 414px) {
+    padding: 48px;
+  }
+
+  @media (min-width: 640px) {
+    padding: 56px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 64px;
+  }
 `;
 
 const PageContent = styled(motion.div)`
-  padding: calc(0.5rem + 3vh) calc(0.5rem + 4vw);
+  padding-bottom: 12em;
 `;
 
 export default Page;
