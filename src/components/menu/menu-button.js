@@ -32,7 +32,7 @@ function MenuButton({ open, setOpen, ...props }) {
             <IconContainer>
                 <IconMenu viewBox="0 0 44 44" variants={IconMenuVariants} animate={open ? "open" : "closed"} initial={"closed"}>
                     <line x1="5.5" y1="11.5" x2="38.5" y2="11.5" />
-                    <line x1="5.5" y1="21.5" x2="38.5" y2="21.5" />
+                    <line x1="15.5" y1="21.5" x2="38.5" y2="21.5" />
                     <line x1="5.5" y1="31.5" x2="38.5" y2="31.5" />
                 </IconMenu>
                 <IconClose viewBox="0 0 44 44" variants={IconCloseVariants} animate={open ? "open" : "closed"} initial={"closed"}>
@@ -40,11 +40,12 @@ function MenuButton({ open, setOpen, ...props }) {
                     <path d="M10 10L34 34" />
                 </IconClose>
             </IconContainer>
-
+            <Label>
+                Menu
+            </Label>
         </Button >
     )
 }
-
 
 export default MenuButton;
 
@@ -91,3 +92,19 @@ const IconClose = styled(motion.svg)`
     stroke: ${props => props.theme.colors.white};
 `;
 
+const Label = styled.span`
+    font-family: ${props => props.theme.fonts.heading};
+    font-size: ${props => props.theme.typography.small};
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1;
+    color: ${props => props.theme.colors.red};
+    visibility: hidden;
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translate(0, -50%);
+    @media (min-width: 414px) {
+        visibility: visible;
+    }
+`;

@@ -7,7 +7,8 @@ export const theme = {
   },
 
   typography: {
-    size: "clamp(19px, 1.6vw, 25px);",
+    size: "clamp(19px, 1.6vw, 25px)",
+    small: "0.7894736842em",
     lineHeight: 1.65,
     scale1: "5.653em",
     scale2: "4em",

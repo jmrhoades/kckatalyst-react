@@ -16,7 +16,10 @@ function Header() {
 
 const Head = styled.header`
     height: 64px;
-    position: relative;
+    position: fixed;
+    background-color: ${props => props.theme.colors.white};
+    width: 100%;
+    z-index: 1;
 
     @media (min-width: 768px) {
         height: 88px;

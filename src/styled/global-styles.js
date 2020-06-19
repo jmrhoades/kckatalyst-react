@@ -91,6 +91,9 @@ button {
     outline: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
 }
 
 button:active,

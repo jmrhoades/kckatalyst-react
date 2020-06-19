@@ -45,25 +45,32 @@ const PageWrap = styled(motion.div)`
   position: absolute;
   width: 100%;
 
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  
   @media (min-width: 375px) {
-    padding: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media (min-width: 414px) {
-    padding: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 
   @media (min-width: 640px) {
-    padding: 56px;
+    padding-left: 56px;
+    padding-right: 56px;
   }
 
   @media (min-width: 768px) {
-    padding: 64px;
+    padding-left: 56px;
+    padding-right: 56px;
   }
 `;
 
 const PageContent = styled(motion.div)`
+  padding-top: 10em;
   padding-bottom: 12em;
 `;
 

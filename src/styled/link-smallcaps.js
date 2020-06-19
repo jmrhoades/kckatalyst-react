@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const LinkSmallCaps = styled.a`
     font-family: ${props => props.theme.fonts.heading};
-    font-size: 0.7894736842em;
+    font-size: ${props => props.theme.typography.small};
     letter-spacing: 0.05em;
     text-transform: uppercase;
     line-height: 1;
@@ -13,8 +13,8 @@ export const LinkSmallCaps = styled.a`
 `;
 
 export const RouteLinkSmallCaps = styled(Link)`
-   font-family: ${props => props.theme.fonts.heading};
-    font-size: 0.7894736842em;
+    font-family: ${props => props.theme.fonts.heading};
+    font-size: ${props => props.theme.typography.small};
     letter-spacing: 0.05em;
     text-transform: uppercase;
     line-height: 1;

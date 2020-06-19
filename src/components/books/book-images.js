@@ -1,8 +1,7 @@
-import React from "react";
 import styled from 'styled-components';
 
 export const BookImagesContainer = styled.div`
-
+    padding-bottom: 4em;
 `;
 
 export const BookImageCover = styled.div`
