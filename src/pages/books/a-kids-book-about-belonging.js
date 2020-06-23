@@ -52,8 +52,8 @@ export function AKidsBookAboutBelonging(props) {
         </BookImagesContainer>
 
         <BookSellersContainer>
-          <BookSellersHeader />
-          <BookSellerLink href="https://akidsbookabout.com/products/a-kids-book-about-belonging">A Kids Book About</BookSellerLink>
+          <BookSellersHeader msg="Available from" />
+          <BookSellerLink href="https://akidsbookabout.com/products/a-kids-book-about-belonging" name="A Kids Book About" />
         </BookSellersContainer>
 
       </PageContentWidth>

@@ -2,8 +2,14 @@ import React from "react";
 import Page from "../../components/page";
 import { Helmet } from "react-helmet";
 import { PageHeader } from "../../styled/page-header";
-import { PageContentWidth } from "../../styled/page-content-width";
 import { BackToBooks } from "../../components/books/back-to-books";
+import { PageContentWidth } from "../../styled/page-content-width";
+import { BookSellersContainer, BookSellersHeader, BookSellerLink } from "../../components/books/books-sellers";
+import { BookImagesContainer, BookImageCover, BookImageSpread } from "../../components/books/book-images";
+import { BookAboutParagraph } from "../../components/books/book-info";
+import AspectBox from "../../components/aspect-box";
+import { LazyImage } from "../../components/lazy-image";
+import { Quote } from "../../components/quote";
 
 export function WhatsYourRedRubberBall(props) {
   return (
@@ -12,10 +18,49 @@ export function WhatsYourRedRubberBall(props) {
         <title>What's Your Red Rubber Ball by Kevin Carroll</title>
       </Helmet>
       <PageContentWidth>
+
         <BackToBooks />
+
         <PageHeader>
-          What's Your Red Rubber Ball
-      </PageHeader>
+          What’s Your Red Rubber Ball
+        </PageHeader>
+
+        <BookAboutParagraph>
+          In a boldly designed, highly energetic book, Kevin leads readers through a series of exercises designed to help them discover their Red Rubber Ball — a dream to chase for a lifetime. With a cardboard box to be decorated, punch-out inspiration cards, a removable dream statement, and gatefold pages that can be written on, this engaging book offers tweens and teens a fun, accessible way to think about their hopes and dreams.
+        </BookAboutParagraph>
+
+        <BookImagesContainer>
+
+          <BookImageCover>
+            <AspectBox ratio={1}>
+              <LazyImage src="/images/whats-your-red-rubber-ball-cover.jpg" />
+            </AspectBox>
+          </BookImageCover>
+
+          <BookImageSpread>
+            <AspectBox ratio={0.7716049383}>
+              <LazyImage src="/images/whats-your-red-rubber-ball-spread-1.jpg" />
+            </AspectBox>
+          </BookImageSpread>
+
+          <BookImageSpread>
+            <AspectBox ratio={0.7716049383}>
+              <LazyImage src="/images/whats-your-red-rubber-ball-spread-2.jpg" />
+            </AspectBox>
+          </BookImageSpread>
+
+        </BookImagesContainer>
+
+        <Quote
+          quote="A combination of workbook, journal, and project guide, it is designed to keep that age group interested and involved. Children in that tween and teen age sometime have a hard time finding things to motivate themselves in school. What's Your Red Rubber Ball?! may provide the encouragement they need, to see beyond their here-and-now problems and find something they can dream for."
+          by="Sacramento Book Review"
+        />
+        
+        <BookSellersContainer>
+          <BookSellersHeader msg="Download PDF"/>
+          <BookSellerLink href="https://akidsbookabout.com/products/a-kids-book-about-belonging" name="WYRRB?! Inspiring Interactive Series of Engaging + Thought Provoking Exercises" />
+        </BookSellersContainer>
+
       </PageContentWidth>
     </Page>
   )
