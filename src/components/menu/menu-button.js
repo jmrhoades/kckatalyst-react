@@ -24,6 +24,21 @@ const IconCloseVariants = {
     }
 };
 
+const MenuLabelVariants = {
+    open: {
+        opacity: 0,
+        transition: {
+            duration: 0.1,
+        }
+    },
+    closed: {
+        opacity: 1,
+        transition: {
+            delay: 0.1,
+        }
+    }
+};
+
 function MenuButton({ open, setOpen, ...props }) {
     const isExpanded = open ? true : false;
 
@@ -40,7 +55,7 @@ function MenuButton({ open, setOpen, ...props }) {
                     <path d="M10 10L34 34" />
                 </IconClose>
             </IconContainer>
-            <Label>
+            <Label variants={MenuLabelVariants} animate={open ? "open" : "closed"} initial={"closed"}>
                 Menu
             </Label>
         </Button >
@@ -78,7 +93,7 @@ const IconContainer = styled.div`
         position: absolute;
         top: 0;
         left: 0;
-        stroke-width: 3px;
+        stroke-width: 2px;
         stroke-linecap: round;
     }
 
@@ -92,19 +107,22 @@ const IconClose = styled(motion.svg)`
     stroke: ${props => props.theme.colors.white};
 `;
 
-const Label = styled.span`
+const Label = styled(motion.span)`
     font-family: ${props => props.theme.fonts.heading};
     font-size: ${props => props.theme.typography.small};
     letter-spacing: 0.05em;
     text-transform: uppercase;
     line-height: 1;
-    color: ${props => props.theme.colors.red};
+    color: ${props => props.theme.colors.black};
     visibility: hidden;
     position: absolute;
-    left: -24px;
+    left: -38px;
     top: 50%;
     transform: translate(0, -50%);
     @media (min-width: 414px) {
         visibility: visible;
+    }
+    @media (min-width: 768px) {
+        left: -28px;
     }
 `;

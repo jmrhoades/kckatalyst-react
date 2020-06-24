@@ -1,31 +1,297 @@
 import React from "react";
 import Page from "../components/page";
 import { Helmet } from "react-helmet";
+import styled from 'styled-components';
+import { Link } from "react-router-dom";
+
 import { PageContentWidth } from "../styled/page-content-width";
+import AspectBox from "../components/aspect-box";
+import { LazyImage } from "../components/lazy-image";
+import { KataglyphsIcons, ApplePodcastsIcon, SpotifyIcon, GooglePodcastsIcon } from "../components/kataglyphs-icons";
+import { Quote } from "../components/quote";
+import { RouteLinkSmallCaps } from "../styled/link-smallcaps";
 
 function Home(props) {
   return (
     <Page>
-      
+
       <Helmet>
         <title>Kevin Carroll Katalyst</title>
       </Helmet>
 
       <PageContentWidth>
-      <p>They chose their addiction over raising three sons. The pinnacle moment of his 	parent’s neglect resulted in the three boys being “rescued” by a stranger, shuttled down to a greyhound bus station in Bowling Green, VA, placed on a bus alone (ages eight, six, and three) and sent on a 200+ mile, one-way fare to their grandparent’s house in Philadelphia. </p>
 
-      <p>Without parents in his life, Kevin resorted to finding life lessons from many sources: businessmen and laborers, winos and alcoholics, drug dealers and users, sport coaches, my peers and old-heads at the playground, merchants, war vets, school teachers, librarians, custodians, food service workers, other kid’s moms and dads. </p>
+        <HomeIntro>
+          <HomeIntroPortrait>
+            <AspectBox ratio={1.5}>
+              <LazyImage src="/images/kevincarroll-portrait-3.jpg" />
+            </AspectBox>
+          </HomeIntroPortrait>
+          <HomeIntroParagraph>
+            <p>Kevin Carroll is the acclaimed author of <Link to="/books/rules-of-the-red-rubber-ball">Rules of the Red Rubber Ball</Link>, <Link to="/books/whats-your-red-rubber-ball">What’s Your Red Rubber Ball?!</Link>, <Link to="/books/the-red-rubber-ball-at-work">The Red Rubber Ball at Work</Link> and <Link href="/books/the-red-rubber-ball-at-work">A Kids Book About Belonging</Link>. He travels the globe consulting and speaking about the role, value and importance of play in life; having a lifelong learner mindset; advancing the human condition in a positive way.</p>
+          </HomeIntroParagraph>
+        </HomeIntro>
 
-      <p>Kevin learned to be constantly on the lookout for any nugget of insight/wisdom that would assist me on my quest to rise above my suffering and circumstances - turning ideas into reality became his focus + “I'll show YOU!” became his daily mantra. Carroll spent endless hours at the neighborhood playground, school & the public library - all of these locales became sanctuaries for him. Finding a way to rise above his 
-          circumstances and not let his circumstances dictate his destiny was his constant 	motivation. Kevin found a way to transform his journey from abandonment, dysfunction and uncertainty to success and a lifelong pursuit of significance. </p>
+        <HomePodcast>
 
-      <p>After serving in the Air Force for ten years and earning a college degree, Kevin became an athletic trainer at the high school and collegiate levels in Philadelphia. His expertise in sport performance was recognized by the 76ers organization and led to earning a dream job as the head athletic trainer for the Philadelphia 76ers in 1995. (Special Note: Carroll was the third African-American athletic trainer in the history of the NBA!) While at the 76ers an unexpected  “verbal altercation” was a catalyst to gain the attention of  Nike who offered him an opportunity to bring his unique + diverse experiences to the sneaker giant in 1997. Although no job "officially" existed at the time, Nike executives directed Kevin to create a position at the company that would add value to the overall mission of the brand. Carroll stayed for seven years as the "Katalyst" (the 'K' is for Kevin)—a creative change agent. At Nike he was instrumental in helping the company develop a deeper understanding of athletic product performance, team dynamics and interpersonal communication. Carroll left Nike in 2004 to create his own company, Kevin Carroll Katalyst, committed to elevating the power of sport and play around the world.
-        Kevin is the author of four highly successful books published by ESPN, Disney Press, McGraw-Hill and A Kids Book About. I’ve had the opportunity to help turn creative ideas into  reality for organizations such as Nike, Starbucks, adidas, Walt Disney, Target, Proctor & Gamble, Google, Columbia Sportswear, Mattel, the National Basketball Association and many others.</p>
+          <HomePodcastHeader>
+            Limited Podcast Series!
+          </HomePodcastHeader>
 
-        </PageContentWidth>
+          <HomePodcastIconLink>
+            <a href="http://kataglyphs.com">
+              <KataglyphsIcons />
+            </a>
+          </HomePodcastIconLink>
 
-    </Page>
+          <p><a href="http://kataglyphs.com">KATAGLYPHS</a> is a auditory + visual “TIME CAPSULE” filled with the lifelong lessons + unexpected wisdom that I learned from the community of human catalysts that raised me.</p>
+
+          <HomeIntroQuote>
+            <Quote
+              quote="My actions may seem small but, their collective impact will be great!"
+              by="anonymous"
+            />
+          </HomeIntroQuote>
+
+          <HomePodcastsLinks>
+
+            <a href="https://podcasts.apple.com/us/podcast/kataglyphs-podcast/id1504525762?ls=1">
+              <ApplePodcastsIcon />
+              <HomePodcastsLinkTitle>Apple Podcasts</HomePodcastsLinkTitle>
+            </a>
+
+            <a href="https://podcasts.google.com/?feed=aHR0cDovL2thdGFnbHlwaHMubGlic3luLmNvbS9yc3M&ved=0CAAQ4aUDahcKEwjw_8Hqp83oAhUAAAAAHQAAAAAQFA">
+              <GooglePodcastsIcon />
+              <HomePodcastsLinkTitle>Google Podcasts</HomePodcastsLinkTitle>
+            </a>
+
+            <a href="https://open.spotify.com/show/2TOUhE6qc0C7yOzB2Xbe8d">
+              <SpotifyIcon />
+              <HomePodcastsLinkTitle>Spotify</HomePodcastsLinkTitle>
+            </a>
+
+          </HomePodcastsLinks>
+
+        </HomePodcast>
+
+        <HomeBooksList>
+          <HomeBooksListHeader>My Books</HomeBooksListHeader>
+          <HomeBooksListContainer>
+            <HomeBooksListLink to="/books/rules-of-the-red-rubber-ball">
+              <AspectBox ratio={1}>
+                <LazyImage src="/images/booklist-rules-of-the-red-rubber-ball.jpg" />
+              </AspectBox>
+            </HomeBooksListLink>
+            <HomeBooksListLink to="/books/whats-your-red-rubber-ball">
+              <AspectBox ratio={1}>
+                <LazyImage src="/images/booklist-whats-your-red-rubber-ball.jpg" />
+              </AspectBox>
+            </HomeBooksListLink>
+            <HomeBooksListLink to="books/the-red-rubber-ball-at-work">
+              <AspectBox ratio={1}>
+                <LazyImage src="/images/booklist-the-red-rubber-ball-at-work.jpg" />
+              </AspectBox>
+            </HomeBooksListLink>
+            <HomeBooksListLink to="books/a-kids-book-about-belonging">
+              <AspectBox ratio={1}>
+                <LazyImage src="/images/booklist-a-kids-book-about-belonging.jpg" />
+              </AspectBox>
+            </HomeBooksListLink>
+          </HomeBooksListContainer>
+        </HomeBooksList>
+
+        <HomeOutNow>
+          <HomeOutNowHeader>Out Now</HomeOutNowHeader>
+          <HomeOutNowImagesContainer>
+            <Link to="/books/a-kids-book-about-belonging">
+              <HomeOutNowImages>
+                <HomeOutNowImageB>
+                  <AspectBox ratio={0.7142857143}>
+                    <LazyImage src="/images/a-kids-book-about-belonging-kevin.jpg" />
+                  </AspectBox>
+                </HomeOutNowImageB>
+                <HomeOutNowImageA>
+                  <AspectBox ratio={0.7142857143}>
+                    <LazyImage src="/images/a-kids-book-about-belonging-child.jpg" />
+                  </AspectBox>
+                </HomeOutNowImageA>
+              </HomeOutNowImages>
+            </Link>
+          </HomeOutNowImagesContainer>
+          <HomeOutNowLink>
+            <RouteLinkSmallCaps to="/books/a-kids-book-about-belonging">A Kids Book About Belonging</RouteLinkSmallCaps>
+          </HomeOutNowLink>
+        </HomeOutNow>
+
+      </PageContentWidth>
+    </Page >
   )
 }
 
+const HomeIntro = styled.section`
+  max-width: 544px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+`;
+
+const HomeIntroPortrait = styled.div`
+  margin-bottom: 4em;
+`;
+
+const HomeIntroParagraph = styled.div`
+  margin-bottom: -1em;
+`;
+
+const HomePodcast = styled.div`
+  max-width: 544px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9em;
+`;
+
+const HomePodcastHeader = styled.h5`
+  margin-bottom: 1em;
+`;
+
+const HomePodcastIconLink = styled.div`
+  margin-bottom: 3em;
+`;
+
+const HomeIntroQuote = styled.div`
+  text-align: center;
+  margin-bottom: -2em;
+`;
+
+const HomePodcastsLinks = styled.div`
+  margin-bottom: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 1em;
+
+  a { 
+    text-align: center;
+    padding: 0 1em;
+    svg {
+      width: 40px;
+      display: inline-block;
+    }
+  }
+
+`;
+
+const HomePodcastsLinkTitle = styled.h6`
+  font-family: ${props => props.theme.fonts.heading};
+  font-size: ${props => props.theme.typography.small};
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0 0 5px;
+  color: ${props => props.theme.colors.black};
+`;
+
+const HomeBooksList = styled.section`
+  max-width: 544px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  margin-bottom: 5em;
+`;
+
+const HomeBooksListHeader = styled.h5`
+  margin-bottom: 1em;
+`;
+
+const HomeBooksListContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2em;
+  row-gap: 2em;
+
+  &:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  &:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  &:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  &:nth-child(4) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+`;
+
+const HomeBooksListLink = styled(Link)`
+  
+`;
+
+const HomeOutNow = styled.section`
+
+`;
+
+const HomeOutNowImagesContainer = styled.div`
+  overflow: hidden;
+  margin-bottom: 2em;
+`;
+
+const HomeOutNowImages = styled.div`
+  position: relative;
+  left: 50%;
+  width: 558px;
+  height: 500px;
+  transform: translateX(-50%);
+
+  @media (min-width: 768px) {
+    width: 668px;
+    height: 520px;
+    overflow: hidden;
+  }
+`;
+
+const HomeOutNowImageA = styled.div`
+ position: absolute;
+  width: 375px;
+  height: 268px;
+  top: 0;
+  left: -125px;
+  border: 30px solid ${props => props.theme.colors.white};
+  box-sizing: content-box;
+  @media (min-width: 768px) {
+    left: -80px;
+    border-width: 40px;
+  }
+`;
+
+const HomeOutNowImageB = styled.div`
+ position: absolute;
+  width: 375px;
+  height: 268px;
+  bottom: 0;
+  right: 0;
+`;
+
+const HomeOutNowHeader = styled.h5`
+  max-width: 544px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+const HomeOutNowLink = styled.div`
+  padding: 2em;
+  max-width: 544px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+`;
+
+
 export default Home;
+

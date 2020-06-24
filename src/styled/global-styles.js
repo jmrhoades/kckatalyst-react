@@ -106,4 +106,8 @@ p {
   padding-bottom: 3em;
 }
 
+.center {
+  text-align:center;
+}
+
 `

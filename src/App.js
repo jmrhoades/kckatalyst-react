@@ -20,6 +20,17 @@ import MenuButton from "./components/menu/menu-button";
 import Header from "./components/header/header";
 
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+
 function App() {
 
   const [open, setOpen] = useState(false);
@@ -35,6 +46,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
+        <ScrollToTop />
         <Header />
         <AnimatePresence>
           <Switch location={location} key={location.pathname}>

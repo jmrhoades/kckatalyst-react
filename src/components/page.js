@@ -2,8 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styled from 'styled-components';
 
-import Footer from "./footer/footer";
-import { BackNextNav } from "./footer/nav";
+import { Footer } from "./footer/footer";
 
 
 function Page(props) {
@@ -17,6 +16,9 @@ function Page(props) {
     },
     out: {
       opacity: 0,
+      transition: {
+        duration: 0.0001,
+      }
     }
   };
 
@@ -37,7 +39,6 @@ function Page(props) {
       <PageContent>
         {props.children}
       </PageContent>
-      <BackNextNav />
       <Footer />
     </PageWrap>
   )

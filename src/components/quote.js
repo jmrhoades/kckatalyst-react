@@ -18,7 +18,6 @@ const QuoteContainer = styled.div`
     max-width: 720px;
     margin: 0 auto;
     margin-bottom: 5em;
-    
 `;
 
 const QuoteBody = styled.div`
