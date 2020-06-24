@@ -72,8 +72,6 @@ export function GooglePodcastsIcon() {
 
 const KataglyphsSVG = styled.svg`
     fill: ${props => props.theme.colors.red};
-    max-width: 544px;
-    margin: 0 auto;
 `;
 
 const ApplePodcastsSVG = styled.svg`

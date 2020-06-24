@@ -113,6 +113,7 @@ const LinksContainer = styled.ul`
         font-family: ${props => props.theme.fonts.heading};
         letter-spacing: 0.05em;
         text-transform: uppercase;
+        text-decoration: none;
         line-height: 1.2;
         color: ${props => props.theme.colors.black};
         span {

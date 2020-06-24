@@ -41,6 +41,7 @@ export const Name = styled.a`
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
     border-bottom: 2px solid ${props => props.theme.colors.red};
+    text-decoration: none;
 
     &:hover {
         color: ${props => props.theme.colors.red};
@@ -68,6 +69,7 @@ export const LinkArrow = styled.a`
     font-family: ${props => props.theme.fonts.heading};
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    text-decoration: none;
     
     color: ${props => props.theme.colors.red};
     border: 2px solid ${props => props.theme.colors.red};

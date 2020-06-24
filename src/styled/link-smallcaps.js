@@ -10,6 +10,7 @@ export const LinkSmallCaps = styled.a`
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
     border-bottom: 2px solid ${props => props.theme.colors.red};
+    text-decoration: none;
 `;
 
 export const RouteLinkSmallCaps = styled(Link)`
@@ -21,4 +22,5 @@ export const RouteLinkSmallCaps = styled(Link)`
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
     border-bottom: 2px solid ${props => props.theme.colors.red};
+    text-decoration: none;
 `;

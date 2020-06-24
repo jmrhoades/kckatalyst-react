@@ -21,16 +21,17 @@ function Home(props) {
 
       <PageContentWidth>
 
-        <HomeIntro>
-          <HomeIntroPortrait>
-            <AspectBox ratio={1.5}>
-              <LazyImage src="/images/kevincarroll-portrait-3.jpg" />
-            </AspectBox>
-          </HomeIntroPortrait>
-          <HomeIntroParagraph>
-            <p>Kevin Carroll is the acclaimed author of <Link to="/books/rules-of-the-red-rubber-ball">Rules of the Red Rubber Ball</Link>, <Link to="/books/whats-your-red-rubber-ball">What’s Your Red Rubber Ball?!</Link>, <Link to="/books/the-red-rubber-ball-at-work">The Red Rubber Ball at Work</Link> and <Link href="/books/the-red-rubber-ball-at-work">A Kids Book About Belonging</Link>. He travels the globe consulting and speaking about the role, value and importance of play in life; having a lifelong learner mindset; advancing the human condition in a positive way.</p>
-          </HomeIntroParagraph>
-        </HomeIntro>
+
+        <HomeIntroPortrait>
+          <AspectBox ratio={1.5}>
+            <LazyImage src="/images/kevincarroll-portrait-3.jpg" />
+          </AspectBox>
+        </HomeIntroPortrait>
+
+        <HomeIntroParagraph>
+          <p>Kevin Carroll is the acclaimed author of <Link to="/books/rules-of-the-red-rubber-ball">Rules of the Red Rubber Ball</Link>, <Link to="/books/whats-your-red-rubber-ball">What’s Your Red Rubber Ball?!</Link>, <Link to="/books/the-red-rubber-ball-at-work">The Red Rubber Ball at Work</Link> and <Link to="/books/the-red-rubber-ball-at-work">A Kids Book About Belonging</Link>. He travels the globe consulting and speaking about the role, value and importance of play in life; having a lifelong learner mindset; advancing the human condition in a positive way.</p>
+        </HomeIntroParagraph>
+
 
         <HomePodcast>
 
@@ -44,8 +45,6 @@ function Home(props) {
             </a>
           </HomePodcastIconLink>
 
-          <p><a href="http://kataglyphs.com">KATAGLYPHS</a> is a auditory + visual “TIME CAPSULE” filled with the lifelong lessons + unexpected wisdom that I learned from the community of human catalysts that raised me.</p>
-
           <HomeIntroQuote>
             <Quote
               quote="My actions may seem small but, their collective impact will be great!"
@@ -53,24 +52,32 @@ function Home(props) {
             />
           </HomeIntroQuote>
 
+          <HomePodcastParagraph>
+            <a href="http://kataglyphs.com">KATAGLYPHS</a> is a auditory + visual “TIME CAPSULE” filled with the lifelong lessons + unexpected wisdom that I learned from the community of human catalysts that raised me.
+          </HomePodcastParagraph>
+
           <HomePodcastsLinks>
-
-            <a href="https://podcasts.apple.com/us/podcast/kataglyphs-podcast/id1504525762?ls=1">
-              <ApplePodcastsIcon />
-              <HomePodcastsLinkTitle>Apple Podcasts</HomePodcastsLinkTitle>
-            </a>
-
-            <a href="https://podcasts.google.com/?feed=aHR0cDovL2thdGFnbHlwaHMubGlic3luLmNvbS9yc3M&ved=0CAAQ4aUDahcKEwjw_8Hqp83oAhUAAAAAHQAAAAAQFA">
-              <GooglePodcastsIcon />
-              <HomePodcastsLinkTitle>Google Podcasts</HomePodcastsLinkTitle>
-            </a>
-
-            <a href="https://open.spotify.com/show/2TOUhE6qc0C7yOzB2Xbe8d">
-              <SpotifyIcon />
-              <HomePodcastsLinkTitle>Spotify</HomePodcastsLinkTitle>
-            </a>
-
+            <HomePodcastsLinkItem>
+              <a href="https://podcasts.apple.com/us/podcast/kataglyphs-podcast/id1504525762?ls=1">
+                <ApplePodcastsIcon />
+                <HomePodcastsLinkTitle><span>Apple Podcasts</span></HomePodcastsLinkTitle>
+              </a>
+            </HomePodcastsLinkItem>
+            <HomePodcastsLinkItem>
+              <a href="https://podcasts.google.com/?feed=aHR0cDovL2thdGFnbHlwaHMubGlic3luLmNvbS9yc3M&ved=0CAAQ4aUDahcKEwjw_8Hqp83oAhUAAAAAHQAAAAAQFA">
+                <GooglePodcastsIcon />
+                <HomePodcastsLinkTitle><span>Google Podcasts</span></HomePodcastsLinkTitle>
+              </a>
+            </HomePodcastsLinkItem>
+            <HomePodcastsLinkItem>
+              <a href="https://open.spotify.com/show/2TOUhE6qc0C7yOzB2Xbe8d">
+                <SpotifyIcon />
+                <HomePodcastsLinkTitle><span>Spotify</span></HomePodcastsLinkTitle>
+              </a>
+            </HomePodcastsLinkItem>
           </HomePodcastsLinks>
+
+          
 
         </HomePodcast>
 
@@ -128,25 +135,18 @@ function Home(props) {
   )
 }
 
-const HomeIntro = styled.section`
+const HomeIntroPortrait = styled.div`
   max-width: 544px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
-`;
-
-const HomeIntroPortrait = styled.div`
   margin-bottom: 4em;
 `;
 
 const HomeIntroParagraph = styled.div`
-  margin-bottom: -1em;
+  margin-bottom: 4em;
 `;
 
 const HomePodcast = styled.div`
-  max-width: 544px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 9em;
 `;
 
@@ -155,43 +155,62 @@ const HomePodcastHeader = styled.h5`
 `;
 
 const HomePodcastIconLink = styled.div`
+  max-width: 544px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 3em;
+  padding: 0 1em;
 `;
 
 const HomeIntroQuote = styled.div`
   text-align: center;
-  margin-bottom: -2em;
+  margin-bottom: -3em;
 `;
 
-const HomePodcastsLinks = styled.div`
-  margin-bottom: 3em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 1em;
+const HomePodcastParagraph = styled.p`
+  padding-bottom: 2em;
+`;
 
-  a { 
-    text-align: center;
-    padding: 0 1em;
-    svg {
-      width: 40px;
-      display: inline-block;
-    }
+const HomePodcastsLinks = styled.ul`
+  margin-bottom: 3em;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-evenly;
   }
 
 `;
 
+const HomePodcastsLinkItem = styled.li`
+  margin-bottom: 1em;
+  a { 
+    display: flex;
+    text-decoration: none;
+    line-height: 40px;
+    vertical-align: middle;
+    
+    svg {
+      width: 29px;
+    }
+  }
+`;
+
 const HomePodcastsLinkTitle = styled.h6`
-  font-family: ${props => props.theme.fonts.heading};
-  font-size: ${props => props.theme.typography.small};
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  line-height: 1;
-  padding: 0 0 5px;
-  color: ${props => props.theme.colors.black};
+  display: inline-block;
+  padding: 0 0.5em;
+  span {
+    font-family: ${props => props.theme.fonts.heading};
+    font-size: ${props => props.theme.typography.small};
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0 0 5px;
+    color: ${props => props.theme.colors.black};
+    padding: 0 0 5px;
+    border-bottom: 2px solid ${props => props.theme.colors.red};
+  }
 `;
 
 const HomeBooksList = styled.section`
-  max-width: 544px;
   margin: 0 auto;
   padding-bottom: 3em;
   margin-bottom: 5em;
@@ -257,7 +276,7 @@ const HomeOutNowImages = styled.div`
 `;
 
 const HomeOutNowImageA = styled.div`
- position: absolute;
+  position: absolute;
   width: 375px;
   height: 268px;
   top: 0;
@@ -271,7 +290,7 @@ const HomeOutNowImageA = styled.div`
 `;
 
 const HomeOutNowImageB = styled.div`
- position: absolute;
+  position: absolute;
   width: 375px;
   height: 268px;
   bottom: 0;
@@ -279,9 +298,7 @@ const HomeOutNowImageB = styled.div`
 `;
 
 const HomeOutNowHeader = styled.h5`
-  max-width: 544px;
-  margin-left: auto;
-  margin-right: auto;
+
 `;
 
 const HomeOutNowLink = styled.div`

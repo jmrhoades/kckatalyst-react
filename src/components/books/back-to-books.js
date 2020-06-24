@@ -21,6 +21,7 @@ const Outer = styled(Link)`
     display: inline-block;
     margin-bottom: 1em;
     line-height: 1;
+    text-decoration: none;
 `;
 
 const Message = styled.span`

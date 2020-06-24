@@ -122,7 +122,5 @@ const Label = styled(motion.span)`
     @media (min-width: 414px) {
         visibility: visible;
     }
-    @media (min-width: 768px) {
-        left: -28px;
-    }
+    
 `;

@@ -25,6 +25,8 @@ export function RulesOfTheRedRubberBall(props) {
           Rules Of The Red Rubber Ball
         </PageHeader>
 
+        <BookImagesContainer>
+
         <BookImageCover>
           <AspectBox ratio={1}>
             <LazyImage src="/images/rules-of-the-red-rubber-ball-cover.jpg" />
@@ -35,24 +37,25 @@ export function RulesOfTheRedRubberBall(props) {
           With simple but delightful storytelling, Kevin channels his childhood passion for sport and play into a universally appealing blueprint for life. Drawing wisdom from the playgrounds of his youth, where he spent hour upon hour sharpening his body and his mind, Kevin shares with readers his Rules of the Red Rubber Ball — how to achieve maximum human potential through the power of passion and creativity.
         </BookAboutParagraph>
 
-        <BookImageCover>
+        <BookImageSpread>
           <AspectBox ratio={0.7716049383}>
             <LazyImage src="/images/rules-of-the-red-rubber-ball-spread-1.jpg" />
           </AspectBox>
-        </BookImageCover>
+        </BookImageSpread>
 
         <BookAboutParagraph>
           Finding your own ‘red rubber ball’ and chasing it to your heart's content, he argues, is the surest route to peace, prosperity, and happiness. Over the years as an athletic trainer, creative catalyst for business and public speaker, Kevin has transformed his philosophy into seven simple rules that any successful leader will endorse.
         </BookAboutParagraph>
 
 
-        <BookImageCover>
+        <BookImageSpread>
           <AspectBox ratio={0.7716049383}>
             <LazyImage src="/images/rules-of-the-red-rubber-ball-spread-2.jpg" />
           </AspectBox>
-        </BookImageCover>
+        </BookImageSpread>
 
-
+        </BookImagesContainer>
+        
         <Quote
           quote="...adult’s version of Dr. Seuss’s Oh, the Places You’ll Go! — a pocket-size guide to finding your way in life."
           by="Newsweek"

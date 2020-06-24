@@ -74,7 +74,6 @@ a {
   color: ${props => props.theme.colors.red};
   font-family: ${props => props.theme.fonts.bodyItalic};
   font-weight: 400;
-  text-decoration: none;
   outline: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;

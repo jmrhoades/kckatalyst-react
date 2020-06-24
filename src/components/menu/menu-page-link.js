@@ -27,6 +27,7 @@ const SiteNavA = styled(Link)`
     line-height: 2.2;
     color: ${props => props.theme.colors.white};
     font-family: ${props => props.theme.fonts.body};
+    text-decoration: none;
 `;
 
 const MenuPageLink = (props) => {

@@ -28,7 +28,7 @@ const QuoteBody = styled.div`
 const Attribution = styled.div`
     color: ${props => props.theme.colors.gray};
     padding-top: 1em;
-
+    font-size: ${props => props.theme.typography.small};
     font-family: ${props => props.theme.fonts.heading};
     letter-spacing: 0.05em;
     text-transform: uppercase;

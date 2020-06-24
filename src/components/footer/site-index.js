@@ -159,6 +159,7 @@ const NavItem = styled.li`
         font-size: 0.7894736842em;
         line-height: 200%;
         position: relative;
+        text-decoration: none;
 
         &::after {
             content: "";
