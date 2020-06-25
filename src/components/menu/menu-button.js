@@ -93,7 +93,7 @@ const IconContainer = styled.div`
         position: absolute;
         top: 0;
         left: 0;
-        stroke-width: 2px;
+        stroke-width: 3px;
         stroke-linecap: round;
     }
 

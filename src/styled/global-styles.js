@@ -6,8 +6,29 @@ body {
   background: ${props => props.theme.colors.white};
   color: ${props => props.theme.colors.black};
   font-family: ${props => props.theme.fonts.body};
-  font-size: ${props => props.theme.typography.size};
+  font-size: 19px;
   line-height: ${props => props.theme.typography.lineHeight};
+  
+  
+  @media (min-width: 375px) {
+    font-size: 20px;
+  }
+  @media (min-width: 414px) {
+    font-size: 21px;
+  }
+  @media (min-width: 600px) {
+    font-size: 22px;
+  }
+  @media (min-width: 768px) {
+    font-size: 23px;
+  }
+  @media (min-width: 960px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1152px) {
+    font-size: 25px;
+  }
+
 }
 
 ::selection {

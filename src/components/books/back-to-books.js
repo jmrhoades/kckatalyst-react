@@ -10,7 +10,7 @@ export function BackToBooks() {
                 <path d="M2 7H24" />
             </Arrow>
             <Message>
-                Back to Books
+                Books
             </Message>
         </Outer>
     )

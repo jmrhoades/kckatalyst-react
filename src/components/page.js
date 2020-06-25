@@ -74,7 +74,7 @@ const PageWrap = styled(motion.div)`
 
 const PageContent = styled(motion.div)`
   padding-top: 10em;
-  padding-bottom: 12em;
+  padding-bottom: 4em;
 `;
 
 export default Page;

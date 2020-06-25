@@ -21,8 +21,13 @@ function About(props) {
       <PageContentWidth>
 
         <PageHeader>
-          About
+          About Me
         </PageHeader>
+
+        <Quote
+          quote="The master in the art of living makes little distinction between his work and his play…"
+          by="James Michener"
+        />
 
         <AboutPortrait1>
           <AspectBox ratio={1.4}>
