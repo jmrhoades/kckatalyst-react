@@ -94,7 +94,7 @@ const IconContainer = styled.div`
         top: 0;
         left: 0;
         stroke-width: 3px;
-        stroke-linecap: round;
+        
     }
 
 `;

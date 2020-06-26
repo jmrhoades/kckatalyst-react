@@ -14,7 +14,7 @@ export function Quote({ quote, by, ...props }) {
     )
 }
 
-const QuoteContainer = styled.div`
+const QuoteContainer = styled.blockquote`
     max-width: 720px;
     margin: 0 auto;
     margin-bottom: 5em;

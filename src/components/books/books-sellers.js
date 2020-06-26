@@ -32,7 +32,7 @@ export const Link = styled.div`
 
 
 export const Name = styled.a`
-    display: inline-block;
+    display: inline;
     position: relative;
     line-height: 1;
     font-family: ${props => props.theme.fonts.heading};
@@ -40,7 +40,8 @@ export const Name = styled.a`
     text-transform: uppercase;
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
-    border-bottom: 2px solid ${props => props.theme.colors.red};
+    /* border-bottom: 2px solid ${props => props.theme.colors.red}; */
+    box-shadow: inset 0 -2.5px 0 ${props => props.theme.colors.red};
     text-decoration: none;
 
     &:hover {

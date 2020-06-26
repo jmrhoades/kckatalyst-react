@@ -1,5 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
+import { PageContentPadding } from "../../styled/page-content-width";
+
 
 import {
     Route,
@@ -9,7 +11,8 @@ import {
 
 export function BackNextNav() {
     return (
-
+        <LinksWrap>
+        <PageContentPadding>
         <Switch>
 
             <Route exact path="/">
@@ -49,7 +52,8 @@ export function BackNextNav() {
             </Route>
 
         </Switch>
-
+        </PageContentPadding>
+        </LinksWrap>
     )
 }
 
@@ -92,13 +96,16 @@ function NextLink({ to, title, ...props }) {
     )
 }
 
-const LinksContainer = styled.ul`
-
+const LinksWrap = styled.div`
     margin-bottom: 3em;
     padding-bottom: 3em;
     padding-top: 3em;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
+`;
+
+const LinksContainer = styled.ul`
+
     
     @media (min-width: 514px) {
         display: grid;
@@ -111,6 +118,7 @@ const LinksContainer = styled.ul`
         flex-direction: row;
         min-height: 80px;
         font-family: ${props => props.theme.fonts.heading};
+        font-size: ${props => props.theme.typography.small};
         letter-spacing: 0.05em;
         text-transform: uppercase;
         text-decoration: none;

@@ -8,7 +8,7 @@ body {
   font-family: ${props => props.theme.fonts.body};
   font-size: 19px;
   line-height: ${props => props.theme.typography.lineHeight};
-  
+  overflow-x: hidden;
   
   @media (min-width: 375px) {
     font-size: 20px;
@@ -61,6 +61,25 @@ h1 {
 h2 {
   font-size: ${props => props.theme.typography.scale2};
   line-height: 1.1;
+  font-size: 56px;
+  @media (min-width: 375px) {
+    font-size: 64px;
+  }
+  @media (min-width: 414px) {
+    font-size: 72px;
+  }
+  @media (min-width: 600px) {
+    font-size: 80px;
+  }
+  @media (min-width: 768px) {
+    font-size: 88px;
+  }
+  @media (min-width: 960px) {
+    font-size: 96px;
+  }
+  @media (min-width: 1152px) {
+    font-size: 96px;
+  }
 }
 h3 {
   font-size: ${props => props.theme.typography.scale3};

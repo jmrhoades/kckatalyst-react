@@ -37,16 +37,16 @@ export function SiteIndex() {
 const Index = styled.footer`
     
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto 1fr auto 1fr auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(3, 1fr);
 
     @media (min-width: 514px) {
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: repeat(4, 1fr);
     }
     
-    @media (min-width: 980px) {
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: auto auto auto;
+    @media (min-width: 960px) {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto auto auto auto;
     }
 `;
 
@@ -54,23 +54,27 @@ const Question = styled.div`
 
     grid-row: 1;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 4;
 
 
     @media (min-width: 514px) {
-        grid-row: 1;
-        grid-column-end: 7;
+        grid-column-end: 5;
     }
 
-    @media (min-width: 980px) {
-        grid-column-end: 3;
-        padding-top: 28px;
+    @media (min-width: 960px) {
+        grid-column-end: 2;
+        padding-right: 40px;
     }
 
     h4 {
         color: ${props => props.theme.colors.black};
         line-height: 1.25;
         padding-bottom: 48px;
+
+        @media (min-width: 1114px) {
+            line-height: 2.2em;
+            padding-bottom: 0;
+        }
     }
 
     em {
@@ -83,7 +87,7 @@ const Question = styled.div`
 const LetsTalkContainer = styled.div`
     grid-row: 3;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 4;
     text-align: center;
     padding-top: 48px;
 
@@ -94,9 +98,9 @@ const LetsTalkContainer = styled.div`
         padding-top: 0;
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 960px) {
         grid-row: 3;
-        grid-column-end: 6;
+        grid-column-end: 5;
         text-align: center;
         padding-top: 48px;
     }
@@ -104,59 +108,53 @@ const LetsTalkContainer = styled.div`
 
 const NavListA = styled.ul`
     grid-row: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 1;
 
     @media (min-width: 514px) {
-        grid-column-start: 4;
-        grid-column-end: 5;
+        grid-column: 2;
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 960px) {
         grid-row: 1;
-        grid-column-start: 3;
-        grid-column-end: 4;
     }
 `;
 
 const NavListB = styled.ul`
     grid-row: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column: 2;
 
     @media (min-width: 514px) {
-        grid-column-start: 5;
-        grid-column-end: 6;
+        grid-column: 3;
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 960px) {
         grid-row: 1;
-        grid-column-start: 4;
-        grid-column-end: 5;
     }
 `;
 
 const NavListC = styled.ul`
     grid-row: 2;
-    grid-column-start: 5;
+    grid-column: 3;
 
     @media (min-width: 514px) {
-        grid-column-start: 6;
-        grid-column-end: 7;
+        grid-column: 4;
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 960px) {
         grid-row: 1;
-        grid-column-start: 5;
-        grid-column-end: 6;
     }
 `;
 
 const NavItem = styled.li`
+        
+    @media (min-width: 514px) {
+        padding-left: 30px;
+    }
+ 
     a {
         font-family: ${props => props.theme.fonts.body};
         color: ${props => props.theme.colors.black};
-        font-size: 0.7894736842em;
+        font-size: ${props => props.theme.typography.small};
         line-height: 200%;
         position: relative;
         text-decoration: none;
@@ -187,9 +185,9 @@ const NavItem = styled.li`
 const Copyright = styled.div`
     grid-row: 4;
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 5;
     text-align: center;
-    font-size: 0.6315789474em;
+    font-size: ${props => props.theme.typography.xsmall};
     color: ${props => props.theme.colors.gray};
     padding-top: 64px;
     padding-bottom: 16px;

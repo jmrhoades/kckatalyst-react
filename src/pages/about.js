@@ -21,7 +21,7 @@ function About(props) {
       <PageContentWidth>
 
         <PageHeader>
-          About Me
+          About Kevin
         </PageHeader>
 
         <Quote

@@ -1,9 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import { KataglyphsIcons, ApplePodcastsIcon, SpotifyIcon, GooglePodcastsIcon } from "../kataglyphs-icons";
-import Home from "../../pages/home";
-
-
 
 export function KataglyphsSection() {
     return (

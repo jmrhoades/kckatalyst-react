@@ -9,7 +9,7 @@ import { LazyImage } from "../lazy-image";
 export function BooksList() {
     return (
         <HomeBooksList>
-            <HomeBooksListHeader>My Books</HomeBooksListHeader>
+            <HomeBooksListHeader>Books by Kevin</HomeBooksListHeader>
             <HomeBooksListContainer>
                 <HomeBooksListLink to="/books/rules-of-the-red-rubber-ball">
                     <AspectBox ratio={1}>

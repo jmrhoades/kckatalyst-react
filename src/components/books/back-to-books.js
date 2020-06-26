@@ -27,7 +27,7 @@ const Outer = styled(Link)`
 const Message = styled.span`
     padding-left: 40px;
     font-family: ${props => props.theme.fonts.heading};
-    font-size: 0.7894736842em;
+    font-size: ${props => props.theme.typography.small};
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: ${props => props.theme.colors.red};

@@ -126,7 +126,8 @@ const ReadMore = styled.button`
     line-height: 1;
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
-    border-bottom: 2px solid ${props => props.theme.colors.red};
+    /* border-bottom: 2px solid ${props => props.theme.colors.red}; */
+    box-shadow: inset 0 -2.5px 0 ${props => props.theme.colors.red};
     text-decoration: none;
     position: absolute;
     bottom: 30px;
@@ -147,7 +148,8 @@ const Done = styled.button`
     line-height: 1;
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
-    border-bottom: 2px solid ${props => props.theme.colors.red};
+    /* border-bottom: 2px solid ${props => props.theme.colors.red}; */
+    box-shadow: inset 0 -2.5px 0 ${props => props.theme.colors.red};
     text-decoration: none;
     position: absolute;
     bottom: 30px;

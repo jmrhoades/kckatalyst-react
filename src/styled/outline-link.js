@@ -12,7 +12,7 @@ export const OutlineLink = styled.a`
     padding: 14px 0 12px;
    
     font-family: ${props => props.theme.fonts.heading};
-    font-size: 0.7894736842em;
+    font-size: ${props => props.theme.typography.small};
     letter-spacing: 0.05em;
     text-transform: uppercase;
     
@@ -34,7 +34,7 @@ export const OutlineRouterLink = styled(Link)`
     padding: 14px 0 12px;
     
     font-family: ${props => props.theme.fonts.heading};
-    font-size: 0.7894736842em;
+    font-size: ${props => props.theme.typography.small};
     letter-spacing: 0.05em;
     text-transform: uppercase;
     
