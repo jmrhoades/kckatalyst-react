@@ -1,12 +1,13 @@
 import React from "react";
 import Page from "../components/page";
 import { Helmet } from "react-helmet";
+import styled from 'styled-components';
 import { PageHeader } from "../styled/page-header";
-import { PageContentWidth } from "../styled/page-content-width";
-import { Quote } from "../components/quote";
-import { Testimonial } from "../components/testimonial";
+import { PageContentWidth, PageContentPadding } from "../styled/page-content-width";
+import { TopQuote, Testimonial } from "../components/quote";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
+import { Experiences, ExperiencesTitle, ExperiencesLead, ExperienceTitle } from "../styled/experiences-list";
 
 function OnStage(props) {
   return (
@@ -22,30 +23,45 @@ function OnStage(props) {
           On Stage
         </PageHeader>
 
-        <Quote
+        <OnStageTopQuote
           quote="Those who tell the stories rule the world"
           by="Native American proverb"
         />
+      </PageContentWidth>
 
-        <div>
-          <h4>Focus Areas:</h4>
-          <p>Storytelling. Leadership. Peak Performance. Innovation. Teamwork. Professional Achievement. Reinvention.</p>
-        </div>
 
-        <div>
+      <PageContentPadding>
+        <CoverImage>
+          <AspectBox ratio={5 / 7}>
+            <LazyImage src="/images/on-stage/on-stage-cover-01-7x5.jpg" />
+          </AspectBox>
+        </CoverImage>
+      </PageContentPadding>
 
-          <h4>Talks</h4>
+      <PageContentWidth>
 
-          <h5>#REALTALK: The Power + Value of Storytelling!</h5>
-          <p>Good stories surprise us. They stick in our minds and help us remember ideas and concepts in a way that numbers, data and text on a page/slide/screen do not. Those who tell good stories have an increasing advantage with their ability to connect with the audiences that matter most for their personal + professional endeavors. Individuals that share compelling stories will be able to spark, inspire and motivate others to collaborate/rally to turn ideas/hopes/aspirations into reality.</p>
+        <Experiences>
+          <FocusTitle>Focus Areas</FocusTitle>
+          <FocusList>Storytelling. Leadership. Peak Performance. Innovation. Teamwork. Professional Achievement. Reinvention.</FocusList>
+        </Experiences>
 
-          <h5>Play@Work: Unleashing Growth through Creativity and Innovation</h5>
-          <p>As children our days were filled with productive play. What was entertaining was also instructive. Games of tag were exercises in planning, teamwork, strategy, design, decision-making, creativity, interpersonal communication and risk-taking. Play was serious business in our youth—and it should be even more serious business in our professional lives if we hope to unleash the creative genius that spurs organizational growth.</p>
-
-          <h5>The PIVOT: Adopting a Game Changing Mindset During Difficult Times</h5>
-          <p>“Resilient people are everywhere. They are ordinary women and men, in every walk of life, who meet the definition of resilience set forth by American Psychological Association - adapting well in the face of adversity, trauma, tragedy, threats or significant sources of stress.” - Meg Jay. The tools, resources and best practices used by those that possess an uncanny ability to be resilient and overcome upheaval, uncertainty or difficult times can be taught and adopted. Learning the art + science of sustained determination (aka resilience) can provide a leader with the game changing mindset needed to face a challenging situation with grit, grace and studied confidence.</p>
-
-        </div>
+        <Experiences>
+          <FocusTitle>Talks</FocusTitle>
+          <ul>
+            <li>
+              <ExperienceTitle>#REALTALK: The Power + Value of Storytelling!</ExperienceTitle>
+              <p>Good stories surprise us. They stick in our minds and help us remember ideas and concepts in a way that numbers, data and text on a page/slide/screen do not. Those who tell good stories have an increasing advantage with their ability to connect with the audiences that matter most for their personal + professional endeavors. Individuals that share compelling stories will be able to spark, inspire and motivate others to collaborate/rally to turn ideas/hopes/aspirations into reality.</p>
+            </li>
+            <li>
+              <ExperienceTitle>Play@Work: Unleashing Growth through Creativity and Innovation</ExperienceTitle>
+              <p>As children our days were filled with productive play. What was entertaining was also instructive. Games of tag were exercises in planning, teamwork, strategy, design, decision-making, creativity, interpersonal communication and risk-taking. Play was serious business in our youth—and it should be even more serious business in our professional lives if we hope to unleash the creative genius that spurs organizational growth.</p>
+            </li>
+            <li>
+              <ExperienceTitle>The PIVOT: Adopting a Game Changing Mindset During Difficult Times</ExperienceTitle>
+              <p>“Resilient people are everywhere. They are ordinary women and men, in every walk of life, who meet the definition of resilience set forth by American Psychological Association - adapting well in the face of adversity, trauma, tragedy, threats or significant sources of stress.” - Meg Jay. The tools, resources and best practices used by those that possess an uncanny ability to be resilient and overcome upheaval, uncertainty or difficult times can be taught and adopted. Learning the art + science of sustained determination (aka resilience) can provide a leader with the game changing mindset needed to face a challenging situation with grit, grace and studied confidence.</p>
+            </li>
+          </ul>
+        </Experiences>
 
         <Testimonial
           quote="Kevin is one of the best leaders, communicators and teachers I know. In every occasion that he has spoken on stage at STORY or led a workshop for our attendees, both virtually and in-person, the reviews and comments have all raved of his magic! He is consistently a favorite among our community consisting of some of the most creative storytellers in the world. He may have been considered the mayor of Nike, but we selfishly consider him the mayor at STORY as well!"
@@ -74,11 +90,11 @@ function OnStage(props) {
         <Testimonial
           quote="We are always looking for ways to get better, learn about ourselves, and understand what makes successful teams and people tick. Most importantly, I want the team to learn about things that can help off the floor, being more than an athlete. We had the opportunity to sit and listen to Kevin and his message. It was motivating. There is a different energy and vibe when he speaks. You learn, you laugh, and you leave inspired wanting more!"
           by="Archie Miller"
-          cite="Head Coach, Indian University Men’s Basketball"
+          cite="Head Coach, Indiana University Men’s Basketball"
         />
 
         <Testimonial
-          quote="I've had the pleasure of hearing Kevin's story regarding the Power of Play and the Rules of the Red Rubber Ball at both a national level through the National Association of Collegiate Marketing Administrators and at a local level when he joined our staff and student-athletes at Virginia Tech. Simply, it was one of the most powerful lessons that I and my colleagues have ever heard. Kevin's unique style allows him to address difficult issues head on while providing an inspirational message that the missing ingredient in the lives of many is fun explored through the creativity of play. If you're looking for someone to elevate your team, create an environment for people to be their authentic selves, and truly reach new heights, you've arrived exactly where you need to be."
+          quote="I’ve had the pleasure of hearing Kevin's story regarding the Power of Play and the Rules of the Red Rubber Ball at both a national level through the National Association of Collegiate Marketing Administrators and at a local level when he joined our staff and student-athletes at Virginia Tech. Simply, it was one of the most powerful lessons that I and my colleagues have ever heard. Kevin's unique style allows him to address difficult issues head on while providing an inspirational message that the missing ingredient in the lives of many is fun explored through the creativity of play. If you're looking for someone to elevate your team, create an environment for people to be their authentic selves, and truly reach new heights, you've arrived exactly where you need to be."
           by="Brad Wurthman"
           cite="Senior Associate Athletics Director, Virginia Tech University"
         />
@@ -93,5 +109,27 @@ function OnStage(props) {
     </Page>
   )
 }
+
+const CoverImage = styled.div`
+  max-width: 1167px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6em;
+`;
+
+const OnStageTopQuote = styled(TopQuote)`
+  max-width: 440px;
+`;
+
+const FocusList = styled.h4`
+  font-family: ${props => props.theme.fonts.bodyItalic};
+  font-size: ${props => props.theme.typography.scale5};
+  line-height: 1.333;
+  padding-bottom: 3em;
+`;
+
+const FocusTitle = styled(ExperiencesTitle)`
+  padding-bottom: 1em;
+`;
 
 export default OnStage;

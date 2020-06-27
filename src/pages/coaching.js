@@ -2,12 +2,12 @@ import React from "react";
 import Page from "../components/page";
 import { Helmet } from "react-helmet";
 import { PageHeader } from "../styled/page-header";
-import { PageContentWidth } from "../styled/page-content-width";
-import { Quote } from "../components/quote";
+import { PageContentWidth, PageContentPadding } from "../styled/page-content-width";
+import { TopQuote } from "../components/quote";
 import styled from 'styled-components';
-import { Testimonial } from "../components/testimonial";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
+import { Experiences, ExperiencesTitle, ExperiencesLead, ExperienceTitle } from "../styled/experiences-list";
 
 function Coaching(props) {
   return (
@@ -18,24 +18,22 @@ function Coaching(props) {
       </Helmet>
 
       <PageContentWidth>
-
         <PageHeader>
           Coaching
         </PageHeader>
-
-        <CoachingTopQuote>
-        <Quote
+        <CoachingTopQuote
           quote="I can not teach you... I can only help you explore yourself"
           by="Bruce Lee"
         />
-        </CoachingTopQuote>
       </PageContentWidth>
 
-      <CoachingTopImage>
-        <AspectBox ratio={0.5625}>
-          <LazyImage src="/images/coaching/coaching-cover-01-16x9.jpg" />
-        </AspectBox>
-      </CoachingTopImage>
+      <PageContentPadding>
+        <CoverImage>
+          <AspectBox ratio={5 / 7}>
+            <LazyImage src="/images/coaching/coaching-cover-02-7x5.jpg" />
+          </AspectBox>
+        </CoverImage>
+      </PageContentPadding>
 
       <PageContentWidth>
 
@@ -59,91 +57,64 @@ function Coaching(props) {
             </li>
             <li>
               <ExperienceTitle>Professional In Residence:</ExperienceTitle>
-              <p>subject matter expertise provided to an organization via onsite visits to amplify and/or support an agreed upon project/goal.</p>
+              <p>Subject matter expertise provided to an organization via onsite visits to amplify and/or support an agreed upon project/goal.</p>
             </li>
           </ul>
         </Experiences>
 
       </PageContentWidth>
 
-      <CoachingBottomImage>
-        <AspectBox ratio={0.8}>
-          <LazyImage src="/images/coaching/coaching-group-01-5x4.jpg" />
+      <CoachingBottomImage1>
+        <AspectBox ratio={0.6669921875}>
+          <LazyImage src="/images/coaching/coaching-group-02.jpg" />
         </AspectBox>
-      </CoachingBottomImage>
+      </CoachingBottomImage1>
+
+      <CoachingBottomImage2>
+        <AspectBox ratio={0.6669921875}>
+          <LazyImage src="/images/coaching/coaching-hug.jpg" />
+        </AspectBox>
+      </CoachingBottomImage2>
 
     </Page>
   )
 }
 
-const CoachingTopImage = styled.div`
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
-`;
-
-const CoachingTopQuote = styled.div`
+const CoachingTopQuote = styled(TopQuote)`
   max-width: 540px;
-  margin-left: auto;
-  margin-right: auto;
 `;
 
-const CoachingBottomImage = styled.div`
-    max-width: 800px;
+const CoverImage = styled.div`
+  max-width: 1399px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+`;
+
+const CoachingBottomImage1 = styled.div`
+    max-width: 512px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5em;
+
+    @media (min-width: 640px) {
+      transform: translateX(-33%);
+    }
+`;
+
+const CoachingBottomImage2 = styled.div`
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 640px) {
+      transform: translateX(33%);
+    }
 `;
 
 const OpeningParagraph = styled.div`
   padding-bottom: 3em;
 `;
-
-const Experiences = styled.section`
-  li {
-    margin-bottom: 1em;
-  }
-
-`;
-
-const ExperiencesTitle = styled.h3`
-  font-family: ${props => props.theme.fonts.heading};
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: ${props => props.theme.colors.black};
-  font-size: ${props => props.theme.typography.scale4};
-  line-height: 1.1;
-  margin-bottom: 0.333em;
-`;
-
-const ExperiencesLead = styled.h4`
-  font-family: ${props => props.theme.fonts.bodyItalic};
-  font-size: ${props => props.theme.typography.scale6};
-  line-height: 1.333;
-  padding-bottom: 3em;
-`;
-
-const ExperienceTitle = styled.h5`
-  font-family: ${props => props.theme.fonts.heading};
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: ${props => props.theme.colors.black};
-  font-size: ${props => props.theme.typography.scale6};
-  line-height: 1.333;
-  margin-bottom: 0.5em;
-  position: relative;
-  &:before {
-      content: "";
-      width: 0.75em;
-      height: 3px;
-      background-color: ${props => props.theme.colors.black};
-      display: block;
-      position: absolute;
-      left: -1.75em;
-      top: 0.5em;
-    }
-`;
-
 
 
 
@@ -151,10 +122,9 @@ export default Coaching;
 
 
 
-  
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+

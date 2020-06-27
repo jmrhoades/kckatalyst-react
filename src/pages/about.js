@@ -7,7 +7,7 @@ import { PageHeader } from "../styled/page-header";
 import { PageContentWidth } from "../styled/page-content-width";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
-import { Quote } from "../components/quote";
+import { TopQuote, Quote } from "../components/quote";
 import { LinkSmallCaps } from "../styled/link-smallcaps";
 
 function About(props) {
@@ -24,7 +24,7 @@ function About(props) {
           About Kevin
         </PageHeader>
 
-        <Quote
+        <TopQuote
           quote="The master in the art of living makes little distinction between his work and his play…"
           by="James Michener"
         />

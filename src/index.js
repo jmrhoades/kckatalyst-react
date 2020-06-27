@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import "./freight.css";
+import './reset.css';
 import './index.css';
 import App from './app';
 

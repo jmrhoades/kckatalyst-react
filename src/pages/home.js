@@ -86,6 +86,10 @@ const HomeQuote = styled.div`
     line-height: 1.2;
     margin-bottom: 2em;
     text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
 
     @media (min-width: 960px) {
       grid-column: 2;
@@ -93,6 +97,7 @@ const HomeQuote = styled.div`
       text-align: left;
       
       margin: auto;
+      padding: 0;
       padding-left: 40px;
       
     }
