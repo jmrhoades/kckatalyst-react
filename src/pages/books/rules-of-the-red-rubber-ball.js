@@ -14,7 +14,7 @@ import { Quote } from "../../components/quote";
 
 export function RulesOfTheRedRubberBall(props) {
   return (
-    <Page>
+    <Page key={props.key}>
       <Helmet>
         <title>Rules Of The Red Rubber Ball by Kevin Carroll</title>
       </Helmet>
@@ -29,7 +29,7 @@ export function RulesOfTheRedRubberBall(props) {
 
         <BookImageCover>
           <AspectBox ratio={1}>
-            <LazyImage src="/images/rules-of-the-red-rubber-ball-cover.jpg" />
+            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-cover.jpg" />
           </AspectBox>
         </BookImageCover>
 
@@ -39,7 +39,7 @@ export function RulesOfTheRedRubberBall(props) {
 
         <BookImageSpread>
           <AspectBox ratio={0.7716049383}>
-            <LazyImage src="/images/rules-of-the-red-rubber-ball-spread-1.jpg" />
+            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-spread-1.jpg" />
           </AspectBox>
         </BookImageSpread>
 
@@ -50,7 +50,7 @@ export function RulesOfTheRedRubberBall(props) {
 
         <BookImageSpread>
           <AspectBox ratio={0.7716049383}>
-            <LazyImage src="/images/rules-of-the-red-rubber-ball-spread-2.jpg" />
+            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-spread-2.jpg" />
           </AspectBox>
         </BookImageSpread>
 

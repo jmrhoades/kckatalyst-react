@@ -71,7 +71,7 @@ const Button = styled.button`
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 
     @media (min-width: 768px) {
         width: 88px;

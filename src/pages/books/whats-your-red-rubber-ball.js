@@ -13,7 +13,7 @@ import { Quote } from "../../components/quote";
 
 export function WhatsYourRedRubberBall(props) {
   return (
-    <Page>
+    <Page key={props.key}>
       <Helmet>
         <title>What's Your Red Rubber Ball?! by Kevin Carroll</title>
       </Helmet>
@@ -33,19 +33,19 @@ export function WhatsYourRedRubberBall(props) {
 
           <BookImageCover>
             <AspectBox ratio={1}>
-              <LazyImage src="/images/whats-your-red-rubber-ball-cover.jpg" />
+              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-cover.jpg" />
             </AspectBox>
           </BookImageCover>
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/whats-your-red-rubber-ball-spread-1.jpg" />
+              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-spread-1.jpg" />
             </AspectBox>
           </BookImageSpread>
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/whats-your-red-rubber-ball-spread-2.jpg" />
+              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-spread-2.jpg" />
             </AspectBox>
           </BookImageSpread>
 
@@ -57,8 +57,8 @@ export function WhatsYourRedRubberBall(props) {
         />
         
         <BookSellersContainer>
-          <BookSellersHeader msg="Download PDF"/>
-          <BookSellerLink href="https://akidsbookabout.com/products/a-kids-book-about-belonging" name="WYRRB?! Inspiring Interactive Series of Engaging + Thought Provoking Exercises" />
+          <BookSellersHeader msg="Available From"/>
+          <BookSellerLink href="https://www.amazon.com/gp/product/1933060565" name="Amazon US" />
         </BookSellersContainer>
 
       </PageContentWidth>

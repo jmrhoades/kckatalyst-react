@@ -8,11 +8,11 @@ import { PageContentWidth } from "../styled/page-content-width";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 import { TopQuote, Quote } from "../components/quote";
-import { LinkSmallCaps } from "../styled/link-smallcaps";
+import { LinkSmallCaps } from "../styled/smallcaps";
 
 function About(props) {
   return (
-    <Page>
+    <Page key={props.key}>
 
       <Helmet>
         <title>Kevin Carroll — About</title>
@@ -31,7 +31,7 @@ function About(props) {
 
         <AboutPortrait1>
           <AspectBox ratio={1.4}>
-            <LazyImage src="/images/kevincarroll-portrait-1.jpg" />
+            <LazyImage src="/images/about/kevincarroll-portrait-1.jpg" />
           </AspectBox>
         </AboutPortrait1>
 
@@ -46,7 +46,7 @@ function About(props) {
 
         <AboutPortrait2>
           <AspectBox ratio={1}>
-            <LazyImage src="/images/kevincarroll-portrait-4.jpg" />
+            <LazyImage src="/images/about/kevincarroll-portrait-4.jpg" />
           </AspectBox>
         </AboutPortrait2>
 

@@ -13,22 +13,22 @@ export function BooksList() {
             <HomeBooksListContainer>
                 <HomeBooksListLink to="/books/rules-of-the-red-rubber-ball">
                     <AspectBox ratio={1}>
-                        <LazyImage src="/images/booklist-rules-of-the-red-rubber-ball.jpg" />
+                        <LazyImage src="/images/books/booklist-rules-of-the-red-rubber-ball.jpg" />
                     </AspectBox>
                 </HomeBooksListLink>
                 <HomeBooksListLink to="/books/whats-your-red-rubber-ball">
                     <AspectBox ratio={1}>
-                        <LazyImage src="/images/booklist-whats-your-red-rubber-ball.jpg" />
+                        <LazyImage src="/images/books/booklist-whats-your-red-rubber-ball.jpg" />
                     </AspectBox>
                 </HomeBooksListLink>
                 <HomeBooksListLink to="books/the-red-rubber-ball-at-work">
                     <AspectBox ratio={1}>
-                        <LazyImage src="/images/booklist-the-red-rubber-ball-at-work.jpg" />
+                        <LazyImage src="/images/books/booklist-the-red-rubber-ball-at-work.jpg" />
                     </AspectBox>
                 </HomeBooksListLink>
                 <HomeBooksListLink to="books/a-kids-book-about-belonging">
                     <AspectBox ratio={1}>
-                        <LazyImage src="/images/booklist-a-kids-book-about-belonging.jpg" />
+                        <LazyImage src="/images/books/booklist-a-kids-book-about-belonging.jpg" />
                     </AspectBox>
                 </HomeBooksListLink>
             </HomeBooksListContainer>

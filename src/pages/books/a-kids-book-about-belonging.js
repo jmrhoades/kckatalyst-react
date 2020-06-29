@@ -13,7 +13,7 @@ import { LazyImage } from "../../components/lazy-image";
 
 export function AKidsBookAboutBelonging(props) {
   return (
-    <Page>
+    <Page key={props.key}>
       <Helmet>
         <title>A Kids Book About Belonging by Kevin Carroll</title>
       </Helmet>
@@ -23,7 +23,7 @@ export function AKidsBookAboutBelonging(props) {
           A Kids Book About Belonging
       </PageHeader>
 
-        <Video poster="/images/a-kids-book-about-belonging-video-poster.jpg" src="/movies/BELONGING-656.mp4" />
+        <Video poster="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-video-poster.jpg" src="/movies/BELONGING-656.mp4" />
 
         <BookAboutParagraph>
           This is a book about belonging. It tackles what it’s like when you feel like you belong to a group or family or team and what it’s like when you don’t. It addresses what it feels like when you don’t fit in, or when others don’t want you around. This book teaches kids how to belong to themselves and how that helps them belong anywhere.
@@ -33,19 +33,19 @@ export function AKidsBookAboutBelonging(props) {
 
           <BookImageCover>
             <AspectBox ratio={1}>
-              <LazyImage src="/images/a-kids-book-about-belonging-cover.jpg" />
+              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-cover.jpg" />
             </AspectBox>
           </BookImageCover>
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/a-kids-book-about-belonging-spread-1.jpg" />
+              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-spread-1.jpg" />
             </AspectBox>
           </BookImageSpread>
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/a-kids-book-about-belonging-spread-2.jpg" />
+              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-spread-2.jpg" />
             </AspectBox>
           </BookImageSpread>
 

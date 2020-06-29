@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import AspectBox from "../aspect-box";
 import { LazyImage } from "../lazy-image";
-import { RouteLinkSmallCaps } from "../../styled/link-smallcaps";
+import { RouteLinkSmallCaps } from "../../styled/smallcaps";
 
 
 export function OutNow() {
@@ -16,12 +16,12 @@ export function OutNow() {
                     <HomeOutNowImages>
                         <HomeOutNowImageB>
                             <AspectBox ratio={0.7142857143}>
-                                <LazyImage src="/images/a-kids-book-about-belonging-kevin.jpg" />
+                                <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-kevin.jpg" />
                             </AspectBox>
                         </HomeOutNowImageB>
                         <HomeOutNowImageA>
                             <AspectBox ratio={0.7142857143}>
-                                <LazyImage src="/images/a-kids-book-about-belonging-child.jpg" />
+                                <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-child.jpg" />
                             </AspectBox>
                         </HomeOutNowImageA>
                     </HomeOutNowImages>

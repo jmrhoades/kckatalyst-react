@@ -15,11 +15,12 @@ export const ExperiencesTitle = styled.h3`
   font-size: ${props => props.theme.typography.scale4};
   line-height: 1.1;
   margin-bottom: 0.333em;
+  padding-bottom: 1em;
 `;
 
 export const ExperiencesLead = styled.h4`
   font-family: ${props => props.theme.fonts.bodyItalic};
-  font-size: ${props => props.theme.typography.scale6};
+  font-size: ${props => props.theme.typography.scale5};
   line-height: 1.333;
   padding-bottom: 3em;
 `;

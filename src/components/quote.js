@@ -108,6 +108,8 @@ const TestimonialCite = styled.cite`
     display: block;
     color: ${props => props.theme.colors.black};
     padding-top: 0.25em;
+    max-width: 600px;
+    line-height: 1.2;
 `;
 
 

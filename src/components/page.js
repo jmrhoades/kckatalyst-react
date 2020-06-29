@@ -35,6 +35,7 @@ function Page(props) {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
+      key={props.key}
     >
       <PageContent>
         {props.children}

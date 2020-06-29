@@ -11,7 +11,8 @@ export const BookImageCover = styled.div`
 `;
 
 export const BookImageSpread = styled(BookImageCover)`
-    max-width: 648px;
+    /* max-width: 648px; */
+    max-width: 100%;
 `;
 
 

@@ -15,13 +15,11 @@ import { MyStory } from "../components/home/my-story";
 
 function Home(props) {
   return (
-    <Page>
+    <Page key={props.key}>
 
       <Helmet>
         <title>Kevin Carroll Katalyst</title>
       </Helmet>
-
-
 
       <HomeTopContainer>
         <HomeQuote>
@@ -29,7 +27,7 @@ function Home(props) {
         </HomeQuote>
         <HomeIntroPortrait>
           <AspectBox ratio={1.5}>
-            <LazyImage src="/images/kevincarroll-portrait-3.jpg" />
+            <LazyImage src="/images/home/kevincarroll-portrait-3.jpg" />
           </AspectBox>
         </HomeIntroPortrait>
       </HomeTopContainer>
@@ -44,12 +42,23 @@ function Home(props) {
           <p>Kevin Carroll is the acclaimed author of <Link to="/books/rules-of-the-red-rubber-ball">Rules of the Red Rubber Ball</Link>, <Link to="/books/whats-your-red-rubber-ball">What’s Your Red Rubber Ball?!</Link>, <Link to="/books/the-red-rubber-ball-at-work">The Red Rubber Ball at Work</Link> and <Link to="/books/the-red-rubber-ball-at-work">A Kids Book About Belonging</Link>. He travels the globe consulting and speaking about the role, value and importance of play in life; having a lifelong learner mindset; advancing the human condition in a positive way.</p>
         </HomeIntroParagraph>
 
+        <HomePageLinks>
+          <PageLinksHeader>Services</PageLinksHeader>
+          <PageLinks>
+            <PageLink>
+              <OutlineRouterLink to="/coaching">Consulting / Coaching</OutlineRouterLink>
+            </PageLink>
+            <PageLink>
+              <OutlineRouterLink to="/on-stage">Speaking / On Stage</OutlineRouterLink>
+            </PageLink>
+          </PageLinks>
+        </HomePageLinks>
+
         <KataglyphsSection />
 
         <BooksList />
 
         <OutNow />
-
 
       </PageContentWidth>
     </Page >
@@ -104,9 +113,51 @@ const HomeQuote = styled.div`
 `;
 
 const HomeIntroParagraph = styled.div`
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 `;
 
+const HomePageLinks = styled.div`
+  margin-bottom: 6em;
+`;
+
+const PageLinksHeader = styled.h5`
+  margin-bottom: 1em;
+`;
+
+const PageLinks = styled.ul`
+
+  @media (min-width: 540px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+  }
+`;
+
+const PageLink = styled.li`
+    margin-bottom: 1em;
+`;
+
+const OutlineRouterLink = styled(Link)`
+    display: block;
+    position: relative;
+    line-height: 1;
+    text-align: center;
+    padding: 18px 0 16px;
+    text-decoration: none;
+    
+    font-family: ${props => props.theme.fonts.heading};
+    font-size: ${props => props.theme.typography.small};
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    
+    color: ${props => props.theme.colors.black};
+    border: 2px solid ${props => props.theme.colors.red};
+
+    &:hover{
+        background-color: ${props => props.theme.colors.red};
+        color: ${props => props.theme.colors.white};
+    }
+`;
 
 
 export default Home;

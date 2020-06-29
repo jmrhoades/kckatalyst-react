@@ -28,7 +28,7 @@ export const PageContentPadding = styled.div`
 `;
 
 export const PageContentWidth = styled(PageContentPadding)`
-    max-width: 864px;
+    max-width: 888px;
     margin: 0 auto;
 
 `;

@@ -7,33 +7,33 @@ import AspectBox from "../../components/aspect-box";
 import { LazyImage } from "../../components/lazy-image";
 import { PageHeader } from "../../styled/page-header";
 import { PageContentWidthWide } from "../../styled/page-content-width";
-import { RouteLinkSmallCaps, LinkSmallCaps } from "../../styled/link-smallcaps";
+import { RouteLinkSmallCaps, LinkSmallCaps } from "../../styled/smallcaps";
 
 const books = [
   {
     title: "A Kids Book About Belonging",
-    img: "/images/booklist-a-kids-book-about-belonging.jpg",
+    img: "/images/books/booklist-a-kids-book-about-belonging.jpg",
     link: "/books/a-kids-book-about-belonging",
     buyLink: "https://akidsbookabout.com/products/a-kids-book-about-belonging",
     buyLabel: "A Kids Book About",
   },
   {
     title: "What's Your Red Rubber Ball?!",
-    img: "/images/booklist-whats-your-red-rubber-ball.jpg",
+    img: "/images/books/booklist-whats-your-red-rubber-ball.jpg",
     link: "/books/whats-your-red-rubber-ball",
-    buyLink: "https://amazon.com",
-    buyLabel: "Download PDF",
+    buyLink: "https://www.amazon.com/gp/product/1933060565",
+    buyLabel: "Buy on Amazon",
   },
   {
     title: "The Red Rubber Ball at Work",
-    img: "/images/booklist-the-red-rubber-ball-at-work.jpg",
+    img: "/images/books/booklist-the-red-rubber-ball-at-work.jpg",
     link: "/books/the-red-rubber-ball-at-work",
     buyLink: "https://www.amazon.com/Red-Rubber-Ball-Work-Elevate/dp/0071599444",
     buyLabel: "Buy on Amazon",
   },
   {
     title: "Rules of the Red Rubber Ball",
-    img: "/images/booklist-rules-of-the-red-rubber-ball.jpg",
+    img: "/images/books/booklist-rules-of-the-red-rubber-ball.jpg",
     link: "/books/rules-of-the-red-rubber-ball",
     buyLink: "https://www.amazon.com/Rules-Red-Rubber-Ball-Sustain/dp/1933060026/",
     buyLabel: "Buy on Amazon",
@@ -48,6 +48,7 @@ function BookItem(props) {
           <LazyImage src={props.info.img} />
         </AspectBox>
       </ImageLink>
+      <BookTitle>{props.info.title}</BookTitle>
       <ButtonContainer>
         <div>
           <RouteLinkSmallCaps to={props.info.link}>
@@ -67,7 +68,7 @@ function BookItem(props) {
 export function Books(props) {
 
   return (
-    <Page>
+    <Page key={props.key}>
 
       <Helmet>
         <title>Kevin Carroll — Books</title>
@@ -147,12 +148,13 @@ const ImageLink = styled.a`
 `;
 
 const ButtonContainer = styled.div`
-  
   div {
     padding-bottom: 1em;
   }
+`;
 
-
+const BookTitle = styled.h6`
+   padding-bottom: 1em;
 `;
 
 

@@ -4,8 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
-import { GlobalStyles } from './styled/global-styles';
-import { theme } from './styled/theme';
+import { GlobalStyles } from './theme/global-styles';
+import { theme } from './theme/theme';
 import Home from "./pages/home";
 import About from "./pages/about";
 import Coaching from "./pages/coaching";
@@ -51,33 +51,32 @@ function App() {
         <AnimatePresence>
           <Switch location={location} key={location.pathname}>
             <Route exact path="/">
-              <Home />
+              <Home key="page-home" />
             </Route>
             <Route path="/about">
-              <About />
+              <About key="page-about" />
             </Route>
             <Route path="/coaching">
-              <Coaching />
+              <Coaching key="page-coaching" />
             </Route>
             <Route path="/on-stage">
-              <OnStage />
+              <OnStage key="page-on-stage" />
             </Route>
             <Route path="/books/a-kids-book-about-belonging">
-              <AKidsBookAboutBelonging />
+              <AKidsBookAboutBelonging key="page-books-a-kids-about-belonging" />
             </Route>
             <Route path="/books/whats-your-red-rubber-ball">
-              <WhatsYourRedRubberBall />
+              <WhatsYourRedRubberBall key="page-books-whats-your-red-rubber-ball" />
             </Route>
             <Route path="/books/the-red-rubber-ball-at-work">
-              <TheRedRubberBallAtWork />
+              <TheRedRubberBallAtWork key="page-books-the-red-rubber-ball-at-work" />
             </Route>
             <Route path="/books/rules-of-the-red-rubber-ball">
-              <RulesOfTheRedRubberBall />
+              <RulesOfTheRedRubberBall key="page-books-rules-of-the-red-rubber-ball" />
             </Route>
             <Route path="/books">
-              <Books />
+              <Books key="page-books" />
             </Route>
-            
           </Switch>
         </AnimatePresence>
       <Menu open={open} setOpen={setOpen} id={menuId} />

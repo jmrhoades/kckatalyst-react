@@ -68,7 +68,7 @@ const MenuContainer = styled.div`
     width: 100%;
     min-height: 100%;
     pointer-events: ${props => props.open ? "auto" : "none"};
-    z-index: 1;
+    z-index: 3;
 `;
 
 const MenuOverlay = styled.div`    

@@ -4,9 +4,9 @@ import {
   BrowserRouter as Router,
 } from "react-router-dom";
 
-import "./freight.css";
-import './reset.css';
-import './index.css';
+import "./theme/freight.css";
+import './theme/reset.css';
+import './theme/index.css';
 import App from './app';
 
 ReactDOM.render(

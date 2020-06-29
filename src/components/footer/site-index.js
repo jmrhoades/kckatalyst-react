@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
-import { LinkSmallCaps } from "../../styled/link-smallcaps";
+import { LinkSmallCaps } from "../../styled/smallcaps";
 
 export function SiteIndex() {
     return (

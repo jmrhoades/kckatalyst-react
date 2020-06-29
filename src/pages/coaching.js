@@ -2,7 +2,7 @@ import React from "react";
 import Page from "../components/page";
 import { Helmet } from "react-helmet";
 import { PageHeader } from "../styled/page-header";
-import { PageContentWidth, PageContentPadding } from "../styled/page-content-width";
+import { PageContentWidth } from "../styled/page-content-width";
 import { TopQuote } from "../components/quote";
 import styled from 'styled-components';
 import AspectBox from "../components/aspect-box";
@@ -11,29 +11,28 @@ import { Experiences, ExperiencesTitle, ExperiencesLead, ExperienceTitle } from 
 
 function Coaching(props) {
   return (
-    <Page>
+    <Page key={props.key}>
 
       <Helmet>
         <title>Kevin Carroll — Coaching</title>
       </Helmet>
 
-      <PageContentWidth>
-        <PageHeader>
-          Coaching
+      
+        <PageContentWidth>
+          <PageHeader>
+            Coaching
         </PageHeader>
-        <CoachingTopQuote
-          quote="I can not teach you... I can only help you explore yourself"
-          by="Bruce Lee"
-        />
-      </PageContentWidth>
-
-      <PageContentPadding>
+          <CoachingTopQuote
+            quote="I can not teach you... I can only help you explore yourself"
+            by="Bruce Lee"
+          />
+        </PageContentWidth>
         <CoverImage>
           <AspectBox ratio={5 / 7}>
             <LazyImage src="/images/coaching/coaching-cover-02-7x5.jpg" />
           </AspectBox>
         </CoverImage>
-      </PageContentPadding>
+      
 
       <PageContentWidth>
 
@@ -44,19 +43,19 @@ function Coaching(props) {
         </OpeningParagraph>
 
         <Experiences>
-          <ExperiencesTitle>COACHING <span>/</span> CONSULTING EXPERIENCES:</ExperiencesTitle>
-          <ExperiencesLead>executive leadership <span>/</span> human performance <span>/</span> reinvention</ExperiencesLead>
+          <ExperiencesTitle>COACHING <span>/</span> CONSULTING EXPERIENCES</ExperiencesTitle>
+          <ExperiencesLead>Executive Leadership. Human Performance. Reinvention.</ExperiencesLead>
           <ul>
             <li>
-              <ExperienceTitle>Executive Leadership Coaching: (1:1)</ExperienceTitle>
+              <ExperienceTitle>Executive Leadership Coaching (1:1)</ExperienceTitle>
               <p>During these meetings, clear goals are set and a “bespoke” action plan is co-designed to achieve the desired outcomes.</p>
             </li>
             <li>
-              <ExperienceTitle>Team Integration Workshops:<br />PLAY Is Serious Business!</ExperienceTitle>
+              <ExperienceTitle>Team Integration Workshops: PLAY Is Serious Business!</ExperienceTitle>
               <p>Craft, connect, collaborate, engage and move attendees via dynamic + playful moments. Be ready to awaken the “KIDULT*” inside you! (*KIDULT = kid + adult.)</p>
             </li>
             <li>
-              <ExperienceTitle>Professional In Residence:</ExperienceTitle>
+              <ExperienceTitle>Professional In Residence</ExperienceTitle>
               <p>Subject matter expertise provided to an organization via onsite visits to amplify and/or support an agreed upon project/goal.</p>
             </li>
           </ul>
@@ -85,7 +84,7 @@ const CoachingTopQuote = styled(TopQuote)`
 `;
 
 const CoverImage = styled.div`
-  max-width: 1399px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3em;

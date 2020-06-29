@@ -14,7 +14,7 @@ import { Quote } from "../../components/quote";
 
 export function TheRedRubberBallAtWork(props) {
   return (
-    <Page>
+    <Page key={props.key}>
       <Helmet>
         <title>The Red Rubber Ball At Work by Kevin Carroll</title>
       </Helmet>
@@ -28,7 +28,7 @@ export function TheRedRubberBallAtWork(props) {
 
           <BookImageCover>
             <AspectBox ratio={1}>
-              <LazyImage src="/images/the-red-rubber-ball-at-work-cover.jpg" />
+              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-cover.jpg" />
             </AspectBox>
           </BookImageCover>
 
@@ -38,7 +38,7 @@ export function TheRedRubberBallAtWork(props) {
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/the-red-rubber-ball-at-work-spread-1.jpg" />
+              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-spread-1.jpg" />
             </AspectBox>
           </BookImageSpread>
 
@@ -48,7 +48,7 @@ export function TheRedRubberBallAtWork(props) {
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/the-red-rubber-ball-at-work-spread-2.jpg" />
+              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-spread-2.jpg" />
             </AspectBox>
           </BookImageSpread>
 

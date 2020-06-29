@@ -19,7 +19,7 @@ const Head = styled.header`
     position: fixed;
     background-color: ${props => props.theme.colors.white};
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 
     @media (min-width: 768px) {
         height: 88px;
