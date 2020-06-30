@@ -14,12 +14,12 @@ function OnStage(props) {
     <Page key={props.key}>
 
       <Helmet>
-        <title>Kevin Carroll — On Stage</title>
+        <title>Kevin Carroll — Onstage</title>
       </Helmet>
 
       <PageContentWidth>
         <PageHeader>
-          On Stage
+          Onstage
         </PageHeader>
         <OnStageTopQuote
           quote="Those who tell the stories rule the world"
@@ -36,7 +36,7 @@ function OnStage(props) {
 
         <Experiences>
           <ExperiencesTitle>Focus Areas</ExperiencesTitle>
-          <ExperiencesLead>Storytelling. Leadership. Peak Performance. Innovation. Teamwork. Professional Achievement. Reinvention.</ExperiencesLead>
+          <ExperiencesLead>Storytelling. Leadership. <span>Peak Performance.</span> Innovation. Teamwork. <span>Professional Achievement.</span> Reinvention.</ExperiencesLead>
         </Experiences>
 
         <Experiences>

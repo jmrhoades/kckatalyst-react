@@ -21,8 +21,8 @@ const books = [
     title: "What's Your Red Rubber Ball?!",
     img: "/images/books/booklist-whats-your-red-rubber-ball.jpg",
     link: "/books/whats-your-red-rubber-ball",
-    buyLink: "https://www.amazon.com/gp/product/1933060565",
-    buyLabel: "Buy on Amazon",
+    buyLink: "https://files.acrobat.com/a/preview/45f89663-6ab4-4864-ae62-d3d324292cd9",
+    buyLabel: "Download PDF",
   },
   {
     title: "The Red Rubber Ball at Work",

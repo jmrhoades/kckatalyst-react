@@ -4,6 +4,25 @@ export const Experiences = styled.section`
   margin-bottom: 4em;
   li {
     margin-bottom: 1em;
+    ul {
+      padding-top: 1em;
+      li {
+        margin-left: 2em;
+        margin-top: 1em;
+        position: relative;
+        &:before {
+          content: "";
+          width: 0.5em;
+          height: 3px;
+          background-color: ${props => props.theme.colors.black};
+          display: block;
+          position: absolute;
+          left: -1em;
+          top: 0.6em;
+          
+        }
+      }
+    }
   }
 `;
 
@@ -23,6 +42,10 @@ export const ExperiencesLead = styled.h4`
   font-size: ${props => props.theme.typography.scale5};
   line-height: 1.333;
   padding-bottom: 3em;
+
+  span {
+    white-space: nowrap;
+  }
 `;
 
 export const ExperienceTitle = styled.h5`
@@ -34,6 +57,7 @@ export const ExperienceTitle = styled.h5`
   line-height: 1.333;
   margin-bottom: 0.5em;
   position: relative;
+  text-align: left;
   &:before {
       content: "";
       width: 0.75em;

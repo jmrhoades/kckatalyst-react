@@ -76,10 +76,13 @@ const HomePodcastHeader = styled.h5`
 const HomePodcastIconLink = styled.div`
   max-width: 344px;
   margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const HomePodcastParagraph = styled.p`
     padding-bottom: 1em;
+    text-align: center;
 `;
 
 const HomePodcastsLinks = styled.ul`
@@ -87,7 +90,7 @@ const HomePodcastsLinks = styled.ul`
 
   @media (min-width: 640px) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
 `;
@@ -96,12 +99,13 @@ const HomePodcastsLinkItem = styled.li`
   margin-bottom: 1em;
   margin-right: 1em;
   a { 
-    display: flex;
+    display: inline-block;
     text-decoration: none;
     line-height: 40px;
-    vertical-align: middle;
     svg {
       width: 29px;
+      display: inline-block;
+      transform: translateY(9px);
     }
   }
 `;

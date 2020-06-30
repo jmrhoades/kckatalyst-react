@@ -18,7 +18,7 @@ export function SiteIndex() {
                 <NavItem><Link to="/coaching">Coaching</Link></NavItem>
             </NavListA>
             <NavListB>
-                <NavItem><Link to="/on-stage">On Stage</Link></NavItem>
+                <NavItem><Link to="/onstage">Onstage</Link></NavItem>
                 <NavItem><Link to="/books">Books</Link></NavItem>
                 <NavItem><a href="mailto:kim@kevincarrollkatalyst.com">Contact</a></NavItem>
             </NavListB>

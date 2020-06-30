@@ -80,6 +80,7 @@ const QuoteAttribution = styled.div`
 
 const TopQuoteContainer = styled(QuoteContainer)`
     max-width: 100%;
+    text-align: center;
 `;
 
 const TopQuoteBody = styled(QuoteBody)`
@@ -87,7 +88,14 @@ const TopQuoteBody = styled(QuoteBody)`
 `;
 
 const TopQuoteAttribution = styled(QuoteAttribution)`
-
+    &::before {
+        content: "—";
+        display: inline-block;
+        position: relative;
+        margin-left: -2em;
+        padding-right: 0.5em;
+        
+    }
 `;
 
 

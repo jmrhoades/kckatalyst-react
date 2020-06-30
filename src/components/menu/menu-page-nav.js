@@ -21,7 +21,7 @@ const paths = {
     "Home": "/",
     "About": "/about",
     "Coaching": "/coaching",
-    "On Stage": "/on-stage",
+    "Onstage": "/onstage",
     "Books": "/books",
 }
 

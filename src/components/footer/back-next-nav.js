@@ -24,10 +24,10 @@ export function BackNextNav() {
             </Route>
 
             <Route exact path="/coaching">
-                <Links backTo="/about" backTitle="About" nextTo="/on-stage" nextTitle="On Stage" />
+                <Links backTo="/about" backTitle="About" nextTo="/onstage" nextTitle="Onstage" />
             </Route>
 
-            <Route exact path="/on-stage">
+            <Route exact path="/onstage">
                 <Links backTo="/coaching" backTitle="Coaching" nextTo="/books" nextTitle="Books" />
             </Route>
 
@@ -48,7 +48,7 @@ export function BackNextNav() {
             </Route>
 
             <Route exact path="/books">
-                <Links backTo="/on-stage" backTitle="On Stage" nextTo="/books/a-kids-book-about-belonging" nextTitle="A Kids Book About Belonging" />
+                <Links backTo="/onstage" backTitle="On Stage" nextTo="/books/a-kids-book-about-belonging" nextTitle="A Kids Book About Belonging" />
             </Route>
 
         </Switch>

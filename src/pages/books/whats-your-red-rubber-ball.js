@@ -57,8 +57,8 @@ export function WhatsYourRedRubberBall(props) {
         />
         
         <BookSellersContainer>
-          <BookSellersHeader msg="Available From"/>
-          <BookSellerLink href="https://www.amazon.com/gp/product/1933060565" name="Amazon US" />
+          <BookSellersHeader msg="Download"/>
+          <BookSellerLink href="https://files.acrobat.com/a/preview/45f89663-6ab4-4864-ae62-d3d324292cd9" name="WYRRB?! Interactive Exercises PDF" />
         </BookSellersContainer>
 
       </PageContentWidth>

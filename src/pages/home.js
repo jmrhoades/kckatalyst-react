@@ -49,7 +49,7 @@ function Home(props) {
               <OutlineRouterLink to="/coaching">Consulting / Coaching</OutlineRouterLink>
             </PageLink>
             <PageLink>
-              <OutlineRouterLink to="/on-stage">Speaking / On Stage</OutlineRouterLink>
+              <OutlineRouterLink to="/onstage">Speaking / Onstage</OutlineRouterLink>
             </PageLink>
           </PageLinks>
         </HomePageLinks>

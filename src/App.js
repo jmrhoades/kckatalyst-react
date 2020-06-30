@@ -9,7 +9,7 @@ import { theme } from './theme/theme';
 import Home from "./pages/home";
 import About from "./pages/about";
 import Coaching from "./pages/coaching";
-import OnStage from "./pages/on-stage";
+import OnStage from "./pages/onstage";
 import { Books } from "./pages/books/index";
 import { AKidsBookAboutBelonging } from "./pages/books/a-kids-book-about-belonging";
 import { WhatsYourRedRubberBall } from "./pages/books/whats-your-red-rubber-ball";
@@ -59,8 +59,8 @@ function App() {
             <Route path="/coaching">
               <Coaching key="page-coaching" />
             </Route>
-            <Route path="/on-stage">
-              <OnStage key="page-on-stage" />
+            <Route path="/onstage">
+              <OnStage key="page-onstage" />
             </Route>
             <Route path="/books/a-kids-book-about-belonging">
               <AKidsBookAboutBelonging key="page-books-a-kids-about-belonging" />

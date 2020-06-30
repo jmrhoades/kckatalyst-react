@@ -57,11 +57,13 @@ li {
 h1 {
   font-size: ${props => props.theme.typography.scale1};
   line-height: 1.1;
+  text-align: center;
 }
 h2 {
   font-size: ${props => props.theme.typography.scale2};
   line-height: 1.1;
   font-size: 56px;
+  text-align: center;
   @media (min-width: 375px) {
     font-size: 64px;
   }
@@ -83,12 +85,15 @@ h2 {
 }
 h3 {
   font-size: ${props => props.theme.typography.scale3};
+  text-align: center;
 }
 h4 {
   font-size: ${props => props.theme.typography.scale4};
+  text-align:center;
 }
 h5 {
   font-size: ${props => props.theme.typography.scale5};
+  text-align:center;
 }
 h6 {
   font-size: ${props => props.theme.typography.scale6};

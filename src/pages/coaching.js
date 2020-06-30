@@ -17,22 +17,22 @@ function Coaching(props) {
         <title>Kevin Carroll — Coaching</title>
       </Helmet>
 
-      
-        <PageContentWidth>
-          <PageHeader>
-            Coaching
+
+      <PageContentWidth>
+        <PageHeader>
+          Coaching
         </PageHeader>
-          <CoachingTopQuote
-            quote="I can not teach you... I can only help you explore yourself"
-            by="Bruce Lee"
-          />
-        </PageContentWidth>
-        <CoverImage>
-          <AspectBox ratio={5 / 7}>
-            <LazyImage src="/images/coaching/coaching-cover-02-7x5.jpg" />
-          </AspectBox>
-        </CoverImage>
-      
+        <CoachingTopQuote
+          quote="I can not teach you... I can only help you explore yourself"
+          by="Bruce Lee"
+        />
+      </PageContentWidth>
+      <CoverImage>
+        <AspectBox ratio={5 / 7}>
+          <LazyImage src="/images/coaching/coaching-cover-02-7x5.jpg" />
+        </AspectBox>
+      </CoverImage>
+
 
       <PageContentWidth>
 
@@ -43,7 +43,7 @@ function Coaching(props) {
         </OpeningParagraph>
 
         <Experiences>
-          <ExperiencesTitle>COACHING <span>/</span> CONSULTING EXPERIENCES</ExperiencesTitle>
+          <ExperiencesTitle>COACHING &amp; CONSULTING</ExperiencesTitle>
           <ExperiencesLead>Executive Leadership. Human Performance. Reinvention.</ExperiencesLead>
           <ul>
             <li>
@@ -51,8 +51,16 @@ function Coaching(props) {
               <p>During these meetings, clear goals are set and a “bespoke” action plan is co-designed to achieve the desired outcomes.</p>
             </li>
             <li>
-              <ExperienceTitle>Team Integration Workshops: PLAY Is Serious Business!</ExperienceTitle>
-              <p>Craft, connect, collaborate, engage and move attendees via dynamic + playful moments. Be ready to awaken the “KIDULT*” inside you! (*KIDULT = kid + adult.)</p>
+              <ExperienceTitle>PLAY Is Serious Business!<br />TEAM INTEGRATION WORKSHOPS</ExperienceTitle>
+              <p>Connect, engage and move attendees via dynamic + playful moments. Be ready to awaken the “KIDULT” (Kid + Adult) inside you via these dynamic + playful experiences: 
+                <ul>
+                  <li>“KIDULT” CREATIVE TIME: team ideation + collaboration exercise.</li>
+                  <li>“KIDULT” RECESS TIME: a purposeful play experience via a series of “intentional” games + activities.</li>
+                  <li>“KIDULT” STORY TIME: create a short poem by answering a series of insightful questions.</li>
+                </ul>
+                <p>RESULTS: teamwork, collaboration, improved creative confidence!</p>
+              </p>
+              
             </li>
             <li>
               <ExperienceTitle>Professional In Residence</ExperienceTitle>
