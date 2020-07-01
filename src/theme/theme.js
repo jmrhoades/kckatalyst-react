@@ -24,6 +24,7 @@ export const theme = {
     black: "#2A2A2A",
     gray: "#6A6864",
     red: "#E2263F",
+    beige: "#f3f4f5",
   },
 
   sizes: {

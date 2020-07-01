@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-const placeHolder =
-  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
-
 const Image = styled.img`
   display: block;
   height: auto;
@@ -26,15 +23,10 @@ const Image = styled.img`
   &.loaded {
     animation-name: loaded;
   }
-
-  &.has-error {
-    // fallback to placeholder image on error
-    content: url(${placeHolder});
-  }
 `;
 
 export const LazyImage = ({ src, alt }) => {
-  const [imageSrc, setImageSrc] = useState(placeHolder);
+  const [imageSrc, setImageSrc] = useState("");
   const [imageRef, setImageRef] = useState();
 
   const onLoad = event => {
