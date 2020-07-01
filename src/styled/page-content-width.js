@@ -36,3 +36,7 @@ export const PageContentWidth = styled(PageContentPadding)`
 export const PageContentWidthWide = styled(PageContentWidth)`
     max-width: 1024px;  
 `;
+
+export const PageContentWidthExtraWide = styled(PageContentWidth)`
+    max-width: 1280px;  
+`;

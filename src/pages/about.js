@@ -4,11 +4,12 @@ import { Helmet } from "react-helmet";
 import styled from 'styled-components';
 
 import { PageHeader } from "../styled/page-header";
-import { PageContentWidth } from "../styled/page-content-width";
+import { PageContentWidth, PageContentWidthWide } from "../styled/page-content-width";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 import { TopQuote, Quote } from "../components/quote";
 import { LinkSmallCaps } from "../styled/smallcaps";
+import { PressKit } from "../components/press-kit";
 
 function About(props) {
   return (
@@ -36,7 +37,7 @@ function About(props) {
         </AboutPortrait1>
 
         <AboutParagraph1>
-          Kevin is an author + instigator of inspiration + creative catalyst. Kevin brings a playful curiosity, a keen understanding of human nature and a lifelong love of competition to all of his endeavors. Kevin is the author of four highly successful books published by ESPN, Disney Press, McGraw-Hill and A Kids Book About. He has helped turn creative ideas into reality for organizations such as Nike, Starbucks, adidas, Walt Disney, Target, Proctor & Gamble, Columbia Sportswear, Mattel, the National Basketball Association and many others. Kevin was named by SUCCESS magazine as one of 19 “SEERS – changing the world!” Kevin believes that play is serious business!
+          Kevin is an author + instigator of inspiration + creative catalyst. Kevin brings a playful curiosity, a keen understanding of human nature and a lifelong love of competition to all of his endeavors. Kevin is the author of four highly successful books published by ESPN, Disney Press, McGraw-Hill and A Kids Book About. He has helped turn creative ideas into reality for organizations such as Nike, Starbucks, adidas, Walt Disney, Target, Proctor &amp; Gamble, Columbia Sportswear, Mattel, the National Basketball Association and many others. Kevin was named by SUCCESS magazine as one of 19 “SEERS – changing the world!” Kevin believes that play is serious business!
         </AboutParagraph1>
 
         <Quote
@@ -50,23 +51,28 @@ function About(props) {
           </AspectBox>
         </AboutPortrait2>
 
-        <AboutCenteredLink>
-          <h6>Press Kit</h6>
-          <LinkSmallCaps href="https://www.dropbox.com/s/ogoermwzvqb3yke/KC_PressKit_2020.pdf">KC’s Press Kit — PDF</LinkSmallCaps>
-        </AboutCenteredLink>
+        <AboutCenteredLinks>
+          <AboutCenteredLink>
+            <h6>Press Kit</h6>
+            <LinkSmallCaps href="https://www.dropbox.com/s/ogoermwzvqb3yke/KC_PressKit_2020.pdf">KC’s Press Kit — PDF</LinkSmallCaps>
+          </AboutCenteredLink>
 
-        <AboutCenteredLink>
-          <h6>Full Biography</h6>
-          <LinkSmallCaps href="https://www.dropbox.com/s/st99oekgw3ps7dw/Kevin%20Carroll%20Katalyst%20BIO%202020.pdf?dl=0">Kevin Carroll Biography — PDF</LinkSmallCaps>
-        </AboutCenteredLink>
+          <AboutCenteredLink>
+            <h6>Full Biography</h6>
+            <LinkSmallCaps href="https://www.dropbox.com/s/st99oekgw3ps7dw/Kevin%20Carroll%20Katalyst%20BIO%202020.pdf?dl=0">Kevin Carroll Biography — PDF</LinkSmallCaps>
+          </AboutCenteredLink>
 
-        <AboutCenteredLink>
-          <h6>For Inquiries, email</h6>
-          <LinkSmallCaps href="mailto:kim@kevincarrollkatalyst.com">kim@kevincarrollkatalyst.com</LinkSmallCaps>
-        </AboutCenteredLink>
-
-
+          <AboutCenteredLink>
+            <h6>For Inquiries, email</h6>
+            <LinkSmallCaps href="mailto:kim@kevincarrollkatalyst.com">kim@kevincarrollkatalyst.com</LinkSmallCaps>
+          </AboutCenteredLink>
+        </AboutCenteredLinks>
       </PageContentWidth>
+      
+      <PageContentWidthWide>
+        <PressKit />
+      </PageContentWidthWide>
+
     </Page>
   )
 }
@@ -90,10 +96,15 @@ const AboutPortrait2 = styled.div`
     margin-bottom: 5em;
 `;
 
+const AboutCenteredLinks = styled.div`
+  margin-bottom: 6em;
+`;
+
 const AboutCenteredLink = styled.div`
   text-align: center;
   margin-bottom: 3em;
 `;
+
 
 
 export default About;

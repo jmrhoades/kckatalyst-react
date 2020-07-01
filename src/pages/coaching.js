@@ -9,6 +9,21 @@ import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 import { Experiences, ExperiencesTitle, ExperiencesLead, ExperienceTitle } from "../styled/experiences-list";
 
+
+const VirtualOption = () => {
+  return (
+    <VOptionContainer>
+      (Virtual Option Available)
+    </VOptionContainer>
+  )
+}
+
+const VOptionContainer = styled.div`
+  font-family: ${props => props.theme.fonts.bodyItalic};
+  text-transform: none;
+  color: ${props => props.theme.colors.red};
+`;
+
 function Coaching(props) {
   return (
     <Page key={props.key}>
@@ -47,11 +62,14 @@ function Coaching(props) {
           <ExperiencesLead>Executive Leadership. Human Performance. Reinvention.</ExperiencesLead>
           <ul>
             <li>
-              <ExperienceTitle>Executive Leadership Coaching (1:1)</ExperienceTitle>
+              <ExperienceTitle>
+                Executive Leadership Coaching (1:1)
+                <VirtualOption />
+              </ExperienceTitle>
               <p>During these meetings, clear goals are set and a “bespoke” action plan is co-designed to achieve the desired outcomes.</p>
             </li>
             <li>
-              <ExperienceTitle>PLAY Is Serious Business!<br />TEAM INTEGRATION WORKSHOPS</ExperienceTitle>
+              <ExperienceTitle>PLAY Is Serious Business!<br />TEAM INTEGRATION WORKSHOPS <VirtualOption /></ExperienceTitle>
               <p>Connect, engage and move attendees via dynamic + playful moments. Be ready to awaken the “KIDULT” (Kid + Adult) inside you via these dynamic + playful experiences: 
                 <ul>
                   <li>“KIDULT” CREATIVE TIME: team ideation + collaboration exercise.</li>
@@ -63,7 +81,7 @@ function Coaching(props) {
               
             </li>
             <li>
-              <ExperienceTitle>Professional In Residence</ExperienceTitle>
+              <ExperienceTitle>Professional “Thinker” In Residence<VirtualOption /></ExperienceTitle>
               <p>Subject matter expertise provided to an organization via onsite visits to amplify and/or support an agreed upon project/goal.</p>
             </li>
           </ul>

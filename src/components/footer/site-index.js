@@ -56,7 +56,6 @@ const Question = styled.div`
     grid-column-start: 1;
     grid-column-end: 4;
 
-
     @media (min-width: 514px) {
         grid-column-end: 5;
     }
@@ -70,7 +69,7 @@ const Question = styled.div`
         color: ${props => props.theme.colors.black};
         line-height: 1.25;
         padding-bottom: 48px;
-
+        text-align: left;
         @media (min-width: 1114px) {
             line-height: 2.2em;
             padding-bottom: 0;
