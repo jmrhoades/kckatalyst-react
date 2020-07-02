@@ -26,7 +26,7 @@ const VOptionContainer = styled.div`
 
 function Coaching(props) {
   return (
-    <Page key={props.key}>
+    <Page>
 
       <Helmet>
         <title>Kevin Carroll — Coaching</title>
@@ -70,14 +70,14 @@ function Coaching(props) {
             </li>
             <li>
               <ExperienceTitle>PLAY Is Serious Business!<br />TEAM INTEGRATION WORKSHOPS <VirtualOption /></ExperienceTitle>
-              <p>Connect, engage and move attendees via dynamic + playful moments. Be ready to awaken the “KIDULT” (Kid + Adult) inside you via these dynamic + playful experiences: 
+              <p>Connect, engage and move attendees via dynamic + playful moments. Be ready to awaken the “KIDULT” (Kid + Adult) inside you via these dynamic + playful experiences: </p>
                 <ul>
                   <li>“KIDULT” CREATIVE TIME: team ideation + collaboration exercise.</li>
                   <li>“KIDULT” RECESS TIME: a purposeful play experience via a series of “intentional” games + activities.</li>
                   <li>“KIDULT” STORY TIME: create a short poem by answering a series of insightful questions.</li>
                 </ul>
                 <p>RESULTS: teamwork, collaboration, improved creative confidence!</p>
-              </p>
+              
               
             </li>
             <li>

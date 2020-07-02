@@ -13,7 +13,7 @@ import { LazyImage } from "../../components/lazy-image";
 
 export function AKidsBookAboutBelonging(props) {
   return (
-    <Page key={props.key}>
+    <Page>
       <Helmet>
         <title>A Kids Book About Belonging by Kevin Carroll</title>
       </Helmet>

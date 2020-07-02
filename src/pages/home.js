@@ -15,7 +15,7 @@ import { MyStory } from "../components/home/my-story";
 
 function Home(props) {
   return (
-    <Page key={props.key}>
+    <Page>
 
       <Helmet>
         <title>Kevin Carroll Katalyst</title>

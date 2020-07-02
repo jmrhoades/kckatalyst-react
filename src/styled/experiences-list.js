@@ -5,7 +5,7 @@ export const Experiences = styled.section`
   li {
     margin-bottom: 1em;
     ul {
-      padding-top: 1em;
+      margin-top: -2em;
       li {
         margin-left: 2em;
         margin-top: 1em;

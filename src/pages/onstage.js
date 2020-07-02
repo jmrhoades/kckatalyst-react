@@ -11,7 +11,7 @@ import { Experiences, ExperiencesTitle, ExperiencesLead, ExperienceTitle } from 
 
 function OnStage(props) {
   return (
-    <Page key={props.key}>
+    <Page>
 
       <Helmet>
         <title>Kevin Carroll — Onstage</title>

@@ -13,7 +13,7 @@ import { Quote } from "../../components/quote";
 
 export function WhatsYourRedRubberBall(props) {
   return (
-    <Page key={props.key}>
+    <Page>
       <Helmet>
         <title>What's Your Red Rubber Ball?! by Kevin Carroll</title>
       </Helmet>

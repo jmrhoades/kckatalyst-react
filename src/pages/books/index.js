@@ -68,7 +68,7 @@ function BookItem(props) {
 export function Books(props) {
 
   return (
-    <Page key={props.key}>
+    <Page>
 
       <Helmet>
         <title>Kevin Carroll — Books</title>

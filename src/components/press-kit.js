@@ -14,23 +14,13 @@ export const PressKit = () => {
     return (
         <Container>
 
-            <Lockup>
-                <KCLockUp />
-            </Lockup>
-
-            <Callout>
-                Since 2004, more than <em>350,000</em> people from <em>200</em>+ corporations, <em>150</em>+ non-profit organizations, and dozens of schools around the world have been inspired by Kevin’s dynamic presentations.
-            </Callout>
-
-            <Intro>
-                Kevin Carroll travels the world using his masterful story-telling skills to entertain, enlighten, and challenge business leaders and worldwide audiences. Using lessons garnered from the spirit and dynamics of play, Kevin helps them understand how to enliven and enrich their work lives, enhance innovation, and improve team dynamics and interpersonal communication.
-            </Intro>
+            <Heading>SPORT FOR SOCIAL CHANGE</Heading>
 
             <Callout>
                 <em>Sport is universal,</em> an inclusive international language teaching leadership, cooperation, and exemplary behavior in both victory and defeat.
             </Callout>
 
-            <Heading>SPORT FOR SOCIAL CHANGE</Heading>
+
             <SportForChangeParagraph>Kevin has traveled the world sharing his message of the Red Rubber Ball and the power of play. When people hear Kevin’s message, they often want others to know what sport and play look like in their culture, on their playgrounds. People have shared stories of their own Red Rubber Balls and the actual balls from their playgrounds. People want their story to become a part of the journey, knowing that Kevin’s ball collection traverses the world’s longitudes and latitudes.</SportForChangeParagraph>
             <SportForChangeParagraph>Kevin has dedicated his life to advancing sport and play as vehicles for social change. Among his many public speaking engagements, Kevin was invited to address the United Nations at the launch of its Year of Sports for Development and Peace in 2005. He was subsequently appointed as a Special Advisor to the humanitarian group Right to Play, which designs global sport and play programs for children and communities affected by war, poverty, and disease. Kevin is also involved with The Homeless World Cup, a program for socially-excluded homeless people and people living in poverty, promoting lasting change through the development of street soccer worldwide and a top quality, well-recognized annual tournament.</SportForChangeParagraph>
 
@@ -40,7 +30,21 @@ export const PressKit = () => {
                 </AspectBox>
             </BallsGrid>
 
-            <Heading>Clients Include</Heading>
+            <Heading>
+            <Lockup>
+                <KCLockUp />
+            </Lockup>
+            </Heading>
+
+            <Callout>
+                Since 2004, more than <em>350,000</em> people from <em>200</em>+ corporations, <em>150</em>+ non-profit organizations, and dozens of schools around the world have been inspired by Kevin’s dynamic presentations.
+            </Callout>
+
+            <Intro>
+                Kevin Carroll travels the world using his masterful story-telling skills to entertain, enlighten, and challenge business leaders and worldwide audiences. Using lessons garnered from the spirit and dynamics of play, Kevin helps them understand how to enliven and enrich their work lives, enhance innovation, and improve team dynamics and interpersonal communication.
+            </Intro>
+
+            <Heading>Onstage Clients Include</Heading>
             <Clients>
                 {
                     clientsList.map(function (e, i) {
@@ -172,7 +176,12 @@ export const PressKit = () => {
                         return (
                             <PressArticle key={i}>
                                 <PressName>{e.name}</PressName>
-                                <PressTitle>{e.title}</PressTitle>
+                                {!e.image && e.title &&
+                                    <PressTitle>{e.title}</PressTitle>
+                                }
+                                {e.image && e.title &&
+                                    <a href={e.image}><PressTitle>{e.title}</PressTitle></a>
+                                }
                             </PressArticle>
                         )
                     })
@@ -193,7 +202,6 @@ const Lockup = styled.div`
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3em;
 `;
 
 const Callout = styled.div`
@@ -203,7 +211,7 @@ const Callout = styled.div`
   max-width: 510px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
   em {
     font-size: 150%;
     line-height: 1;
@@ -362,9 +370,11 @@ const PromotionalVideoGroupItem = styled.li`
 
 const PressArticles = styled.ul`
     margin-bottom: 5em;
+    
     @media (min-width: 640px) {
         column-count: 2;
         column-gap: 4em;
+        font-size: 85%;
     }
 `;
 

@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import styled from 'styled-components';
 
 import { PageHeader } from "../styled/page-header";
-import { PageContentWidth, PageContentWidthWide } from "../styled/page-content-width";
+import { PageContentWidth, PageContentWidthExtraWide } from "../styled/page-content-width";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 import { TopQuote, Quote } from "../components/quote";
@@ -13,7 +13,7 @@ import { PressKit } from "../components/press-kit";
 
 function About(props) {
   return (
-    <Page key={props.key}>
+    <Page>
 
       <Helmet>
         <title>Kevin Carroll — About</title>
@@ -51,27 +51,25 @@ function About(props) {
           </AspectBox>
         </AboutPortrait2>
 
+        <PageContentWidthExtraWide>
+          <PressKit />
+        </PageContentWidthExtraWide>
+
         <AboutCenteredLinks>
           <AboutCenteredLink>
             <h6>Press Kit</h6>
             <LinkSmallCaps href="https://www.dropbox.com/s/ogoermwzvqb3yke/KC_PressKit_2020.pdf">KC’s Press Kit — PDF</LinkSmallCaps>
           </AboutCenteredLink>
-
           <AboutCenteredLink>
             <h6>Full Biography</h6>
             <LinkSmallCaps href="https://www.dropbox.com/s/st99oekgw3ps7dw/Kevin%20Carroll%20Katalyst%20BIO%202020.pdf?dl=0">Kevin Carroll Biography — PDF</LinkSmallCaps>
           </AboutCenteredLink>
-
           <AboutCenteredLink>
             <h6>For Inquiries, email</h6>
             <LinkSmallCaps href="mailto:kim@kevincarrollkatalyst.com">kim@kevincarrollkatalyst.com</LinkSmallCaps>
           </AboutCenteredLink>
         </AboutCenteredLinks>
       </PageContentWidth>
-      
-      <PageContentWidthWide>
-        <PressKit />
-      </PageContentWidthWide>
 
     </Page>
   )
