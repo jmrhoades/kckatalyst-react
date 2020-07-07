@@ -44,7 +44,11 @@ export function BackNextNav() {
             </Route>
 
             <Route exact path="/books/rules-of-the-red-rubber-ball">
-                <Links backTo="/books/the-red-rubber-ball-at-work" backTitle="The Red Rubber Ball At Work" nextTo="/" nextTitle="Home" />
+                <Links backTo="/books/the-red-rubber-ball-at-work" backTitle="The Red Rubber Ball At Work" nextTo="/social-change" nextTitle="Social Change" />
+            </Route>
+
+            <Route exact path="/social-change">
+                <Links backTo="/books/rules-of-the-red-rubber-ball" backTitle="Rules of the Red Rubber Ball" nextTo="/" nextTitle="Home" />
             </Route>
 
             <Route exact path="/books">

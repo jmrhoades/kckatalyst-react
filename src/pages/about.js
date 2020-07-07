@@ -101,6 +101,10 @@ const AboutCenteredLinks = styled.div`
 const AboutCenteredLink = styled.div`
   text-align: center;
   margin-bottom: 3em;
+
+  h6 {
+    color: ${props => props.theme.colors.gray};
+  }
 `;
 
 

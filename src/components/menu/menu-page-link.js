@@ -20,26 +20,33 @@ const variants = {
   }
 };
 
-const SiteNavA = styled(Link)`
-    font-size: 40px;
+const SiteNavLI = styled(motion.li)`
+  a {
     display: block;
     text-align: center;
-    line-height: 2.2;
     color: ${props => props.theme.colors.white};
     font-family: ${props => props.theme.fonts.body};
     text-decoration: none;
+  }
+  font-size: ${props => props.theme.typography.scale5};
+  line-height: 2.2;
 `;
 
 const MenuPageLink = (props) => {
-  
+
   return (
-    <motion.li
+    <SiteNavLI
       variants={variants}
       whileHover={{ scale: 1.0 }}
       whileTap={{ scale: 1.0 }}
     >
-      <SiteNavA to={props.to}>{props.title}</SiteNavA>
-    </motion.li>
+      {props.anchor === false &&
+        <Link to={props.to}>{props.title}</Link>
+      }
+      {props.anchor &&
+        <a href={props.to}>{props.title}</a>
+      }
+    </SiteNavLI>
   );
 };
 

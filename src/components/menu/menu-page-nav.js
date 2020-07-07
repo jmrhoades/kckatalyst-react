@@ -23,6 +23,8 @@ const paths = {
     "Coaching": "/coaching",
     "Onstage": "/onstage",
     "Books": "/books",
+    "Social Change": "/social-change",
+    "Contact": "mailto:kim@kevincarrollkatalyst.com",
 }
 
 const MenuPageNav = () => {
@@ -30,7 +32,7 @@ const MenuPageNav = () => {
     return (
         <SiteNavUL variants={variants}>
             {Object.keys(paths).map((key, i) => (
-                <MenuPageLink i={i} key={i} to={paths[key]} title={key} />
+                <MenuPageLink i={i} key={i} to={paths[key]} title={key} anchor={paths[key].charAt(0) !== "/"} />
             ))}
         </SiteNavUL>
     );

@@ -10,7 +10,7 @@ export function SiteIndex() {
                 <h4>What’s <em>your</em> red rubber ball?!</h4>
             </Question>
             <LetsTalkContainer>
-                <LinkSmallCaps href="mailto:kim@kevincarrollkatalyst.com">Let’s Talk</LinkSmallCaps>
+                <LinkSmallCaps href="mailto:kim@kevincarrollkatalyst.com">Contact</LinkSmallCaps>
             </LetsTalkContainer>
             <NavListA>
                 <NavItem><Link to="/">Home</Link></NavItem>
@@ -20,7 +20,7 @@ export function SiteIndex() {
             <NavListB>
                 <NavItem><Link to="/onstage">Onstage</Link></NavItem>
                 <NavItem><Link to="/books">Books</Link></NavItem>
-                <NavItem><a href="mailto:kim@kevincarrollkatalyst.com">Contact</a></NavItem>
+                <NavItem><Link to="/social-change">Social Change</Link></NavItem>
             </NavListB>
             <NavListC>
                 <NavItem><a href="https://twitter.com/kckatalyst">Twitter</a></NavItem>

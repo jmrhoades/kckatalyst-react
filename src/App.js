@@ -15,6 +15,7 @@ import { AKidsBookAboutBelonging } from "./pages/books/a-kids-book-about-belongi
 import { WhatsYourRedRubberBall } from "./pages/books/whats-your-red-rubber-ball";
 import { TheRedRubberBallAtWork } from "./pages/books/the-red-rubber-ball-at-work";
 import { RulesOfTheRedRubberBall } from "./pages/books/rules-of-the-red-rubber-ball";
+import { SportForSocialChange } from "./pages/social-change";
 import Menu from "./components/menu/menu";
 import MenuButton from "./components/menu/menu-button";
 import Header from "./components/header/header";
@@ -61,6 +62,9 @@ function App() {
             </Route>
             <Route path="/onstage">
               <OnStage key="page-onstage" />
+            </Route>
+            <Route path="/social-change">
+              <SportForSocialChange key="page-social-change" />
             </Route>
             <Route path="/books/a-kids-book-about-belonging">
               <AKidsBookAboutBelonging key="page-books-a-kids-about-belonging" />
