@@ -1,34 +1,18 @@
 import React from "react";
 import styled from 'styled-components';
 
-import AspectBox from "../components/aspect-box";
-import { LazyImage } from "../components/lazy-image";
 import { KCLockUp, BoyAndBall, TedLogo, PodcastsIcon, PressIcon } from "./icons-and-logos";
 import { clientsList } from "../data/clients";
 import { tedVideosList } from "../data/ted-videos";
 import { promotionalVideosList } from "../data/promotional-videos";
 import { podcastsList } from "../data/podcasts";
 import { pressList } from "../data/press";
+import { Callout } from "../styled/call-out";
+import { GroupedLinks, GroupedLinkItem, GroupedLinkAnchor, GroupedItemTitle, GroupedItemMeta, GroupedLinksTitle, GroupedLinksGroup, GroupedLinksGroupItem } from "../styled/grouped-links";
 
 export const PressKit = () => {
     return (
         <Container>
-
-            <Heading>SPORT FOR SOCIAL CHANGE</Heading>
-
-            <Callout>
-                <em>Sport is universal,</em> an inclusive international language teaching leadership, cooperation, and exemplary behavior in both victory and defeat.
-            </Callout>
-
-
-            <SportForChangeParagraph>Kevin has traveled the world sharing his message of the Red Rubber Ball and the power of play. When people hear Kevin’s message, they often want others to know what sport and play look like in their culture, on their playgrounds. People have shared stories of their own Red Rubber Balls and the actual balls from their playgrounds. People want their story to become a part of the journey, knowing that Kevin’s ball collection traverses the world’s longitudes and latitudes.</SportForChangeParagraph>
-            <SportForChangeParagraph>Kevin has dedicated his life to advancing sport and play as vehicles for social change. Among his many public speaking engagements, Kevin was invited to address the United Nations at the launch of its Year of Sports for Development and Peace in 2005. He was subsequently appointed as a Special Advisor to the humanitarian group Right to Play, which designs global sport and play programs for children and communities affected by war, poverty, and disease. Kevin is also involved with The Homeless World Cup, a program for socially-excluded homeless people and people living in poverty, promoting lasting change through the development of street soccer worldwide and a top quality, well-recognized annual tournament.</SportForChangeParagraph>
-
-            <BallsGrid>
-                <AspectBox ratio={1}>
-                    <LazyImage src="/images/about/balls-grid-380.jpg" />
-                </AspectBox>
-            </BallsGrid>
 
             <Heading>
             <Lockup>
@@ -74,49 +58,50 @@ export const PressKit = () => {
                 <BoyAndBall />
                 PROMOTIONAL VIDEOS &amp; IMAGE GALLERIES
             </Heading>
-            <PromotionalVideos>
+
+            <GroupedLinks>
                 {
                     promotionalVideosList.map(function (e, i) {
                         return (
-                            <PromotionalVideo key={i}>
+                            <GroupedLinkItem key={i}>
                                 {e.groupTitle &&
-                                    <PromotionalVideoGroupTitle>
+                                    <GroupedLinksTitle>
                                         {e.groupTitle}
-                                    </PromotionalVideoGroupTitle>
+                                    </GroupedLinksTitle>
                                 }
                                 {e.groupItems &&
-                                    <PromotionalVideoGroup>
+                                    <GroupedLinksGroup>
                                         {e.groupItems.map(function (o, j) {
                                             return (
-                                                <PromotionalVideoGroupItem key={j}>
+                                                <GroupedLinksGroupItem key={j}>
                                                     {!o.url && o.title &&
                                                         <span>{o.title}</span>
                                                     }
                                                     {o.url && o.title &&
                                                         <a href={o.url}>{o.title}</a>
                                                     }
-                                                </PromotionalVideoGroupItem>
+                                                </GroupedLinksGroupItem>
                                             )
                                         })
                                         }
-                                    </PromotionalVideoGroup>
+                                    </GroupedLinksGroup>
                                 }
                                 {e.url && e.title &&
-                                    <PromotionalVideoLink href={e.url}>
-                                        <PromotionalVideoTitle>{e.title}</PromotionalVideoTitle>
-                                    </PromotionalVideoLink>
+                                    <GroupedLinkAnchor href={e.url}>
+                                        <GroupedItemTitle>{e.title}</GroupedItemTitle>
+                                    </GroupedLinkAnchor>
                                 }
                                 {!e.url && e.title &&
-                                    <PromotionalVideoTitle>{e.title}</PromotionalVideoTitle>
+                                    <GroupedItemTitle>{e.title}</GroupedItemTitle>
                                 }
                                 {e.meta &&
-                                    <PromotionalMeta> ({e.meta})</PromotionalMeta>
+                                    <GroupedItemMeta> ({e.meta})</GroupedItemMeta>
                                 }
-                            </PromotionalVideo>
+                            </GroupedLinkItem>
                         )
                     })
                 }
-            </PromotionalVideos>
+            </GroupedLinks>
 
             <Heading>
                 <PodcastsIcon />
@@ -204,20 +189,6 @@ const Lockup = styled.div`
   margin-right: auto;
 `;
 
-const Callout = styled.div`
-  font-size: ${props => props.theme.typography.scale6};
-  color: ${props => props.theme.colors.red};
-  text-align: center;
-  max-width: 510px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3em;
-  em {
-    font-size: 150%;
-    line-height: 1;
-  }
-`;
-
 const Heading = styled.h5`
     font-family: ${props => props.theme.fonts.body};
     letter-spacing: 0.05em;
@@ -227,19 +198,6 @@ const Heading = styled.h5`
     padding-bottom: 1em;
     border-bottom: 2px dashed ${props => props.theme.colors.gray};
     margin-bottom: 2em;
-`;
-
-const BallsGrid = styled.div`
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 380px;
-    margin-bottom: 4em;
-`;
-
-const SportForChangeParagraph = styled.p`
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 768px;
 `;
 
 const Clients = styled.ul`
@@ -293,9 +251,6 @@ const VideoTitle = styled.a`
 const VideoYear = styled.span`
     color: ${props => props.theme.colors.gray};
 `;
-
-
-
 
 const PromotionalVideos = styled.ul`
     margin-bottom: 5em;

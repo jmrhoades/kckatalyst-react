@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import styled from 'styled-components';
 
 import { PageHeader } from "../styled/page-header";
-import { PageContentWidth, PageContentWidthExtraWide } from "../styled/page-content-width";
+import { PageContentWidth } from "../styled/page-content-width";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 import { TopQuote, Quote } from "../components/quote";
@@ -51,9 +51,9 @@ function About(props) {
           </AspectBox>
         </AboutPortrait2>
 
-        <PageContentWidthExtraWide>
-          <PressKit />
-        </PageContentWidthExtraWide>
+        
+        <PressKit />
+        
 
         <AboutCenteredLinks>
           <AboutCenteredLink>
