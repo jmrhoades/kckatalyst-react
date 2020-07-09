@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { KataglyphsIcons, ApplePodcastsIcon, SpotifyIcon, GooglePodcastsIcon } from "../header/kataglyphs-icons";
 import AspectBox from "../aspect-box";
+import { bottomSpace } from "../../theme/global-styles";
 
 export function KataglyphsSection() {
   return (
@@ -66,7 +67,7 @@ export function KataglyphsSection() {
 }
 
 const HomePodcast = styled.div`
-  margin-bottom: 6em;
+  margin-bottom: ${bottomSpace};
   position: relative;
   text-align: center;
 

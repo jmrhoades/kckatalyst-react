@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { bottomSpace } from "../theme/global-styles";
 
 export const GroupedLinks = styled.ul`
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
     
     @media (min-width: 800px) {
         column-count: 2;

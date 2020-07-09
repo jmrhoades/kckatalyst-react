@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import { bottomSpace } from "../theme/global-styles";
 
 export function Quote({ quote, by, ...props }) {
     return (
@@ -51,7 +52,7 @@ export function Testimonial({ quote, by, cite, ...props }) {
 const QuoteContainer = styled.figure`
     max-width: 720px;
     margin: 0 auto;
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
     display: block;
 `;
 

@@ -9,6 +9,7 @@ import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 import { Experiences, ExperiencesTitle, ExperiencesLead, ExperienceTitle } from "../styled/experiences-list";
 import { LinkSmallCaps } from "../styled/smallcaps";
+import { bottomSpace } from "../theme/global-styles";
 
 
 const VirtualOption = () => {
@@ -105,20 +106,18 @@ function Coaching(props) {
         <BottomCenteredLinks>
           <BottomCenteredLink>
             <h6>Download</h6>
-            <LinkSmallCaps href="/images/coaching/83817_KC_Coachking_PDF_r3_Condensed[1].pdf">KC’s Coaching Services — PDF</LinkSmallCaps>
+            <LinkSmallCaps href="/downloads/83817_KC_Coaching_PDF_r3.pdf">KC’s Coaching Services — PDF</LinkSmallCaps>
           </BottomCenteredLink>
         </BottomCenteredLinks>
 
       </PageContentWidth>
-
-
 
     </Page>
   )
 }
 
 const BottomCenteredLinks = styled.div`
-  margin-bottom: 6em;
+  margin-bottom: ${bottomSpace};
 `;
 
 const BottomCenteredLink = styled.div`

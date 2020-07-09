@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import { bottomSpace } from "../theme/global-styles";
 
 export function Video({ poster, src, ...props }) {
     return (
@@ -14,5 +15,5 @@ export function Video({ poster, src, ...props }) {
 const VideoContainer = styled.div`
     max-width: 720px;
     margin: 0 auto;
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
 `;

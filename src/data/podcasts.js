@@ -47,6 +47,7 @@ export const podcastsList = [
     },
     {
         title: "Athletic Greens Inspiring Lives Podcast",
+        url: "https://inspiringlives.simplecast.com/episodes/kevin-carroll-the-importance-of-play-curiosity-and-joy",
     },
     {
         title: "Story",

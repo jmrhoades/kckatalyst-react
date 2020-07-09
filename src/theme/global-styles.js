@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+export const bottomSpace = "5em";
+
 export const GlobalStyles = createGlobalStyle`
 
 body {

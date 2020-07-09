@@ -10,6 +10,7 @@ import { LazyImage } from "../components/lazy-image";
 import { KataglyphsSection } from "../components/home/kataglyphs-section";
 import { BooksList } from "../components/home/books-list";
 import { CoverImage } from "../components/cover-image";
+import { bottomSpace } from "../theme/global-styles";
 
 
 function Home(props) {
@@ -86,7 +87,7 @@ const HomeBioParagraph = styled.div`
 `;
 
 const HomePageLinks = styled.div`
-  margin-bottom: 6em;
+  margin-bottom: ${bottomSpace};
 `;
 
 const PageLinksHeader = styled.h5`

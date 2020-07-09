@@ -23,6 +23,11 @@ export const promotionalVideosList = [
     },
     {
         title: "CREATIVE MORNINGS",
+        meta: "Vancouver, BC / 2020",
+        url: "https://creativemornings.com/talks/kevin-carroll-online/1",
+    },
+    {
+        title: "CREATIVE MORNINGS",
         meta: "Portland, OR / 2015",
         url: "http://bit.ly/1JdWaXB",
     },
@@ -81,10 +86,6 @@ export const promotionalVideosList = [
         title: "NIKE CHI - TALK",
         meta: "Chicago, IL / 2014",
         url: "http://bit.ly/1Ug1Bw3",
-    },
-    {
-        title: "(re)PLACED TV Show",
-        meta: "2015",
     },
     {
         title: "Morsels o’ Motivation",

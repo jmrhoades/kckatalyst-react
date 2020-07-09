@@ -10,6 +10,7 @@ import { pressList } from "../data/press";
 import { Callout } from "../styled/call-out";
 import { SeparatorHeading } from "../styled/separator-heading";
 import { GroupedLinks, GroupedLinkItem, GroupedLinkAnchor, GroupedItemTitle, GroupedItemMeta, GroupedLinksTitle, GroupedLinksGroup, GroupedLinksGroupItem } from "../styled/grouped-links";
+import { bottomSpace } from "../theme/global-styles";
 
 export const PressKit = () => {
     return (
@@ -198,7 +199,7 @@ const Lockup = styled.div`
 const Clients = styled.ul`
     column-count: 2;
     column-gap: 2em;
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
     @media (min-width: 640px) {
         column-count: 3;
     }
@@ -212,11 +213,11 @@ const Intro = styled.p`
     margin-left: auto;
     margin-right: auto;
     max-width: 768px;
-    padding-bottom: 5em;  
+    padding-bottom: ${bottomSpace};  
 `;
 
 const TedVideos = styled.ul`
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
     @media (min-width: 640px) {
         column-count: 2;
         column-gap: 4em;
@@ -248,7 +249,7 @@ const VideoYear = styled.span`
 `;
 
 const PromotionalVideos = styled.ul`
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
     
     @media (min-width: 800px) {
         column-count: 2;
@@ -319,7 +320,7 @@ const PromotionalVideoGroupItem = styled.li`
 
 
 const PressArticles = styled.ul`
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
     
     @media (min-width: 640px) {
         column-count: 2;

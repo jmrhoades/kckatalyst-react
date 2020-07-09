@@ -10,6 +10,7 @@ import { LazyImage } from "../components/lazy-image";
 import { Experiences, ExperiencesTitle, ExperiencesLead, ExperienceTitle } from "../styled/experiences-list";
 import { CoverImage } from "../components/cover-image";
 import { SeparatorHeading } from "../styled/separator-heading";
+import { bottomSpace } from "../theme/global-styles";
 
 function OnStage(props) {
   return (
@@ -245,7 +246,7 @@ const Image1 = styled.div`
 const Image2 = styled.div`
     max-width: 460px;
     margin-left: auto;
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
 
     margin-top: -2em;
     transform: translateX(25%);
@@ -264,7 +265,7 @@ const Image3 = styled.div`
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
+  margin-bottom: ${bottomSpace};
 `;
 
 const ImagePortrait1 = styled.div`
@@ -290,7 +291,7 @@ const ImagePortrait1 = styled.div`
 
 const ImagePortrait2 = styled.div`
     margin-left: auto;
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
     transform: translateX(25%);
     max-width: 360px;
 
@@ -317,7 +318,7 @@ const PortraitContainer3 = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 720px;
-  margin-bottom: 5em;
+  margin-bottom: ${bottomSpace};
 `;
 
 const PortraitContainer3Wrap = styled.div`
@@ -354,7 +355,7 @@ const Image4 = styled.div`
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
+  margin-bottom: ${bottomSpace};
 `;
 
 const ImageCover4 = styled.div`
@@ -362,21 +363,21 @@ const ImageCover4 = styled.div`
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
+  margin-bottom: ${bottomSpace};
 `;
 
 const ImageLast = styled.div`
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
+  margin-bottom: ${bottomSpace};
 `;
 
 const SportsContainer1 = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 780px;
-  margin-bottom: 5em;
+  margin-bottom: ${bottomSpace};
 `;
 
 const SportsContainer1Wrap = styled.div`

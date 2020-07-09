@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styled from 'styled-components';
+import { bottomSpace } from "../../theme/global-styles";
 
 
 export function MyStory() {
@@ -65,7 +66,7 @@ const MyStoryOuter = styled.div`
     margin-right: auto;
     position: relative;
     overflow: hidden;
-    margin-bottom: 5em;
+    margin-bottom: ${bottomSpace};
     height: ${props => props.open ? "auto" : "500px"};
 
 `;

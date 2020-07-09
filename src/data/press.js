@@ -61,6 +61,7 @@ export const pressList = [
     {
         name: "THRIVE GLOBAL",
         title: "Living Fearlessly",
+        image: "https://thriveglobal.com/stories/the-spirit-of-play/",
     },
     {
         name: "PHILADELPHIA DAILY NEWS",
