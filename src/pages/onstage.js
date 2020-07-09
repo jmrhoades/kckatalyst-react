@@ -8,6 +8,8 @@ import { TopQuote, Testimonial } from "../components/quote";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 import { Experiences, ExperiencesTitle, ExperiencesLead, ExperienceTitle } from "../styled/experiences-list";
+import { CoverImage } from "../components/cover-image";
+import { SeparatorHeading } from "../styled/separator-heading";
 
 function OnStage(props) {
   return (
@@ -21,22 +23,25 @@ function OnStage(props) {
         <PageHeader>
           Onstage
         </PageHeader>
+      </PageContentWidth>
+
+      <CoverImage
+        ratio={1535 / 2312}
+        src={"/images/on-stage/on-stage-cover-05.jpg"}
+      />
+
+      <PageContentWidth>
         <OnStageTopQuote
           quote="Those who tell the stories rule the world"
           by="Native American proverb"
         />
       </PageContentWidth>
-      <CoverImage>
-        <AspectBox ratio={1536 / 2304}>
-          <LazyImage src="/images/on-stage/on-stage-cover-02.jpg" />
-        </AspectBox>
-      </CoverImage>
 
       <PageContentWidth>
 
         <Experiences>
           <ExperiencesTitle>Focus Areas</ExperiencesTitle>
-          <ExperiencesLead>Storytelling. Leadership. <span>Peak Performance.</span> Innovation. Teamwork. <span>Professional Achievement.</span> Reinvention.</ExperiencesLead>
+          <ExperiencesLead><span>Storytelling</span> <span>Leadership</span> <span>Peak Performance</span> <span>Innovation</span> <span>Teamwork</span> <span>Professional Achievement</span> <span>Reinvention</span> <span>Host + Facilitator</span></ExperiencesLead>
         </Experiences>
 
         <Experiences>
@@ -70,6 +75,12 @@ function OnStage(props) {
             <LazyImage src="/images/on-stage/on-stage-blue-02.jpg" />
           </AspectBox>
         </Image2>
+      </PageContentWidth>
+
+      <PageContentWidth>
+        <SeparatorHeading>
+          Testimonials
+      </SeparatorHeading>
       </PageContentWidth>
 
       <PageContentWidth>
@@ -127,11 +138,6 @@ function OnStage(props) {
               <LazyImage src="/images/on-stage/on-stage-sports-01.jpg" />
             </AspectBox>
           </SportsImage2>
-          <SportsImage3>
-            <AspectBox ratio={900 / 1356}>
-              <LazyImage src="/images/on-stage/on-stage-sports-03.jpg" />
-            </AspectBox>
-          </SportsImage3>
         </SportsContainer1Wrap>
       </SportsContainer1>
 
@@ -211,13 +217,13 @@ function OnStage(props) {
 }
 
 
-const CoverImage = styled.div`
-  min-width: 480px;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 6em;
-`;
+// const CoverImage = styled.div`
+//   min-width: 480px;
+//   max-width: 1280px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 6em;
+// `;
 
 const OnStageTopQuote = styled(TopQuote)`
   max-width: 440px;
@@ -389,12 +395,6 @@ const SportsImage2 = styled.div`
   @media (min-width: 780px) {
       margin-top: -6em;
     }
-`;
-
-const SportsImage3 = styled.div`
-  max-width: 678px;
-  margin-left: auto;
-  transform: translateX(10%);
 `;
 
 

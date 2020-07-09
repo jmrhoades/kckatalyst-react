@@ -9,8 +9,7 @@ import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 import { KataglyphsSection } from "../components/home/kataglyphs-section";
 import { BooksList } from "../components/home/books-list";
-import { OutNow } from "../components/home/out-now";
-import { MyStory } from "../components/home/my-story";
+import { CoverImage } from "../components/cover-image";
 
 
 function Home(props) {
@@ -21,27 +20,31 @@ function Home(props) {
         <title>Kevin Carroll Katalyst</title>
       </Helmet>
 
-      <HomeTopContainer>
-        <HomeQuote>
-          “My actions may seem small but, their collective impact will be great!”
-        </HomeQuote>
-        <HomeIntroPortrait>
-          <AspectBox ratio={1.5}>
-            <LazyImage src="/images/home/kevincarroll-portrait-3.jpg" />
-          </AspectBox>
-        </HomeIntroPortrait>
-      </HomeTopContainer>
-
+      <CoverImage
+        ratio={1536 / 2304}
+        src={"/images/on-stage/on-stage-cover-02.jpg"}
+      />
 
       <PageContentWidth>
-
-
-        <MyStory />
-
         <HomeIntroParagraph>
-          <p>Kevin Carroll is the acclaimed author of <Link to="/books/rules-of-the-red-rubber-ball">Rules of the Red Rubber Ball</Link>, <Link to="/books/whats-your-red-rubber-ball">What’s Your Red Rubber Ball?!</Link>, <Link to="/books/the-red-rubber-ball-at-work">The Red Rubber Ball at Work</Link> and <Link to="/books/the-red-rubber-ball-at-work">A Kids Book About Belonging</Link>. He travels the globe consulting and speaking about the role, value and importance of play in life; having a lifelong learner mindset; advancing the human condition in a positive way.</p>
+          Kevin Carroll, the Katalyst, is on a mission to empower greatness in individuals and organizations through the power of positivity, creativity and play. Since 2004, more than 350,000 people from 200+ corporations, 150+ non-profit organizations, and dozens of schools around the world have been inspired by Kevin’s dynamic speaking engagements, coaching, facilitating and content creation.
         </HomeIntroParagraph>
+      </PageContentWidth>
 
+      <PageContentWidth>
+        <HomeBioContainer>
+          <HomeBioImage>
+            <AspectBox ratio={1.5}>
+              <LazyImage src="/images/home/kevincarroll-portrait-3.jpg" />
+            </AspectBox>
+          </HomeBioImage>
+          <HomeBioParagraph>
+            <p>Kevin is an author + instigator of inspiration + creative catalyst who brings a playful curiosity, a keen understanding of human nature and a lifelong love of competition to all of his endeavors. Kevin has given multiple TED talks and written four highly successful books published by ESPN, Disney Press, McGraw-Hill and A Kids Book About. He has helped turn creative ideas into reality for Fortune 500 companies, professional sports leagues, and global non-profits. Widely acclaimed for his desire and ability to change the world using play + positivity as a catalyst for positive change and self-improvement.</p>
+          </HomeBioParagraph>
+        </HomeBioContainer>
+      </PageContentWidth>
+
+      <PageContentWidth>
         <HomePageLinks>
           <PageLinksHeader>Services</PageLinksHeader>
           <PageLinks>
@@ -58,62 +61,28 @@ function Home(props) {
 
         <BooksList />
 
-        <OutNow />
-
       </PageContentWidth>
     </Page >
   )
 }
 
-const HomeTopContainer = styled.div`
-  @media (min-width: 960px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+const HomeIntroParagraph = styled.div`
+  margin-bottom: 3em;
 `;
 
-const HomeIntroPortrait = styled.div`
+const HomeBioContainer = styled.div`
+
+`;
+
+const HomeBioImage = styled.div`
   max-width: 544px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4em;
-    @media (min-width: 960px) {
-      width: 558px;
-      grid-column: 1;
-      grid-row: 1;
-      margin-bottom: 0;
-      margin-top: -4em;
-    }
 `;
 
-const HomeQuote = styled.div`
-    font-family: ${props => props.theme.fonts.bodyItalic};
-    font-size:  ${props => props.theme.typography.scale4};
-    line-height: 1.2;
-    margin-bottom: 2em;
-    text-align: center;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1em;
+const HomeBioParagraph = styled.div`
 
-    @media (min-width: 960px) {
-      grid-column: 2;
-      grid-row: 1;
-      text-align: left;
-      
-      margin: auto;
-      padding: 0;
-      padding-left: 40px;
-      
-    }
-`;
-
-const HomeIntroParagraph = styled.div`
-  margin-bottom: 3em;
 `;
 
 const HomePageLinks = styled.div`
@@ -126,15 +95,15 @@ const PageLinksHeader = styled.h5`
 
 const PageLinks = styled.ul`
 
-  @media (min-width: 540px) {
+  /* @media (min-width: 540px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2em;
-  }
+  } */
 `;
 
 const PageLink = styled.li`
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 `;
 
 const OutlineRouterLink = styled(Link)`
@@ -146,7 +115,7 @@ const OutlineRouterLink = styled(Link)`
     text-decoration: none;
     
     font-family: ${props => props.theme.fonts.heading};
-    font-size: ${props => props.theme.typography.small};
+    font-size: ${props => props.theme.typography.scale6};
     letter-spacing: 0.05em;
     text-transform: uppercase;
     

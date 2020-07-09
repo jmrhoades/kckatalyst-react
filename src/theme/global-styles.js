@@ -60,28 +60,9 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: ${props => props.theme.typography.scale2};
+  font-size: ${props => props.theme.typography.scale4};
   line-height: 1.1;
-  font-size: 56px;
   text-align: center;
-  @media (min-width: 375px) {
-    font-size: 64px;
-  }
-  @media (min-width: 414px) {
-    font-size: 72px;
-  }
-  @media (min-width: 600px) {
-    font-size: 80px;
-  }
-  @media (min-width: 768px) {
-    font-size: 88px;
-  }
-  @media (min-width: 960px) {
-    font-size: 96px;
-  }
-  @media (min-width: 1152px) {
-    font-size: 96px;
-  }
 }
 h3 {
   font-size: ${props => props.theme.typography.scale3};

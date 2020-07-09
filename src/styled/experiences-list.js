@@ -40,11 +40,11 @@ export const ExperiencesTitle = styled.h3`
 export const ExperiencesLead = styled.h4`
   font-family: ${props => props.theme.fonts.bodyItalic};
   font-size: ${props => props.theme.typography.scale5};
-  line-height: 1.333;
+  line-height: 1.75;
   padding-bottom: 3em;
-
   span {
     white-space: nowrap;
+    padding:0.33em;
   }
 `;
 

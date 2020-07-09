@@ -60,7 +60,7 @@ const MyStoryOuter = styled.div`
     padding-top: 2em;
     background-color: ${props => props.theme.colors.white};
     box-shadow: 0px 0.664142px 2.85027px rgba(0, 0, 0, 0.0196802), 0px 1.59602px 6.84961px rgba(0, 0, 0, 0.0282725), 0px 3.00517px 12.8972px rgba(0, 0, 0, 0.035), 0px 5.36071px 23.0064px rgba(0, 0, 0, 0.0417275);
-    max-width: 544px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -68,10 +68,6 @@ const MyStoryOuter = styled.div`
     margin-bottom: 5em;
     height: ${props => props.open ? "auto" : "500px"};
 
-    @media (min-width: 960px) { 
-        margin-top: -4em;
-        margin-left: 30%;
-    }
 `;
 
 const MyStoryInner = styled.div`

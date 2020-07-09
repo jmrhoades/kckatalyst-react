@@ -20,9 +20,11 @@ export function TopQuote({ quote, by, ...props }) {
             <TopQuoteBody>
                 “{quote}”
             </TopQuoteBody>
-            <TopQuoteAttribution>
-                {by}
-            </TopQuoteAttribution>
+            {by &&
+                <TopQuoteAttribution>
+                    {by}
+                </TopQuoteAttribution>
+            }
         </TopQuoteContainer>
     )
 }

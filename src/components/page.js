@@ -51,8 +51,12 @@ const PageWrap = styled(motion.div)`
 `;
 
 const PageContent = styled(motion.div)`
-  padding-top: 10em;
   padding-bottom: 4em;
+  padding-top: 6em;
+  padding-top: 64px;
+  @media (min-width: 768px) {
+    padding-top: 88px;
+  }
 `;
 
 export default Page;

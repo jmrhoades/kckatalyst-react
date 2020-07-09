@@ -8,39 +8,33 @@ import { promotionalVideosList } from "../data/promotional-videos";
 import { podcastsList } from "../data/podcasts";
 import { pressList } from "../data/press";
 import { Callout } from "../styled/call-out";
+import { SeparatorHeading } from "../styled/separator-heading";
 import { GroupedLinks, GroupedLinkItem, GroupedLinkAnchor, GroupedItemTitle, GroupedItemMeta, GroupedLinksTitle, GroupedLinksGroup, GroupedLinksGroupItem } from "../styled/grouped-links";
 
 export const PressKit = () => {
     return (
         <Container>
 
-            <Heading>
+            <SeparatorHeading>
             <Lockup>
                 <KCLockUp />
             </Lockup>
-            </Heading>
+            </SeparatorHeading>
 
             <Callout>
                 Since 2004, more than <em>350,000</em> people from <em>200</em>+ corporations, <em>150</em>+ non-profit organizations, and dozens of schools around the world have been inspired by Kevin’s dynamic presentations.
             </Callout>
 
             <Intro>
-                Kevin Carroll travels the world using his masterful story-telling skills to entertain, enlighten, and challenge business leaders and worldwide audiences. Using lessons garnered from the spirit and dynamics of play, Kevin helps them understand how to enliven and enrich their work lives, enhance innovation, and improve team dynamics and interpersonal communication.
+                Kevin Carroll engages an audience with his masterful story-telling skills to entertain, enlighten, and challenge business leaders and worldwide audiences. Using lessons garnered from the spirit and dynamics of play, Kevin helps them understand how to enliven and enrich their work lives, enhance innovation, and improve team dynamics and interpersonal communication.
             </Intro>
 
-            <Heading>Onstage Clients Include</Heading>
-            <Clients>
-                {
-                    clientsList.map(function (e, i) {
-                        return <Client key={i}>{e}</Client>
-                    })
-                }
-            </Clients>
+            
 
-            <Heading>
+            <SeparatorHeading>
                 <TedLogo />
                 &amp; Kevin Carroll
-            </Heading>
+            </SeparatorHeading>
             <TedVideos>
                 {
                     tedVideosList.map(function (e, i) {
@@ -54,10 +48,10 @@ export const PressKit = () => {
                 }
             </TedVideos>
 
-            <Heading>
+            <SeparatorHeading>
                 <BoyAndBall />
                 PROMOTIONAL VIDEOS &amp; IMAGE GALLERIES
-            </Heading>
+            </SeparatorHeading>
 
             <GroupedLinks>
                 {
@@ -103,10 +97,10 @@ export const PressKit = () => {
                 }
             </GroupedLinks>
 
-            <Heading>
+            <SeparatorHeading>
                 <PodcastsIcon />
                 PODCASTS
-            </Heading>
+            </SeparatorHeading>
             <PromotionalVideos>
                 {
                     podcastsList.map(function (e, i) {
@@ -151,10 +145,10 @@ export const PressKit = () => {
                 }
             </PromotionalVideos>
 
-            <Heading>
+            <SeparatorHeading>
                 <PressIcon />
                 PRESS ARTICLES
-            </Heading>
+            </SeparatorHeading>
             <PressArticles>
                 {
                     pressList.map(function (e, i) {
@@ -173,6 +167,18 @@ export const PressKit = () => {
                 }
             </PressArticles>
 
+
+            <SeparatorHeading>
+                Onstage Clients Include
+            </SeparatorHeading>
+            <Clients>
+                {
+                    clientsList.map(function (e, i) {
+                        return <Client key={i}>{e}</Client>
+                    })
+                }
+            </Clients>
+
         </Container>
     )
 }
@@ -187,17 +193,6 @@ const Lockup = styled.div`
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-`;
-
-const Heading = styled.h5`
-    font-family: ${props => props.theme.fonts.body};
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: ${props => props.theme.colors.gray};
-    font-size: ${props => props.theme.typography.scale6};
-    padding-bottom: 1em;
-    border-bottom: 2px dashed ${props => props.theme.colors.gray};
-    margin-bottom: 2em;
 `;
 
 const Clients = styled.ul`

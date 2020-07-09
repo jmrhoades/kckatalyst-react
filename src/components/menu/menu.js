@@ -87,7 +87,7 @@ const SiteNav = styled(motion.nav)`
     top: 0;
     right: 0;
     width: 100%;
-    max-width: 375px;
+    max-width: 331px;
     height: 100%;
     background-color: ${props => props.theme.colors.red};
     display: flex;

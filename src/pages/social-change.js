@@ -10,6 +10,8 @@ import { Callout } from "../styled/call-out";
 import { BoyAndBall } from "../components/icons-and-logos";
 import { GroupedLinks, GroupedLinkItem, GroupedLinkAnchor, GroupedItemTitle, GroupedItemMeta, GroupedLinksTitle, GroupedLinksGroup, GroupedLinksGroupItem } from "../styled/grouped-links";
 import { socialChangeList } from "../data/social-change";
+import { TopQuote } from "../components/quote";
+
 
 export const SportForSocialChange = (props) => {
   return (
@@ -30,6 +32,10 @@ export const SportForSocialChange = (props) => {
             <LazyImage src="/images/about/balls-grid-380.jpg" />
           </AspectBox>
         </BallsGrid>
+
+        <TopQuote
+          quote="My actions may seem small but, their collective impact will be great."
+        />
 
         <Callout>
           <em>Sport is universal,</em> an inclusive international language teaching leadership, cooperation, and exemplary behavior in both victory and defeat.
