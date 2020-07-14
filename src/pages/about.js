@@ -55,7 +55,7 @@ function About(props) {
         <AboutCenteredLinks>
           <AboutCenteredLink>
             <h6>Press Kit</h6>
-            <LinkSmallCaps href="https://www.dropbox.com/s/ogoermwzvqb3yke/KC_PressKit_2020.pdf">KC’s Press Kit — PDF</LinkSmallCaps>
+            <LinkSmallCaps href="/downloads/2020_Digital_Press_Kit_LoRes.pdf">KC’s Press Kit — PDF</LinkSmallCaps>
           </AboutCenteredLink>
           <AboutCenteredLink>
             <h6>For Inquiries, email</h6>

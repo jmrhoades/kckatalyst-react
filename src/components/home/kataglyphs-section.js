@@ -55,12 +55,13 @@ export function KataglyphsSection() {
           width="640"
           height="360"
           title="KATAGLYPHS"
-          src="https://www.youtube-nocookie.com/embed/MJj_gpRJViE?modestbranding=1&fs=1"
+          src="https://www.youtube-nocookie.com/embed?listType=playlist&list=PL-aeTqwGNTmSFmfVNgsUCJr4aqZTyppRi&modestbranding=1&fs=1&rel=0"
           frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         />
       </AspectBox>
       </VideoContainer>
-
 
     </HomePodcast>
   )
@@ -138,12 +139,12 @@ const HomePodcastsLinkTitle = styled.h6`
   text-transform: uppercase;
   color: ${props => props.theme.colors.red};
   @media (min-width: 860px) {
-    display: inline-block;
+    /* display: inline-block; */
   }
 `;
 
 const VideoContainer = styled.div`
-  max-width: 540px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 `;

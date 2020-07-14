@@ -32,6 +32,7 @@ export const pressList = [
     {
         name: "KIWANIS MAGAZINE",
         title: "April/May 2019 The Power of PLAY Issue",
+        image: "/images/press/kiwanis-play.jpg",
     },
     {
         name: "MOTTO",

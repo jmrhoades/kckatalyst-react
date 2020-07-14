@@ -38,7 +38,7 @@ export const tedVideosList = [
     {
         title: "TEDxOU TALK: TAKE A STAND FOR PLAY!",
         year: "2014",
-        url: "http://tedxou.com/kevin-carroll/",
+        url: "https://youtu.be/qH2_H9vnjW0",
         place: "University of Oklahoma",
     },
 ];

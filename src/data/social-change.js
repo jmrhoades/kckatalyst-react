@@ -92,5 +92,6 @@ export const socialChangeList = [
     {
         title: "KIWANIS MAGAZINE",
         meta: "April/May 2019 The Power of PLAY Issue",
+        url: "/images/press/kiwanis-play.jpg",
     },
 ];
