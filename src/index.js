@@ -10,12 +10,8 @@ import './theme/index.css';
 import App from './app';
 
 ReactDOM.render(
-  
     <Router>
       <App />
     </Router>,
-  
   document.getElementById('root')
 );
-
-

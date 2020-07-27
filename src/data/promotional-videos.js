@@ -88,11 +88,6 @@ export const promotionalVideosList = [
         url: "http://bit.ly/1Ug1Bw3",
     },
     {
-        title: "Morsels o’ Motivation",
-        meta: "2016",
-        url: "http://s3-us-west-2.amazonaws.com/storyfirm/Kevin+Carroll+Press+Kit+2017+V1.mp4",
-    },
-    {
         title: "NIKE N7 Youth Summit",
         meta: "Vancouver, BC / 2017",
         url: "http://bit.ly/2shqwwr",
