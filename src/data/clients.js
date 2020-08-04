@@ -25,5 +25,5 @@ export const clientsList = [
     "NCAA",
     "SKYY Spirits",
     "Kaboom!",
-    "Philip Morris",
+    "Google",
 ];

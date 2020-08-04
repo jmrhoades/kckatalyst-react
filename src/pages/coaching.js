@@ -44,21 +44,21 @@ function Coaching(props) {
       <SectionTop>
 
         <SectionTopImages>
-          <AspectBox ratio={2/3}>
+          <AspectBox ratio={2 / 3}>
             <LazyImage src="/images/coaching/coachin-top-images-01.jpg" />
           </AspectBox>
-          <AspectBox ratio={2/3}>
+          <AspectBox ratio={2 / 3}>
             <LazyImage src="/images/coaching/coachin-top-images-02.jpg" />
           </AspectBox>
-          <AspectBox ratio={2/3}>
+          <AspectBox ratio={2 / 3}>
             <LazyImage src="/images/coaching/coachin-top-images-03.jpg" />
           </AspectBox>
         </SectionTopImages>
 
         <SectionTopQuote>
           <PageContentPadding>
-          <TopQuote quote="I can not teach you... I can only help you explore yourself"
-            by="Bruce Lee" />
+            <TopQuote quote="I can not teach you... I can only help you explore yourself"
+              by="Bruce Lee" />
           </PageContentPadding>
         </SectionTopQuote>
 
@@ -104,8 +104,14 @@ function Coaching(props) {
         </Experiences>
 
         <BottomCenteredLinks>
+          <h6>Download</h6>
           <BottomCenteredLink>
-            <h6>Download</h6>
+            <DownloadLink href="https://www.coursera.org/account/accomplishments/specialization/JZJSUYXKPZAD">
+              FOUNDATIONS OF POSITIVE PSYCHOLOGY Certificate
+              <span>by University of Pennsylvania on Coursera</span>
+            </DownloadLink>
+          </BottomCenteredLink>
+          <BottomCenteredLink>
             <LinkSmallCaps href="/downloads/83817_KC_Coaching_PDF_r3.pdf">KC’s Coaching Services — PDF</LinkSmallCaps>
           </BottomCenteredLink>
         </BottomCenteredLinks>
@@ -118,14 +124,14 @@ function Coaching(props) {
 
 const BottomCenteredLinks = styled.div`
   margin-bottom: ${bottomSpace};
+  text-align: center;
+  h6 {
+    margin-bottom: 1em;
+  }
 `;
 
 const BottomCenteredLink = styled.div`
-  text-align: center;
-  margin-bottom: 3em;
-  h6 {
-    color: ${props => props.theme.colors.gray};
-  }
+  margin-bottom: 1.5em;
 `;
 
 
@@ -174,6 +180,19 @@ const OpeningParagraph = styled.div`
   padding-bottom: 3em;
 `;
 
+const DownloadLink = styled(LinkSmallCaps)`
+
+  span {
+    display: block;
+    font-family: ${props => props.theme.fonts.body};
+    font-size: ${props => props.theme.typography.body};
+    letter-spacing: 0;
+    text-transform: none;
+    line-height: 2;
+    padding: 0 0 5px;
+    box-shadow: none;
+  }
+`
 
 
 export default Coaching;

@@ -200,9 +200,6 @@ const Clients = styled.ul`
     column-count: 2;
     column-gap: 2em;
     margin-bottom: ${bottomSpace};
-    @media (min-width: 640px) {
-        column-count: 3;
-    }
 `;
 
 const Client = styled.li`
