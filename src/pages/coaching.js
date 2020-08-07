@@ -107,7 +107,7 @@ function Coaching(props) {
           <h6>Download</h6>
           <BottomCenteredLink>
             <DownloadLink href="https://www.coursera.org/account/accomplishments/specialization/JZJSUYXKPZAD">
-              FOUNDATIONS OF POSITIVE PSYCHOLOGY Certificate
+              FOUNDATIONS OF POSITIVE PSYCHOLOGY SPECIALIZATION Certificate
               <span>by University of Pennsylvania on Coursera</span>
             </DownloadLink>
           </BottomCenteredLink>
