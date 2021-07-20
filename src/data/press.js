@@ -1,5 +1,10 @@
 export const pressList = [
     {
+        name: "ESPN / The Undefeated",
+        title: "Featured Article + Network Show Appearance",
+        image: "https://theundefeated.com/features/one-hope-for-the-next-generation-of-black-athletes/",
+    },
+    {
         name: "ATLANTA VOICE",
         title: "Motivator Kevin ‘Katalyst’ Carroll encourages everyone to chase their dreams ‘Red Rubber Ball’",
         image: "/images/press/atlanta-voice.jpg",

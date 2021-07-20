@@ -11,6 +11,7 @@ import { KataglyphsSection } from "../components/home/kataglyphs-section";
 import { BooksList } from "../components/home/books-list";
 import { CoverImage } from "../components/cover-image";
 import { bottomSpace } from "../theme/global-styles";
+import { FeaturedVideo } from "../components/home/featured-video";
 
 
 function Home(props) {
@@ -58,8 +59,9 @@ function Home(props) {
           </PageLinks>
         </HomePageLinks>
 
-        <KataglyphsSection />
+        {/* <KataglyphsSection /> */}
 
+       <FeaturedVideo />
         <BooksList />
 
       </PageContentWidth>

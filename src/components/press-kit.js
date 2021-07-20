@@ -303,7 +303,7 @@ const PromotionalVideoGroupItem = styled.li`
         left: -12px;
         top: 0.4em;
     }
-    a {
+    & a {
         text-decoration: none;
         color: ${props => props.theme.colors.black};
         font-family: ${props => props.theme.fonts.body};

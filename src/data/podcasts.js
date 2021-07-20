@@ -1,5 +1,17 @@
 export const podcastsList = [
     {
+        title: "KATAGLYPHS SERIES (2020)",
+        url: "https://m.youtube.com/playlist?list=PL-aeTqwGNTmSFmfVNgsUCJr4aqZTyppRi",
+    },
+    {
+        title: "Water The Bamboo with Greg Bell",
+        url: "https://podcasts.apple.com/us/podcast/water-the-bamboo-unleashing-your-potential/id1540399517#episodeGuid=32aadf37-f43a-4764-83df-aae014715181",
+    },
+    {
+        title: "JON GORDON – Positve U",
+        url: "https://positiveuniversity.com/episode/kevin-carroll/",
+    },
+    {
         groupTitle: "A Tribe Called YES!",
         groupItems: [
             {

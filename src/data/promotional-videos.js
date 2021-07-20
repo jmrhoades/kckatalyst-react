@@ -1,5 +1,31 @@
 export const promotionalVideosList = [
     {
+        title: "ESPN / THE UNDEFEATED",
+        meta: "Featured Guest",
+        url: " https://vimeo.com/534670533/a1e11cb0e8",
+    },
+    {
+        groupTitle: "PHARRELL’S TEAM YELLOW & WARBY PARKER – HOST",
+        groupItems: [
+            {
+                title: "Videos",
+                url: "https://bit.ly/2QEBJDy",
+            },
+            {
+                title: "About the Project",
+                url: "http://bit.ly/3dytsdi",
+            },
+        ]
+    },
+    {
+        title: "UPWORK VOICES OF AUTHORITY",
+        url: "https://buff.ly/2UFni0W",
+    },
+    {
+        title: "PDX PHILANTHROPY - RIP CITY...RISE UP!",
+        url: "http://riseuppdx.com/",
+    },
+    {
         groupTitle: "“THE KATALYST” CONFECTIONS FOR THE CURIOUS SOUL",
         groupItems: [
             {
@@ -32,7 +58,11 @@ export const promotionalVideosList = [
         url: "http://bit.ly/1JdWaXB",
     },
     {
-        title: "FIRST TECH CREDIT UNION MEMBER SPOTLIGHT",
+        title: "FIRST TECH FEDERAL CREDIT UNION",
+        url: "https://vimeo.com/503191219",
+    },
+    {
+        title: "FIRST TECH FEDERAL CREDIT UNION — MEMBER SPOTLIGHT",
         url: "https://www.youtube.com/watch?v=t5ddaoX9ws8",
     },
     {
