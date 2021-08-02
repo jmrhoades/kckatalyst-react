@@ -15,11 +15,6 @@ export const tedVideosList = [
         url: "http://blog.ted.com/2011/05/26/we-all-speak-ball-qa-with-full-spectrum-speaker-kevin-carroll/",
     },
     {
-        title: "TED GLOBAL ONLINE CHAT",
-        year: "2011",
-        url: "https://www.ted.com/conversations/3593/live_chat_with_kevin_carroll.html",
-    },
-    {
         title: "TEDxHARLEM TALK: PLAY is Necessary!",
         year: "2012",
         url: "http://youtu.be/1pz72Wygg8c",
