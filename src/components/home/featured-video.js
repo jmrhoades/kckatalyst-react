@@ -8,7 +8,18 @@ export function FeaturedVideo() {
 
     <Wrap>
       <h6>Featured Video</h6>
-      <p>Catching Up With Kevin Carroll – A Member Spotlight by First Tech Federal Credit Union</p>
+
+      <p>Write It Down, Make It Real</p>
+      <VideoContainer>
+      <AspectBox>
+       <video controls poster="/videos/write_it_down_make_it_real.jpg">
+        <source src="/videos/write_it_down_make_it_real.mp4" type="video/mp4" />
+       </video>
+      </AspectBox>
+      </VideoContainer>
+
+
+      {/* <p>Catching Up With Kevin Carroll – A Member Spotlight by First Tech Federal Credit Union</p>
       <VideoContainer>
       <AspectBox>
         <iframe
@@ -21,7 +32,7 @@ export function FeaturedVideo() {
         />
         <script src="https://player.vimeo.com/api/player.js"></script>
       </AspectBox>
-      </VideoContainer>
+      </VideoContainer> */}
     </Wrap>
   )
 }
