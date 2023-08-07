@@ -57,7 +57,7 @@ function OnStage(props) {
               <p>As children our days were filled with productive play. What was entertaining was also instructive. Games of tag were exercises in planning, teamwork, strategy, design, decision-making, creativity, interpersonal communication and risk-taking. Play was serious business in our youth—and it should be even more serious business in our professional lives if we hope to unleash the creative genius that spurs organizational growth.</p>
             </li>
             <li>
-              <ExperienceTitle>The PIVOT: Adopting a Game Changing Mindset During Difficult Times</ExperienceTitle>
+              <ExperienceTitle>The PIVOT: Adopting a Game Changing Mindset</ExperienceTitle>
               <p>“Resilient people are everywhere. They are ordinary women and men, in every walk of life, who meet the definition of resilience set forth by American Psychological Association - adapting well in the face of adversity, trauma, tragedy, threats or significant sources of stress.” - Meg Jay. The tools, resources and best practices used by those that possess an uncanny ability to be resilient and overcome upheaval, uncertainty or difficult times can be taught and adopted. Learning the art + science of sustained determination (aka resilience) can provide a leader with the game changing mindset needed to face a challenging situation with grit, grace and studied confidence.</p>
             </li>
           </ul>

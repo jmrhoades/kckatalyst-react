@@ -28,7 +28,7 @@ export function SiteIndex() {
                 <NavItem><a href="https://www.linkedin.com/in/kevincarrollkatalyst/">LinkedIn</a></NavItem>
             </NavListC>
             <Copyright>
-                Copyright Kevin Carroll 2022. All rights reserved.
+                Copyright Kevin Carroll 2023. All rights reserved.
             </Copyright>
         </Index>
     )
