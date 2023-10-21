@@ -10,7 +10,7 @@ export function SiteIndex() {
                 <h4>What’s <em>your</em> red rubber ball?!</h4>
             </Question>
             <LetsTalkContainer>
-                <LinkSmallCaps href="mailto:kim@kevincarrollkatalyst.com">Contact</LinkSmallCaps>
+                <LinkSmallCaps href="mailto:kimkief503@gmail.com">Contact</LinkSmallCaps>
             </LetsTalkContainer>
             <NavListA>
                 <NavItem><Link to="/">Home</Link></NavItem>

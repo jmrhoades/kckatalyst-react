@@ -59,7 +59,7 @@ function About(props) {
           </AboutCenteredLink>
           <AboutCenteredLink>
             <h6>For Inquiries, email</h6>
-            <LinkSmallCaps href="mailto:kim@kevincarrollkatalyst.com">kim@kevincarrollkatalyst.com</LinkSmallCaps>
+            <LinkSmallCaps href="mailto:kimkief503@gmail.com">kimkief503@gmail.com</LinkSmallCaps>
           </AboutCenteredLink>
         </AboutCenteredLinks>
       </PageContentWidth>

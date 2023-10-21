@@ -24,7 +24,7 @@ const paths = {
     "Onstage": "/onstage",
     "Books": "/books",
     "Social Change": "/social-change",
-    "Contact": "mailto:kim@kevincarrollkatalyst.com",
+    "Contact": "mailto:kimkief503@gmail.com",
 }
 
 const MenuPageNav = () => {
