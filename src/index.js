@@ -7,7 +7,7 @@ import {
 import "./theme/freight.css";
 import './theme/reset.css';
 import './theme/index.css';
-import App from './app';
+import App from './App';
 
 ReactDOM.render(
     <Router>
