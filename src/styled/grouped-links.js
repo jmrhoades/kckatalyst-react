@@ -4,7 +4,7 @@ import { bottomSpace } from "../theme/global-styles";
 export const GroupedLinks = styled.ul`
     margin-bottom: ${bottomSpace};
     
-    @media (min-width: 800px) {
+    @media (min-width: 768px) {
         column-count: 2;
         column-gap: 4em;
     }
@@ -26,11 +26,13 @@ export const GroupedLinkAnchor = styled.a`
     &:hover {
         color: ${props => props.theme.colors.red};
     }
+    &:focus-visible {
+        outline: 2px solid ${props => props.theme.colors.red};
+        outline-offset: 2px;
+    }
 `;
 
-export const GroupedItemTitle = styled.span`
- 
-`;
+export const GroupedItemTitle = styled.span``;
 
 export const GroupedItemMeta = styled.span`
     font-family: ${props => props.theme.fonts.bodyItalic};
@@ -66,6 +68,10 @@ export const GroupedLinksGroupItem = styled.li`
         box-shadow: inset 0 -1.5px 0 ${props => props.theme.colors.red};
         &:hover {
             color: ${props => props.theme.colors.red};
+        }
+        &:focus-visible {
+            outline: 2px solid ${props => props.theme.colors.red};
+            outline-offset: 2px;
         }
     }
 }

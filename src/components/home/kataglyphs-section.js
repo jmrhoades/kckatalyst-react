@@ -138,9 +138,6 @@ const HomePodcastsLinkTitle = styled.h6`
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: ${props => props.theme.colors.red};
-  @media (min-width: 860px) {
-    /* display: inline-block; */
-  }
 `;
 
 const VideoContainer = styled.div`

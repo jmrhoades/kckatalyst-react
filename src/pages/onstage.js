@@ -29,6 +29,7 @@ function OnStage(props) {
       <CoverImage
         ratio={1535 / 2312}
         src={"/images/on-stage/on-stage-cover-05.jpg"}
+        alt="Kevin Carroll on stage"
       />
 
       <PageContentWidth>
@@ -68,12 +69,12 @@ function OnStage(props) {
       <PageContentWidth>
         <Image1>
           <AspectBox ratio={940 / 1408}>
-            <LazyImage src="/images/on-stage/on-stage-blue-01.jpg" />
+            <LazyImage src="/images/on-stage/on-stage-blue-01.jpg" alt="Kevin Carroll speaking event" />
           </AspectBox>
         </Image1>
         <Image2>
           <AspectBox ratio={1308 / 920}>
-            <LazyImage src="/images/on-stage/on-stage-blue-02.jpg" />
+            <LazyImage src="/images/on-stage/on-stage-blue-02.jpg" alt="Kevin Carroll speaking event" />
           </AspectBox>
         </Image2>
       </PageContentWidth>
@@ -94,7 +95,7 @@ function OnStage(props) {
 
       <Image3>
         <AspectBox ratio={1600 / 2400}>
-          <LazyImage src="/images/on-stage/on-stage-beige-01.jpg" />
+          <LazyImage src="/images/on-stage/on-stage-beige-01.jpg" alt="Kevin Carroll speaking event" />
         </AspectBox>
       </Image3>
 
@@ -109,12 +110,12 @@ function OnStage(props) {
       <PageContentWidth>
         <ImagePortrait1>
           <AspectBox ratio={2000 / 1334}>
-            <LazyImage src="/images/on-stage/on-stage-portrait-01.jpg" />
+            <LazyImage src="/images/on-stage/on-stage-portrait-01.jpg" alt="Kevin Carroll portrait" />
           </AspectBox>
         </ImagePortrait1>
         <ImagePortrait2>
           <AspectBox ratio={2000 / 1334}>
-            <LazyImage src="/images/on-stage/on-stage-portrait-02.jpg" />
+            <LazyImage src="/images/on-stage/on-stage-portrait-02.jpg" alt="Kevin Carroll portrait" />
           </AspectBox>
         </ImagePortrait2>
       </PageContentWidth>
@@ -131,12 +132,12 @@ function OnStage(props) {
         <SportsContainer1Wrap>
           <SportsImage1>
             <AspectBox ratio={462 / 750}>
-              <LazyImage src="/images/on-stage/on-stage-sports-02.jpg" />
+              <LazyImage src="/images/on-stage/on-stage-sports-02.jpg" alt="Kevin Carroll sports event" />
             </AspectBox>
           </SportsImage1>
           <SportsImage2>
             <AspectBox ratio={684 / 1024}>
-              <LazyImage src="/images/on-stage/on-stage-sports-01.jpg" />
+              <LazyImage src="/images/on-stage/on-stage-sports-01.jpg" alt="Kevin Carroll sports event" />
             </AspectBox>
           </SportsImage2>
         </SportsContainer1Wrap>
@@ -152,7 +153,7 @@ function OnStage(props) {
 
       <Image4>
         <AspectBox ratio={1600 / 2400}>
-          <LazyImage src="/images/on-stage/on-stage-cover-03.jpg" />
+          <LazyImage src="/images/on-stage/on-stage-cover-03.jpg" alt="Kevin Carroll on stage" />
         </AspectBox>
       </Image4>
 
@@ -168,17 +169,17 @@ function OnStage(props) {
         <PortraitContainer3Wrap>
           <ImagePortrait3>
             <AspectBox ratio={1024 / 819}>
-              <LazyImage src="/images/on-stage/on-stage-portrait-04.jpg" />
+              <LazyImage src="/images/on-stage/on-stage-portrait-04.jpg" alt="Kevin Carroll portrait" />
             </AspectBox>
           </ImagePortrait3>
           <ImagePortrait4>
             <AspectBox ratio={1024 / 683}>
-              <LazyImage src="/images/on-stage/on-stage-portrait-03.jpg" />
+              <LazyImage src="/images/on-stage/on-stage-portrait-03.jpg" alt="Kevin Carroll portrait" />
             </AspectBox>
           </ImagePortrait4>
           <ImagePortrait5>
             <AspectBox ratio={1024 / 683}>
-              <LazyImage src="/images/on-stage/on-stage-portrait-05.jpg" />
+              <LazyImage src="/images/on-stage/on-stage-portrait-05.jpg" alt="Kevin Carroll portrait" />
             </AspectBox>
           </ImagePortrait5>
         </PortraitContainer3Wrap>
@@ -194,7 +195,7 @@ function OnStage(props) {
 
       <ImageCover4>
         <AspectBox ratio={1365 / 2048}>
-          <LazyImage src="/images/on-stage/on-stage-cover-04.jpg" />
+          <LazyImage src="/images/on-stage/on-stage-cover-04.jpg" alt="Kevin Carroll on stage" />
         </AspectBox>
       </ImageCover4>
 
@@ -208,7 +209,7 @@ function OnStage(props) {
 
       <ImageLast>
         <AspectBox ratio={1}>
-          <LazyImage src="/images/on-stage/on-stage-square-01.jpg" />
+          <LazyImage src="/images/on-stage/on-stage-square-01.jpg" alt="Kevin Carroll" />
         </AspectBox>
       </ImageLast>
 
@@ -216,15 +217,6 @@ function OnStage(props) {
     </Page>
   )
 }
-
-
-// const CoverImage = styled.div`
-//   min-width: 480px;
-//   max-width: 1280px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 6em;
-// `;
 
 const OnStageTopQuote = styled(TopQuote)`
   max-width: 440px;
@@ -238,7 +230,7 @@ const Image1 = styled.div`
     position: relative;
     z-index: 1;
 
-    @media (min-width: 980px) {
+    @media (min-width: 1024px) {
       transform: translateX(-25%);
     }
 `;
@@ -251,7 +243,7 @@ const Image2 = styled.div`
     margin-top: -2em;
     transform: translateX(25%);
 
-    @media (min-width: 480px) {
+    @media (min-width: 414px) {
       margin-top: -4em;
     }
 
@@ -280,7 +272,7 @@ const ImagePortrait1 = styled.div`
       max-width: 400px;
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 1024px) {
       max-width: 460px;
     }
 
@@ -301,7 +293,7 @@ const ImagePortrait2 = styled.div`
       max-width: 460px;
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 1024px) {
       max-width: 460px;
       transform: translateX(25%);
     }
@@ -393,7 +385,7 @@ const SportsImage2 = styled.div`
   max-width: 512px;
   transform: translateX(-25%);
   margin-bottom: 1em;
-  @media (min-width: 780px) {
+  @media (min-width: 768px) {
       margin-top: -6em;
     }
 `;

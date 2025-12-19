@@ -56,6 +56,10 @@ const SocialNavA = styled.a`
   width: 100%;
   height: 100%;
 
+  &:focus-visible {
+    outline: 2px solid ${props => props.theme.colors.white};
+    outline-offset: 2px;
+  }
 `;
 
 const SocialNavSVG = styled.svg`
@@ -112,20 +116,20 @@ const IconLinkedIn = () => {
   )
 }
 
-const socialLinks = {
-  "https://twitter.com/kckatalyst": IconTwitter,
-  "https://instagram.com/kckatalyst": IconInsta,
-  "https://www.linkedin.com/in/kevincarrollkatalyst/": IconLinkedIn,
-}
+const socialLinks = [
+  { url: "https://twitter.com/kckatalyst", icon: IconTwitter, label: "Twitter" },
+  { url: "https://instagram.com/kckatalyst", icon: IconInsta, label: "Instagram" },
+  { url: "https://www.linkedin.com/in/kevincarrollkatalyst/", icon: IconLinkedIn, label: "LinkedIn" },
+]
 
 const MenuSocialNav = () => {
 
   return (
     <SocialNavUL variants={variants}>
-      {Object.keys(socialLinks).map((key, i) => (
+      {socialLinks.map((link, i) => (
         <SocialNavLI key={i} variants={linkVariants}>
-          <SocialNavA href={key}>
-            {socialLinks[key]()}
+          <SocialNavA href={link.url} aria-label={link.label}>
+            {link.icon()}
           </SocialNavA>
         </SocialNavLI>
       ))}

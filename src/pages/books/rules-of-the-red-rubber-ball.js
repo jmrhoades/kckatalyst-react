@@ -29,7 +29,7 @@ export function RulesOfTheRedRubberBall(props) {
 
         <BookImageCover>
           <AspectBox ratio={1}>
-            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-cover.jpg" />
+            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-cover.jpg" alt="Rules of the Red Rubber Ball cover" />
           </AspectBox>
         </BookImageCover>
 
@@ -39,7 +39,7 @@ export function RulesOfTheRedRubberBall(props) {
 
         <BookImageSpread>
           <AspectBox ratio={0.7716049383}>
-            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-spread-1.jpg" />
+            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-spread-1.jpg" alt="Rules of the Red Rubber Ball interior page" />
           </AspectBox>
         </BookImageSpread>
 
@@ -50,7 +50,7 @@ export function RulesOfTheRedRubberBall(props) {
 
         <BookImageSpread>
           <AspectBox ratio={0.7716049383}>
-            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-spread-2.jpg" />
+            <LazyImage src="/images/books/rules-of-the-red-rubber-ball/rules-of-the-red-rubber-ball-spread-2.jpg" alt="Rules of the Red Rubber Ball interior page" />
           </AspectBox>
         </BookImageSpread>
 

@@ -29,7 +29,7 @@ export const SportForSocialChange = (props) => {
 
         <BallsGrid>
           <AspectBox ratio={1}>
-            <LazyImage src="/images/about/balls-grid-380.jpg" />
+            <LazyImage src="/images/about/balls-grid-380.jpg" alt="Collection of red rubber balls from around the world" />
           </AspectBox>
         </BallsGrid>
 

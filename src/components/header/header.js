@@ -7,7 +7,7 @@ import HeaderLogo from "./header-logo";
 function Header() {
     return (
         <Head>
-            <Link to="/">
+            <Link to="/" aria-label="Home">
                 <HeaderLogo />
             </Link>
         </Head>

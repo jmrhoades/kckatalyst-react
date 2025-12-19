@@ -40,12 +40,16 @@ export const Name = styled.a`
     text-transform: uppercase;
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
-    /* border-bottom: 2px solid ${props => props.theme.colors.red}; */
     box-shadow: inset 0 -2.5px 0 ${props => props.theme.colors.red};
     text-decoration: none;
 
     &:hover {
         color: ${props => props.theme.colors.red};
+    }
+
+    &:focus-visible {
+        outline: 2px solid ${props => props.theme.colors.red};
+        outline-offset: 2px;
     }
 `;
 
@@ -75,13 +79,18 @@ export const LinkArrow = styled.a`
     color: ${props => props.theme.colors.red};
     border: 2px solid ${props => props.theme.colors.red};
 
-    &:hover{
+    &:hover, &:focus-visible {
         background-color: ${props => props.theme.colors.red};
         color: ${props => props.theme.colors.white};
 
         svg {
             stroke: ${props => props.theme.colors.white};
         }
+    }
+
+    &:focus-visible {
+        outline: 2px solid ${props => props.theme.colors.red};
+        outline-offset: 2px;
     }
 `;
 

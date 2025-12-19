@@ -13,22 +13,22 @@ export function BooksList() {
             <HomeBooksListContainer>
                 <HomeBooksListLink to="/books/rules-of-the-red-rubber-ball">
                     <AspectBox ratio={1}>
-                        <LazyImage src="/images/books/booklist-rules-of-the-red-rubber-ball.jpg" />
+                        <LazyImage src="/images/books/booklist-rules-of-the-red-rubber-ball.jpg" alt="Rules of the Red Rubber Ball book cover" />
                     </AspectBox>
                 </HomeBooksListLink>
                 <HomeBooksListLink to="/books/whats-your-red-rubber-ball">
                     <AspectBox ratio={1}>
-                        <LazyImage src="/images/books/booklist-whats-your-red-rubber-ball.jpg" />
+                        <LazyImage src="/images/books/booklist-whats-your-red-rubber-ball.jpg" alt="What's Your Red Rubber Ball book cover" />
                     </AspectBox>
                 </HomeBooksListLink>
                 <HomeBooksListLink to="books/the-red-rubber-ball-at-work">
                     <AspectBox ratio={1}>
-                        <LazyImage src="/images/books/booklist-the-red-rubber-ball-at-work.jpg" />
+                        <LazyImage src="/images/books/booklist-the-red-rubber-ball-at-work.jpg" alt="The Red Rubber Ball at Work book cover" />
                     </AspectBox>
                 </HomeBooksListLink>
                 <HomeBooksListLink to="books/a-kids-book-about-belonging">
                     <AspectBox ratio={1}>
-                        <LazyImage src="/images/books/booklist-a-kids-book-about-belonging.jpg" />
+                        <LazyImage src="/images/books/booklist-a-kids-book-about-belonging.jpg" alt="A Kids Book About Belonging cover" />
                     </AspectBox>
                 </HomeBooksListLink>
             </HomeBooksListContainer>

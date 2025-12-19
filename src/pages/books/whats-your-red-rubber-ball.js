@@ -33,19 +33,19 @@ export function WhatsYourRedRubberBall(props) {
 
           <BookImageCover>
             <AspectBox ratio={1}>
-              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-cover.jpg" />
+              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-cover.jpg" alt="What's Your Red Rubber Ball cover" />
             </AspectBox>
           </BookImageCover>
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-spread-1.jpg" />
+              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-spread-1.jpg" alt="What's Your Red Rubber Ball interior page" />
             </AspectBox>
           </BookImageSpread>
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-spread-2.jpg" />
+              <LazyImage src="/images/books/whats-your-red-rubber-ball/whats-your-red-rubber-ball-spread-2.jpg" alt="What's Your Red Rubber Ball interior page" />
             </AspectBox>
           </BookImageSpread>
 

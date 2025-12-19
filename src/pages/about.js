@@ -29,7 +29,7 @@ function About(props) {
 
         <AboutPortrait1>
           <AspectBox ratio={1.4}>
-            <LazyImage src="/images/about/kevincarroll-portrait-1.jpg" />
+            <LazyImage src="/images/about/kevincarroll-portrait-1.jpg" alt="Kevin Carroll portrait" />
           </AspectBox>
         </AboutPortrait1>
 
@@ -46,7 +46,7 @@ function About(props) {
 
         <AboutPortrait2>
           <AspectBox ratio={1}>
-            <LazyImage src="/images/about/kevincarroll-portrait-4.jpg" />
+            <LazyImage src="/images/about/kevincarroll-portrait-4.jpg" alt="Kevin Carroll portrait" />
           </AspectBox>
         </AboutPortrait2>
 

@@ -77,6 +77,11 @@ const Button = styled.button`
         width: 88px;
         height: 88px;
     }
+
+    &:focus-visible {
+        outline: 2px solid ${props => props.theme.colors.red};
+        outline-offset: 2px;
+    }
 `;
 
 const IconContainer = styled.div`

@@ -40,11 +40,11 @@ const Index = styled.footer`
     grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(3, 1fr);
 
-    @media (min-width: 514px) {
+    @media (min-width: 640px) {
         grid-template-columns: repeat(4, 1fr);
     }
-    
-    @media (min-width: 960px) {
+
+    @media (min-width: 1024px) {
         grid-template-rows: repeat(3, auto);
         grid-template-columns: auto auto auto auto;
     }
@@ -56,11 +56,11 @@ const Question = styled.div`
     grid-column-start: 1;
     grid-column-end: 4;
 
-    @media (min-width: 514px) {
+    @media (min-width: 640px) {
         grid-column-end: 5;
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
         grid-column-end: 2;
         padding-right: 40px;
     }
@@ -70,7 +70,7 @@ const Question = styled.div`
         line-height: 1.25;
         padding-bottom: 48px;
         text-align: left;
-        @media (min-width: 1114px) {
+        @media (min-width: 1024px) {
             line-height: 2.2em;
             padding-bottom: 0;
         }
@@ -90,14 +90,14 @@ const LetsTalkContainer = styled.div`
     text-align: center;
     padding-top: 48px;
 
-    @media (min-width: 514px) {
+    @media (min-width: 640px) {
         grid-row: 2;
         grid-column-end: 2;
         text-align: left;
         padding-top: 0;
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
         grid-row: 3;
         grid-column-end: 5;
         text-align: center;
@@ -109,11 +109,11 @@ const NavListA = styled.ul`
     grid-row: 2;
     grid-column: 1;
 
-    @media (min-width: 514px) {
+    @media (min-width: 640px) {
         grid-column: 2;
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
         grid-row: 1;
     }
 `;
@@ -122,11 +122,11 @@ const NavListB = styled.ul`
     grid-row: 2;
     grid-column: 2;
 
-    @media (min-width: 514px) {
+    @media (min-width: 640px) {
         grid-column: 3;
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
         grid-row: 1;
     }
 `;
@@ -135,18 +135,18 @@ const NavListC = styled.ul`
     grid-row: 2;
     grid-column: 3;
 
-    @media (min-width: 514px) {
+    @media (min-width: 640px) {
         grid-column: 4;
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
         grid-row: 1;
     }
 `;
 
 const NavItem = styled.li`
-        
-    @media (min-width: 514px) {
+
+    @media (min-width: 640px) {
         padding-left: 30px;
     }
  
@@ -177,6 +177,11 @@ const NavItem = styled.li`
                 opacity: 1;
                 transform: scaleX(1.0);
             }
+        }
+
+        &:focus-visible {
+            outline: 2px solid ${props => props.theme.colors.red};
+            outline-offset: 2px;
         }
     }
 `;

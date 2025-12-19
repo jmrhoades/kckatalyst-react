@@ -19,9 +19,14 @@ export const OutlineLink = styled.a`
     color: ${props => props.theme.colors.red};
     border: 2px solid ${props => props.theme.colors.red};
 
-    &:hover{
+    &:hover, &:focus-visible {
         background-color: ${props => props.theme.colors.red};
         color: ${props => props.theme.colors.white};
+    }
+
+    &:focus-visible {
+        outline: 2px solid ${props => props.theme.colors.red};
+        outline-offset: 2px;
     }
 `;
 
@@ -41,8 +46,13 @@ export const OutlineRouterLink = styled(Link)`
     color: ${props => props.theme.colors.black};
     border: 2px solid ${props => props.theme.colors.red};
 
-    &:hover{
+    &:hover, &:focus-visible {
         background-color: ${props => props.theme.colors.red};
         color: ${props => props.theme.colors.white};
+    }
+
+    &:focus-visible {
+        outline: 2px solid ${props => props.theme.colors.red};
+        outline-offset: 2px;
     }
 `;

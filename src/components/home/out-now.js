@@ -16,12 +16,12 @@ export function OutNow() {
                     <HomeOutNowImages>
                         <HomeOutNowImageB>
                             <AspectBox ratio={0.7142857143}>
-                                <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-kevin.jpg" />
+                                <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-kevin.jpg" alt="Kevin Carroll from A Kids Book About Belonging" />
                             </AspectBox>
                         </HomeOutNowImageB>
                         <HomeOutNowImageA>
                             <AspectBox ratio={0.7142857143}>
-                                <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-child.jpg" />
+                                <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-child.jpg" alt="Child from A Kids Book About Belonging" />
                             </AspectBox>
                         </HomeOutNowImageA>
                     </HomeOutNowImages>

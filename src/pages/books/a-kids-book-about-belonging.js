@@ -33,19 +33,19 @@ export function AKidsBookAboutBelonging(props) {
 
           <BookImageCover>
             <AspectBox ratio={1}>
-              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-cover.jpg" />
+              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-cover.jpg" alt="A Kids Book About Belonging cover" />
             </AspectBox>
           </BookImageCover>
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-spread-1.jpg" />
+              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-spread-1.jpg" alt="A Kids Book About Belonging interior page" />
             </AspectBox>
           </BookImageSpread>
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-spread-2.jpg" />
+              <LazyImage src="/images/books/a-kids-book-about-belonging/a-kids-book-about-belonging-spread-2.jpg" alt="A Kids Book About Belonging interior page" />
             </AspectBox>
           </BookImageSpread>
 

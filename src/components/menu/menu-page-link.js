@@ -27,6 +27,11 @@ const SiteNavLI = styled(motion.li)`
     color: ${props => props.theme.colors.white};
     font-family: ${props => props.theme.fonts.body};
     text-decoration: none;
+
+    &:focus-visible {
+      outline: 2px solid ${props => props.theme.colors.white};
+      outline-offset: 2px;
+    }
   }
   font-size: ${props => props.theme.typography.scale5};
   line-height: 2.2;

@@ -19,9 +19,13 @@ export const LinkSmallCaps = styled.a`
     line-height: 1;
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
-    /* border-bottom: 2px solid ${props => props.theme.colors.red}; */
     box-shadow: inset 0 -2.5px 0 ${props => props.theme.colors.red};
     text-decoration: none;
+
+    &:focus-visible {
+        outline: 2px solid ${props => props.theme.colors.red};
+        outline-offset: 2px;
+    }
 `;
 
 export const RouteLinkSmallCaps = styled(Link)`
@@ -32,7 +36,11 @@ export const RouteLinkSmallCaps = styled(Link)`
     line-height: 1;
     padding: 0 0 5px;
     color: ${props => props.theme.colors.black};
-    /* border-bottom: 2px solid ${props => props.theme.colors.red}; */
     box-shadow: inset 0 -2.5px 0 ${props => props.theme.colors.red};
     text-decoration: none;
+
+    &:focus-visible {
+        outline: 2px solid ${props => props.theme.colors.red};
+        outline-offset: 2px;
+    }
 `;

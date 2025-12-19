@@ -45,7 +45,7 @@ function BookItem(props) {
     <>
       <ImageLink href={props.info.link}>
         <AspectBox ratio={1}>
-          <LazyImage src={props.info.img} />
+          <LazyImage src={props.info.img} alt={`${props.info.title} cover`} />
         </AspectBox>
       </ImageLink>
       <BookTitle>{props.info.title}</BookTitle>

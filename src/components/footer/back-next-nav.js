@@ -111,7 +111,7 @@ const LinksWrap = styled.div`
 const LinksContainer = styled.ul`
 
     
-    @media (min-width: 514px) {
+    @media (min-width: 640px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 40px;
@@ -132,6 +132,10 @@ const LinksContainer = styled.ul`
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+        &:focus-visible {
+            outline: 2px solid ${props => props.theme.colors.red};
+            outline-offset: 2px;
         }
     }
 `;

@@ -2,16 +2,15 @@ import React from "react";
 import Page from "../components/page";
 import { Helmet } from "react-helmet";
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
 
 import { PageContentWidth } from "../styled/page-content-width";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
-import { KataglyphsSection } from "../components/home/kataglyphs-section";
 import { BooksList } from "../components/home/books-list";
 import { CoverImage } from "../components/cover-image";
 import { bottomSpace } from "../theme/global-styles";
 import { FeaturedVideo } from "../components/home/featured-video";
+import { OutlineRouterLink } from "../styled/outline-link";
 
 
 function Home(props) {
@@ -25,6 +24,7 @@ function Home(props) {
       <CoverImage
         ratio={1536 / 2304}
         src={"/images/on-stage/on-stage-cover-02.jpg"}
+        alt="Kevin Carroll speaking on stage"
       />
 
       <PageContentWidth>
@@ -37,7 +37,7 @@ function Home(props) {
         <HomeBioContainer>
           <HomeBioImage>
             <AspectBox ratio={1.5}>
-              <LazyImage src="/images/home/kevincarroll-portrait-3.jpg" />
+              <LazyImage src="/images/home/kevincarroll-portrait-3.jpg" alt="Kevin Carroll portrait" />
             </AspectBox>
           </HomeBioImage>
           <HomeBioParagraph>
@@ -59,8 +59,6 @@ function Home(props) {
           </PageLinks>
         </HomePageLinks>
 
-        {/* <KataglyphsSection /> */}
-
        <FeaturedVideo />
         <BooksList />
 
@@ -73,9 +71,7 @@ const HomeIntroParagraph = styled.div`
   margin-bottom: 3em;
 `;
 
-const HomeBioContainer = styled.div`
-
-`;
+const HomeBioContainer = styled.div``;
 
 const HomeBioImage = styled.div`
   max-width: 544px;
@@ -84,9 +80,7 @@ const HomeBioImage = styled.div`
   margin-bottom: 4em;
 `;
 
-const HomeBioParagraph = styled.div`
-
-`;
+const HomeBioParagraph = styled.div``;
 
 const HomePageLinks = styled.div`
   margin-bottom: ${bottomSpace};
@@ -96,41 +90,11 @@ const PageLinksHeader = styled.h5`
   margin-bottom: 1em;
 `;
 
-const PageLinks = styled.ul`
-
-  /* @media (min-width: 540px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2em;
-  } */
-`;
+const PageLinks = styled.ul``;
 
 const PageLink = styled.li`
     margin-bottom: 1.5em;
 `;
-
-const OutlineRouterLink = styled(Link)`
-    display: block;
-    position: relative;
-    line-height: 1;
-    text-align: center;
-    padding: 18px 0 16px;
-    text-decoration: none;
-    
-    font-family: ${props => props.theme.fonts.heading};
-    font-size: ${props => props.theme.typography.scale6};
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    
-    color: ${props => props.theme.colors.black};
-    border: 2px solid ${props => props.theme.colors.red};
-
-    &:hover{
-        background-color: ${props => props.theme.colors.red};
-        color: ${props => props.theme.colors.white};
-    }
-`;
-
 
 export default Home;
 

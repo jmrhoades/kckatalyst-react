@@ -28,7 +28,7 @@ export function TheRedRubberBallAtWork(props) {
 
           <BookImageCover>
             <AspectBox ratio={1}>
-              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-cover.jpg" />
+              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-cover.jpg" alt="The Red Rubber Ball at Work cover" />
             </AspectBox>
           </BookImageCover>
 
@@ -38,7 +38,7 @@ export function TheRedRubberBallAtWork(props) {
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-spread-1.jpg" />
+              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-spread-1.jpg" alt="The Red Rubber Ball at Work interior page" />
             </AspectBox>
           </BookImageSpread>
 
@@ -48,7 +48,7 @@ export function TheRedRubberBallAtWork(props) {
 
           <BookImageSpread>
             <AspectBox ratio={0.7716049383}>
-              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-spread-2.jpg" />
+              <LazyImage src="/images/books/the-red-rubber-ball-at-work/the-red-rubber-ball-at-work-spread-2.jpg" alt="The Red Rubber Ball at Work interior page" />
             </AspectBox>
           </BookImageSpread>
 

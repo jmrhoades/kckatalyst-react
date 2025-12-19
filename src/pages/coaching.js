@@ -45,13 +45,13 @@ function Coaching(props) {
 
         <SectionTopImages>
           <AspectBox ratio={2 / 3}>
-            <LazyImage src="/images/coaching/coachin-top-images-01.jpg" />
+            <LazyImage src="/images/coaching/coachin-top-images-01.jpg" alt="Kevin Carroll coaching session" />
           </AspectBox>
           <AspectBox ratio={2 / 3}>
-            <LazyImage src="/images/coaching/coachin-top-images-02.jpg" />
+            <LazyImage src="/images/coaching/coachin-top-images-02.jpg" alt="Kevin Carroll coaching session" />
           </AspectBox>
           <AspectBox ratio={2 / 3}>
-            <LazyImage src="/images/coaching/coachin-top-images-03.jpg" />
+            <LazyImage src="/images/coaching/coachin-top-images-03.jpg" alt="Kevin Carroll coaching session" />
           </AspectBox>
         </SectionTopImages>
 

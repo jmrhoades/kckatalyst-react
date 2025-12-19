@@ -3,12 +3,12 @@ import styled from "styled-components";
 import AspectBox from "../components/aspect-box";
 import { LazyImage } from "../components/lazy-image";
 
-export const CoverImage = ({ratio, src, ...props}) => {
+export const CoverImage = ({ratio, src, alt = "", ...props}) => {
     return (
         <Outer>
         <Container>
             <AspectBox ratio={ratio}>
-                <LazyImage src={src} />
+                <LazyImage src={src} alt={alt} />
             </AspectBox>
         </Container>
         </Outer>

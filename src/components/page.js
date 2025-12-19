@@ -37,7 +37,7 @@ function Page(props) {
       transition={pageTransition}
       key={props.key}
     >
-      <PageContent>
+      <PageContent id="main-content">
         {props.children}
       </PageContent>
       <Footer />

@@ -18,16 +18,16 @@ body {
   @media (min-width: 414px) {
     font-size: 21px;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 640px) {
     font-size: 22px;
   }
   @media (min-width: 768px) {
     font-size: 23px;
   }
-  @media (min-width: 960px) {
+  @media (min-width: 1024px) {
     font-size: 24px;
   }
-  @media (min-width: 1152px) {
+  @media (min-width: 1280px) {
     font-size: 25px;
   }
 
@@ -102,9 +102,13 @@ a {
   color: ${props => props.theme.colors.red};
   font-family: ${props => props.theme.fonts.bodyItalic};
   font-weight: 400;
-  outline: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible {
+  outline: 2px solid ${props => props.theme.colors.red};
+  outline-offset: 2px;
 }
 
 button {
@@ -115,7 +119,6 @@ button {
     border: none;
     background: none;
     cursor: pointer;
-    outline: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     font-size: inherit;
@@ -123,10 +126,9 @@ button {
     font-weight: inherit;
 }
 
-button:active,
-button:focus {
-    outline: none;
-    box-shadow: none;
+button:focus-visible {
+    outline: 2px solid ${props => props.theme.colors.red};
+    outline-offset: 2px;
 }
 
 p {
