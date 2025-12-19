@@ -318,25 +318,30 @@ const PromotionalVideoGroupItem = styled.li`
 
 const PressArticles = styled.ul`
     margin-bottom: ${bottomSpace};
-    
-    @media (min-width: 640px) {
-        column-count: 2;
-        column-gap: 4em;
-        font-size: 85%;
-    }
 `;
 
 const PressArticle = styled.li`
     display: grid;
-    grid-template-columns: 4em 1fr;
-    column-gap: 4em;
-    margin-bottom: 1em;
+    grid-template-columns: 1fr;
+    margin-bottom: 1.5em;
     color: ${props => props.theme.colors.black};
     line-height: 1.2;
+
+    @media (min-width: 600px) {
+        grid-template-columns: 200px 1fr;
+        column-gap: 2em;
+        margin-bottom: 1em;
+    }
 `;
 
 const PressName = styled.p`
     padding-bottom: 0;
+    padding-top: 0.35em;
+    white-space: nowrap;
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 `;
 
 const PressTitle = styled.p`
